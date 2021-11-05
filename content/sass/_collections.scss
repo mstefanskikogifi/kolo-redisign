@@ -1,0 +1,208 @@
+﻿/* ==========================================================================
+ COLLECTIONS
+ ========================================================================== */
+.collections-categories {
+    display: block;
+    padding: 20px 15px 0 15px;
+
+    li {
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 5px;
+        padding: 10px 15px;
+        text-transform: uppercase;
+    }
+}
+
+.lt-ie8 .collections-categories li {
+    display: inline;
+    margin-left: 2px;
+    margin-right: 2px;
+    zoom: 1;
+}
+
+.item-list {
+    .collections-list li {
+        /*display: inline-block;*/
+        float:left;
+        height: 250px;
+        margin: 10px 5px 0 5px;
+        position: relative;
+
+        a {
+            height: 100%;
+        }
+
+        img {
+            height: 100%;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    ul.collections-list li .text {
+        bottom: 10px;
+        height: auto;
+        left: 10px;
+        margin: 0;
+        padding: 10px;
+        position: absolute;
+        text-align: center;
+        width: 270px;
+
+        p {
+            height: auto;
+            text-align: center;
+        }
+    }
+}
+
+/* ==========================================================================
+ COLLECTION
+ ========================================================================== */
+.collection-filters {
+    margin-top: 10px;
+    padding: 20px 10px;
+    position: relative;
+
+    h3 {
+        //display: inline-block;
+        float: left;
+        padding: 8px 5px 0 0;
+        text-transform: uppercase;
+    }
+
+    .style-select{
+        display: inline-block;
+        width: 180px;
+    }
+
+    .LinkInspiration {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(0px, -50%);
+
+        a::after {
+            content: "\0025B6";
+            padding-left: 10px;
+        }
+    }
+}
+
+body:not(.pageeditor) {
+    .inspiration-content {
+        margin-top: 40px;
+
+        h3 {
+            display: block;
+            text-align: left;
+        }
+    }
+    
+    .item-list .inspirations-list {
+        height: auto;
+        overflow: visible;
+
+        li {
+            float: left;
+            margin: 0 1%;
+            width: 31%;
+        
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.lt-ie8 {
+    .collection-filters h3,
+    .collection-filters .style-select {
+        display: inline;
+        zoom: 1;
+    }
+
+    .collection-filters h3 {
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+}
+
+/* ==========================================================================
+ @MEDIA QUERIES
+ *========================================================================== */
+
+/* Large desktop display */
+@media (min-width: 1380px) {
+    body:not(.pageeditor) {
+        .item-list {
+            .collections-list li {
+                height: 300px;
+            }
+
+            ul.collections-list li .text {
+                width: 330px;
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 979px) {
+    body:not(.pageeditor) {
+        .item-list {
+            .collections-list li {
+                height: 185px;
+            }
+
+            ul.collections-list li .text {
+                width: 190px;
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    body:not(.pageeditor) {
+        .item-list {
+            .collections-list {
+                width: 100%;
+
+                li {
+                    margin:  10px 0 0 0;
+                    width: 49%;
+                }
+            }
+
+            ul.collections-list {
+                > li:nth-child(2n) {
+                    float: right;
+                }
+
+                li {
+                    .text {
+                        left: 2%;
+                        padding: 10px 0;
+                        width: 96%;
+
+                        p {
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .collection-filters {
+            .LinkInspiration {
+                margin-top: 10px;
+                position: relative;
+                right: 0;
+                top: 0;
+                transform: none;
+            }
+        }
+    }
+}

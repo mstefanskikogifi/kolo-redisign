@@ -1,0 +1,1352 @@
+﻿/* ==========================================================================
+INSPIRATIONS
+========================================================================== */
+.inspiration-filters {
+    margin-top: 10px;
+
+    .left-filters {
+        float: left;
+    }
+
+    .right-filters {
+        float: right;
+    }
+
+    .filtr-contener {
+        float: left;
+        margin: 0 10px 20px 10px;
+    }
+}
+
+.small-filters {
+    padding: 20px 0 0 0;
+}
+
+//All Inspitations style
+.inspirationList {
+    width: 100% !important;
+
+    .filtr-contener {
+        background-color: #1a1a1a;
+        color: #fff;
+        margin: 0 0 20px;
+        padding: 10px 0;
+        width: 100%;
+
+        h3, 
+        .styled-select-light {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        h3 {
+            padding: 6px 15px;
+        }
+
+        .styled-select-light {
+            display: inline-block;
+            padding: 0 5px;
+            width: 25%;
+        }
+    }
+}
+//All Inspitations style - end
+
+.small-filters {
+    h3 {
+        //display: inline-block;
+        float: left;
+        text-transform: uppercase;
+        padding: 8px 5px 0 0;
+    }
+
+    .styled-select-light {
+        display: inline-block;
+        height: 40px;
+        margin-right: 5px;
+        width: 200px;
+    }
+}
+
+.lt-ie8 {
+    .small-filters {
+        h3 {
+            zoom: 1;
+            display: inline;
+            float: none;
+            margin: 0px 5px 10px 10px;
+            padding: 0;
+        }
+
+        .styled-select-light {
+            zoom: 1;
+            display: inline;
+        }
+    }
+}
+
+.rightFloat {
+    float: right;
+}
+
+.small-filters a,
+.small-filters button, 
+.small-filters .button {
+    display: block;
+    float: right;
+    padding: 8px 10px;
+    margin: 0 10px 20px 10px;
+    text-transform: uppercase;
+}
+
+.sliders-inspirations {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+/* ==========================================================================
+ INSPIRATIONS CAROUSEL
+ ========================================================================== */
+.main-inspiration {
+    background-color: #fff;
+    clear: both;
+    margin-bottom: 5px;
+    overflow: hidden;
+    padding: 20px 10px;
+    position: relative;
+
+    &.active {
+        clear: both;
+    }
+    
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    .image-contener {
+        float: left;
+        position: relative;
+
+        img {
+            display: block;
+        }
+
+        &.imageOnly {
+            width: 100%;
+        }
+    }
+
+    h3, h4 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        padding: 10px 0 10px 10px;
+        text-align: left;
+    }
+
+    .text {
+        float: right;
+        height: 470px;
+        max-width: 255px;
+        position: relative;
+        overflow: hidden;
+        position: absolute;
+        right: 0px;
+
+        .desc {
+            margin-right: 5px;
+        }
+
+        .jspVerticalBar {
+            margin-right: 3px;
+        }
+
+        .close-desc {
+            display: none;
+        }
+
+        h3 {
+            line-height: 20px;
+            padding: 20px 0;
+            text-align: left;
+        }
+
+        p {
+            font-weight: normal;
+            line-height: 16px;
+            padding-top: 10px;
+            text-align: left;
+        }
+
+        .collections-list {
+            /*position: absolute;
+            left: 0px;
+            bottom: 0px;*/
+            /*width: 100%;*/
+            margin-right: 5px;
+            margin-top: 15px;
+
+            h4 {
+                line-height: 25px;
+                text-align: left;
+                padding: 10px 0;
+                text-transform: uppercase;
+            }
+
+            ul li {
+                clear: both;
+                line-height: 55px;
+                margin-bottom: 10px;
+                text-align: left;
+
+                span {
+                    display: inline-block;
+                    line-height: 12px;
+                    max-width: 105px;
+                    padding: 0 0 0 10px;
+                }
+
+                img {
+                    float: left;
+                    height: 55px;
+                    width: 85px;
+                }
+            }
+        }
+
+        /*.desc, .collections-list {
+            margin-left: 15px;
+        }*/
+    }
+
+    .collections-list-new {
+        display: none;
+        margin-top: 20px;
+
+        h4 {
+            border-bottom: 4px solid;
+        }
+
+        ul.collections-inspiration {
+            li {
+                width: 15.6666%;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.hot-spot {
+    position: absolute;
+    /*top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: red;*/
+
+    span {
+        cursor: pointer;
+        display: block;
+        height: 30px;
+        left: -15px;
+        position: absolute;
+        top: -15px;
+        width: 30px;
+    }
+} 
+
+.small-carousel-wrapper {
+    width: 950px;
+    height: 110px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 20px;
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    margin: 0 auto;
+}
+
+.small-carousel {
+    width: 200000px;
+
+    li {
+        //background-color: #000;
+        cursor: pointer;
+        float: left;
+        margin-right: 10px;
+        overflow: hidden;
+        position: relative;
+        width: 150px;
+
+        &.active .overlay,
+        &:hover .overlay {
+            height: 100px;
+            left: 0px;
+            opacity: 0.5;
+            position: absolute;
+            top: 0px;
+            width: 150px;
+            z-index: 1;
+        }
+
+        img {
+            //height: 100px;
+            //width: 150px;
+        }
+
+        .content {
+            display: none;
+        }
+    }
+}
+
+.scroll-pane {
+    /*overflow: auto;*/
+    width: 100%;
+    float: left;
+}
+
+.scroll-content-item {
+    height: 475px;
+    float: left;
+    margin: 0px;
+    font-size: 3em;
+    line-height: 96px;
+    text-align: center;
+}
+
+.scroll-bar-wrap {
+    clear: left;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    margin: 20px auto;
+    overflow: hidden;
+
+    .ui-slider {
+        background: none;
+        border: 0;
+        height: 6px;
+        margin: 0 auto;
+    }
+
+    .ui-handle-helper-parent {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .ui-slider-handle {
+        top: 0px!important;
+        border: 0!important;
+        height: 6px!important;
+        border-radius: 4px;
+
+        .ui-icon {
+            display: none!important;
+        }
+    }
+}
+
+.productPopup {
+    display: none;
+}
+
+/* ==========================================================================
+PRODUCT POPUP
+========================================================================== */
+.productPopup {
+    .main-product {
+        width: 810px;
+
+        .left-content {
+            width: 340px;
+
+            img {
+                width: 310px;
+                height: auto;
+            }
+        }
+
+        #showDetailsProduct {
+            margin: 10px 0 20px;
+        }
+    }
+}
+
+.lt-ie9 {
+    .productPopup {
+        .main-product {
+            width: 950px;
+        }
+    }
+}
+
+/* ==========================================================================
+BROCHURES
+========================================================================== */
+.brochures-filters {
+    margin-top: 10px;
+
+    h3 {
+        margin-left: 20px;
+    }
+
+    .style-select {
+        /*margin-bottom: 21px;*/
+    }
+}  
+
+.lt-ie8 {
+    .brochures-filters {
+        margin-top: 0;
+        padding-top: 10px;
+
+        h3,
+        .styled-select-light {
+            display: inline;
+            zoom: 1;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        a {
+            float: none;
+            display: inline;
+            position: relative;
+            left: 295px;
+            top: 5px;
+        }
+    }
+}
+
+.item-list {
+    .brochures-list {
+        li {
+            height: 325px;
+            position: relative;
+            margin: 10px 5px 0px 5px;
+            float: left;
+            -moz-transition: ease-in all 0.3s, -moz-transform 0.3s;
+            -webkit-transition: ease-in all 0.3s, -webkit-transform 0.3s;
+            -o-transition: ease-in all 0.3s, -o-transform 0.3s;
+            transition: ease-in all 0.3s, transform 0.3s;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                -moz-transition: ease-in all 0.3s, -moz-transform 0.3s;
+                -webkit-transition: ease-in all 0.3s, -webkit-transform 0.3s;
+                -o-transition: ease-in all 0.3s, -o-transform 0.3s;
+                transition: ease-in all 0.3s, transform 0.3s;
+            }
+
+            .text {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                width: 206px;
+                min-height: 70px;
+                padding-bottom: 36px;
+
+                span {
+                    display: block;
+                    float: left;
+                    width: 165px;
+                    margin-top: 8px;
+                    margin-left: 10px;
+                }
+
+                .ez-checkbox {
+                    background-color: #FFF;
+                    border: 1px solid #686869;
+                    height: 18px;
+                    margin-right: 0px;
+                    position: relative;
+                    width: 18px;
+
+                    &.ez-checked::after {
+                        background-color: #686869;
+                        content: '';
+                        display: block;
+                        height: 10px;
+                        left: 50%;
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        -webkit-transform: translate(-50%,-50%);
+                        -moz-transform: translate(-50%,-50%);
+                        -o-transform: translate(-50%,-50%); 
+                        width: 10px;
+                    }
+                }
+
+                .links {
+                    position: absolute;
+                    left: 10px;
+                    bottom: 5px;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+
+                .no-print {
+                    position: absolute;
+                    right: 5px;
+                    bottom: 5px;
+                    width: 19px;
+                    height: 20px;
+
+                    .no-print-label {
+                        display: none;
+
+                        span {
+                            display: block;
+                            bottom: -5px;
+                            right: 25px;
+                            position: absolute;
+                            width: 10px;
+                            height: 5px;
+                            font-size: 0px;
+                        }
+                    }
+
+                    &:hover .no-print-label {
+                        display: block;
+                        text-align: center;
+                        position: absolute;
+                        top: -35px;
+                        right: -20px;
+                        padding: 2px 5px;
+                        z-index: 20;
+                        line-height: 12px;
+                        zoom: 1;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+ORDERING BROCHURE
+========================================================================== */
+.order-list {
+    padding: 0 20px;
+
+    .headerWrap {
+        overflow: hidden;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        padding: 10px 0;
+
+        &.orderDetails {
+            float: left;
+        }
+
+        &.itemNumber {
+            float: right;
+        }
+    }
+
+    ul li {
+        /*border-bottom: 1px solid #e5e5e5;*/
+        clear: both;
+        position: relative;
+        display: table;
+        width: 100%;
+
+        img {
+            /*height: 100px;*/
+            float: left;
+            padding: 15px 10px;
+        }
+
+        .text {
+            margin-left: 20px;
+            padding: 15px 10px;
+            display: inline-block;
+            display: table-cell;
+            vertical-align: middle;
+            position: static;
+            width: 100%;
+
+            h3 {
+                display: inline-block;
+                font-weight: bold;
+                max-width: 80%;
+            }
+
+            .selectDark { /*for ordering brochures*/
+                width: 50px;
+                /*position: relative !important;*/
+                float: right;
+                margin-top: -14px;
+
+                ul li {
+                    border: 0;
+                    width: auto;
+                    min-width: 32px;
+                }
+            }
+
+            .brochureCount {
+                float: right;
+
+                input {
+                    background: none;
+                    border: 1px solid #686868;
+                    font-size: 18px;
+                    margin: -7px 0 0;
+                    padding: 8px;
+                    text-align: center;
+                    width: 30px;
+                }
+            }
+
+            span {
+                clear: both;
+                color: #d00000 !important;
+                display: block;
+                float: right;
+                padding: 5px 0;
+            }
+        }
+    }
+}
+
+.lt-ie8 {
+    .order-list ul li {
+        display: block;
+
+        .text {
+            padding-top: 46px;
+            display: block;
+            max-width: 580px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        h3,
+        span {
+            display: block;
+            height: auto;
+        }
+    }
+}
+
+.small-carousel li a {
+    display: inline-block;
+    height: 120px;
+    width: 180px;
+}
+
+.inspirationsNew {
+    margin-bottom: 2%;
+    
+    ul {
+        li {
+            display: block;
+            float: left;
+            height: 120px;
+            margin: .5%;
+            width: 18.9999%;
+
+            a {
+                display: block;
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+
+                img {
+                    display: block;
+                    left: 50%;
+                    min-height: 100%;
+                    min-width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -o-transform: translate(-50%, -50%);
+                    /*width: 100%;*/
+                }
+            }
+        }
+
+        &.collections-inspiration {
+            li {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.FullWindow {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    span {
+        background-color: #FFF;
+        display: block;
+        padding: 3px;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.Popup {
+	background-color: rgba(0,0,0,.7);
+	height: 100%;
+	left: 0;
+    position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+
+    .Close {
+	    background-color: #FFF;
+	    cursor: pointer;
+	    font-size: 1.2em;
+	    font-weight: bold;
+	    line-height: 1;
+	    padding: 6px 10px;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+    }
+}
+
+.BigImage {
+	background-color: #FFF;
+	margin: 5% auto 0;
+	max-width: 780px;
+	position: relative;
+	width: 100%;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    .BigImageArrow {
+        position: absolute;
+        top: 50%;
+        -ms-transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+
+        span {
+            background-color: #fff;
+            background-image: url("/content/images/carouselButtons.png");
+            cursor: pointer;
+            display: block;
+            height: 45px;
+            width: 45px;
+        }
+
+        &.Prev {
+            span {
+                background-position: 0 0;
+            }
+        }
+
+        &.Next {
+            right: 0;
+
+            span {
+                background-position: -45px 0;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+ @MEDIA QUERIES
+ *========================================================================== */
+
+/* Large desktop */
+@media (min-width: 1380px) {
+    /* ==========================================================================
+ INSPIRATION CAROUSEL
+ ========================================================================== */
+    body:not(.pageeditor) {
+        .sliders-inspirations-content {
+            height: 735px;
+        }
+
+        .small-carousel-wrapper {
+            height: 140px;
+            width: 1130px;
+        }
+
+        .small-carousel > li {
+            height: 120px;
+            width: 180px;
+
+            img {
+                //height: 120px;
+                min-height: 100%;
+                //width: 180px;
+                min-width: 100%;
+            }
+        }
+
+        .small-carousel li:hover .overlay,
+        .small-carousel li.active .overlay {
+            width: 180px;
+            height: 120px;
+        }
+
+        .scroll-content {
+            height: 580px;
+        }
+
+        .scroll-bar-wrap {
+            width: 1115px;
+        }
+
+        /* ==========================================================================
+         PRODUCT POPUP
+         ========================================================================== */
+
+        .productPopup .main-product {
+            width: 950px;
+
+            .left-content {
+                width: 390px;
+
+                img {
+                    max-width: 100%;
+                    width: auto;
+                }
+            }
+        }
+
+        /* ==========================================================================
+         BROCHURES
+         ========================================================================== */
+
+        .item-list .brochures-list li {
+            height: 385px;
+            width: 273px;
+            /*overflow: hidden;*/
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .text {
+                height: 75px;
+                width: 251px;
+
+                span {
+                    width: 200px;
+                }
+            }
+        }
+
+        .inspiration-filters .right-filters {
+            width: 320px;
+        }
+    }
+
+    .inspirationsNew {
+        ul {
+            li {
+                height: 120px;
+                width: 15.6666%;
+
+                a {
+                    display: block;
+                    height: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    width: 100%;
+
+                    img {
+                        display: block;
+                        left: 50%;
+                        /*min-height: 100%;*/
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        /*width: 100%;*/
+                    }
+                }
+            }
+
+            &.collections-inspiration {
+                li {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1380px) {
+    body:not(.pageeditor) {
+        .main-inspiration {
+            .text {
+                max-width: 220px;
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    body:not(.pageeditor) {
+        .main-inspiration {
+            .text {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 979px) {
+    body:not(.pageeditor) {
+        /* ==========================================================================
+        INSPIRATION CAROUSEL
+        ========================================================================== */
+        .main-inspiration {
+            padding: 20px 0;
+
+            .collections-list-new.large-3tab {
+                width: 100%;
+            }
+
+            .text {
+                border: 0!important;
+                height: auto!important;
+                position: relative;
+
+                .collections-list {
+                    width: 230px;
+                    float: right;
+                    position: static;
+                    border: 0!important;
+                    margin: 0;
+                }
+
+                .desc {
+                    float: left;
+                    /*padding-left: 5px;*/
+                    margin: 0;
+
+                    > * {
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+
+                    h3 {
+                        border: 0!important;
+                    }
+                }
+            }
+        }
+
+        /* ==========================================================================
+        PRODUCT POPUP
+        ========================================================================== */
+        .productPopup {
+            padding: 0px;
+
+            .main-product {
+                width: 670px;
+
+                .left-content {
+                    width: 320px;
+
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+
+        /* ==========================================================================
+        Brochures
+        ========================================================================== */
+        .item-list .brochures-list li .text .no-print:hover .no-print-label {
+            display: none;
+        }
+
+        .form {
+            margin-bottom: 10px;
+        }
+    }
+
+    .inspirationsNew {
+        ul {
+            li {
+                width: 24%;
+            }
+
+            &.collections-inspiration {
+                li {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .inspirationsNew {
+        ul {
+            li {
+                width: 32.3333%;
+            }
+
+            &.collections-inspiration {
+                li {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    /* ==========================================================================
+ INSPIRATIONS
+ ========================================================================== */
+    body:not(.pageeditor) {
+        .inspiration-filters {
+            .left-filters,
+            .right-filters,
+            .filtr-contener {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        .small-filters {
+            h3 {
+                width: 30%;
+                padding-left: 2%;
+            }
+
+            .styled-select-light {
+                width: 60%;
+                margin-right: 0px;
+            }
+
+            a {
+                float: left;
+            }
+        }
+
+        .sliders-inspirations {
+            position: relative;
+            width: 100%;
+            z-index: 6;
+        }
+
+        /* ==========================================================================
+        INSPIRATIONS CAROUSEL
+        ========================================================================== */
+        .main-inspiration {
+            padding: 20px 0;
+            position: relative;
+            overflow: visible;
+
+            .image-contener {
+                float: none;
+                width: 100%;
+            }
+
+            .text {
+                float: none;
+                display: none;
+                width: 100%;
+                height: auto!important;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                z-index: 3;
+
+                .close-desc {
+                    display: block;
+                    float: right;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                h3 {
+                    padding: 20px;
+                    border: 0!important;
+                }
+
+                p {
+                    padding: 20px;
+                }
+
+                .collections-list {
+                    position: static;
+                    width: 100%;
+                }
+            }
+        }
+
+        .inspirationsNew {
+            ul {
+                li {
+                    height: 120px;
+
+                    img {
+                        /*height: 100%;
+                        width: 100%;*/
+                    }
+                }
+            }
+
+            .main-inspiration {
+                ul {
+                    li {
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        /* ==========================================================================
+        PRODUCT POPUP
+        ========================================================================== */
+        .productPopup .main-product {
+            padding: 2%;
+            width: 96%;
+
+            .left-content,
+            .right-content {
+                width: 100%;
+            }
+
+            .left-content img {
+                height: auto;
+                max-width: 100%;
+                width: auto;
+            }
+        }
+
+        /* ==========================================================================
+        BROCHURES
+        ========================================================================== */
+        .brochures-filters {
+            h3 {
+                margin-left: 10px;
+                padding: 0;
+                text-align: left;
+            }
+
+            button {
+                float: left;
+                display: block;
+            }
+        }
+
+        .item-list {
+            .brochures-list {
+                li {
+                    height: auto;
+                    margin: 10px 0px 0px 0px;
+                    float: none;
+                    width: 100%;
+                    clear: both;
+
+                    img {
+                        width: 31.979%; /*large-4mob - overwrite desktop rules*/
+                        height: auto;
+                        margin: 0;
+                        float: left;
+                    }
+
+                    .text {
+                        position: static;
+                        width: 64.989%; /*large-8mob - overwrite desktop rules*/
+                        height: auto;
+                        float: right;
+                        padding: 0;
+
+                        .ez-checkbox {
+                            margin: 10px 10px 10px 0;
+                        }
+
+                        span {
+                            display: block;
+                            float: left;
+                            width: 83%;
+                            margin-top: 8px;
+                            margin-left: 0px;
+                        }
+
+                        .links {
+                            position: absolute;
+                            left: 35.011%;
+                            bottom: 10px;
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                        }
+
+                        .no-print {
+                            left: 35.011%;
+                            bottom: 40px;
+
+                            &:hover .no-print-label {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ==========================================================================
+        ORDERING BROCHURE
+        ========================================================================== */
+        .order-list ul li img {
+            display: none;
+        }
+
+        .form {
+            .fieldWrapper {
+                > div,
+                > input {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    body:not(.pageeditor) {
+        .brochures-filters {
+            margin: 0;
+            padding: 10px;
+
+            button {
+                float: none;
+                margin: 0;
+                width: 100%;
+
+                &:first-child {
+                    margin: 0 0 10px;
+                }
+            }
+        }
+    }
+
+    .small-filters {
+        button, 
+        .button {
+            box-sizing: border-box;
+            float: none;
+            padding: 8px 10px;
+            margin: 10px 0;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .inspirationsNew {
+        ul {
+            li {
+                width: 49%;
+            }
+
+            &.collections-inspiration {
+                li {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+ @MEDIA FILTERS BEHAVIOUR
+ ========================================================================== */
+body:not(.pageeditor) {
+    .large-8 {
+        width: 700px;
+    }
+
+    .inspiration-filters .right-filters {
+        width: 420px;
+    }
+}
+
+@media (max-width: 1370px) {
+    body:not(.pageeditor) {
+        .large-8, 
+        .inspiration-filters .right-filters {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 979px) {
+    body:not(.pageeditor) {
+        .large-8 {
+            width: 40%;
+        }
+
+        .inspiration-filters .right-filters {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    body:not(.pageeditor) {
+        .large-8, 
+        .inspiration-filters .right-filters {
+            width: 100%;
+        }
+
+        .small-filters {
+            .styled-select-light {
+                width: 65%;
+            }
+
+            a {
+                float: none;
+            }
+        }
+
+        .mobile-nonHide {
+            display: block;
+        }
+    }
+}

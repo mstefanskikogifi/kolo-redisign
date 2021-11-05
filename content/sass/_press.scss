@@ -1,0 +1,119 @@
+﻿/* ==========================================================================
+ PRESS AND NEWS LISTS
+ *========================================================================== */
+#Press, 
+.press {
+    position: relative;
+
+    .sort-select {
+        float: right;
+        margin-bottom: 20px;
+        position: absolute;
+        right: 15px;
+        top: -55px;
+        width: 200px;
+    }
+
+    > ul > li {
+        padding-bottom: 30px;
+        clear: both;
+    }
+
+    ul li {
+        img,
+        .desc {
+            float: left;
+        }
+
+        .desc {
+            padding: 0 0 0 10px;
+
+            * {
+                padding: 0 10px;
+            }
+
+            p {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .btnMore {
+        text-align: center;
+    }
+
+    .item-list {
+        &.list-style ul li img {
+            margin: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+ SINGLE PRESS AND SINGLE NEWS
+ *========================================================================== */
+.single-press-text {
+    float: left;
+    padding-bottom: 20px;
+
+    p {
+        padding: 0 15px;
+    }
+}
+
+.single-press .date {
+    margin: -10px 0 10px 0;
+    padding-left: 20px;
+    display: block;
+}
+
+.lt-ie8 .single-press .date {
+    margin: 0 0 10px 0;
+}
+
+/*Mobile*/
+@media (max-width: 767px) {   
+    body:not(.pageeditor) {
+        #Press, 
+        .press {
+            .styled-select.sort-select {
+                float: right;
+                margin-top: 10px 0;
+                position: relative;
+                right: 15px;
+                top: 0;
+            }
+
+            ul li {
+                .desc {
+                    padding-left: 1%;
+
+                    h2 {
+                        padding: 0 1% 1% 1%;
+                    }
+
+                    .date {
+                        padding: 1%;
+                    }
+
+                    p {
+                        margin: 0;
+                        padding: 1%;
+                    }
+                }
+            }
+
+            .item-list {
+                &.list-style ul li img {
+                    margin: 0;
+                    width: 40.231%;
+                }
+            }
+        }
+
+        .small-subcontent .single-press .date {
+            margin-bottom: 2%;
+            padding-left: 0;
+        }
+    }
+}
