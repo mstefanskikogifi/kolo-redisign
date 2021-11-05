@@ -2,165 +2,166 @@
  MAIN STYLE
  ========================================================================== */
 .box-page {
-    height: 760px;
-    position: relative;
+	height: 760px;
+	position: relative;
+	overflow: scroll;
 
-    ul.box_composer {
-        height: 750px;
+	ul.box_composer {
+		height: 750px;
 
-        li {
-            list-style: none;
-            position: absolute;
-        }
-    }
+		li {
+			list-style: none;
+			position: absolute;
+		}
+	}
 
-    ul {
-        li {
-            &.templateStart,
-            &.hidden {
-                display: none;
-            }
+	ul {
+		li {
+			&.templateStart,
+			&.hidden {
+				display: none;
+			}
 
-            &.hidden span {
-                display: none!important;
-            }
+			&.hidden span {
+				display: none !important;
+			}
 
-            &.created {
-                span {
-                    display: none!important;
-                    z-index: 10;
-                }
+			&.created {
+				span {
+					display: none !important;
+					z-index: 10;
+				}
 
-                &:hover span.removeBox,
-                &:hover span.editBox {
-                    display: block!important;
-                }
-            }
+				&:hover span.removeBox,
+				&:hover span.editBox {
+					display: block !important;
+				}
+			}
 
-            span {
-                &.editBox {
-                    left: 10px;
-                    top: 50px;
-                }
-            }
-        }
-    }
+			span {
+				&.editBox {
+					left: 10px;
+					top: 50px;
+				}
+			}
+		}
+	}
 
-    > div {
-        position: absolute;
-        -moz-transition: ease-in all 0.3s, -moz-transform 0.3s;
-        -webkit-transition: ease-in all 0.3s, -webkit-transform 0.3s;
-        -o-transition: ease-in all 0.3s, -o-transform 0.3s;
-        transition: ease-in all 0.3s, transform 0.3s;
-    }
+	> div {
+		position: absolute;
+		-moz-transition: ease-in all 0.3s, -moz-transform 0.3s;
+		-webkit-transition: ease-in all 0.3s, -webkit-transform 0.3s;
+		-o-transition: ease-in all 0.3s, -o-transform 0.3s;
+		transition: ease-in all 0.3s, transform 0.3s;
+	}
 
-    input[type=submit] {
-        border: 0;
-        cursor: pointer;
-        display: block;
-        max-width: 150px;
-        padding: 10px 35px;
-        position: absolute;
-        right: 120px;
-        text-transform: uppercase;
-        z-index: 2;
-    }
+	input[type='submit'] {
+		border: 0;
+		cursor: pointer;
+		display: block;
+		max-width: 150px;
+		padding: 10px 35px;
+		position: absolute;
+		right: 120px;
+		text-transform: uppercase;
+		z-index: 2;
+	}
 
-    .boxType {
-        display: none;
-        position: absolute;
-        z-index: 10;
-    }
+	.boxType {
+		display: none;
+		position: absolute;
+		z-index: 10;
+	}
 
-    .boxType-select {
-        display: none;
-        width: 175px;
-    }
+	.boxType-select {
+		display: none;
+		width: 175px;
+	}
 
-    #DataSourceInfo {
-        bottom: 10px;
-        position: absolute;
-        right: 10px;
-    }
+	#DataSourceInfo {
+		bottom: 10px;
+		position: absolute;
+		right: 10px;
+	}
 
-    .googleMap .panel {
-        display: none;
-    }
+	.googleMap .panel {
+		display: none;
+	}
 }
 
 button.removeBox,
 span.mobile {
-    display: none;
+	display: none;
 }
 #mainform .boxes-bottom.boxes-bottom-width {
-    background: none!important;
+	background: none !important;
 }
 .pageeditor {
-    span.mobile {
-        background: #fff;
-        border: 0;
-        bottom: -1px;
-        cursor: pointer;
-        display: block;
-        left: 0px;
-        padding: 5px;
-        position: absolute;
-        text-transform: uppercase;
-    }
+	span.mobile {
+		background: #fff;
+		border: 0;
+		bottom: -1px;
+		cursor: pointer;
+		display: block;
+		left: 0px;
+		padding: 5px;
+		position: absolute;
+		text-transform: uppercase;
+	}
 
-    button.removeBox {
-        background: url(/content/images/close.png) 0 22px;
-        border: 0;
-        cursor: pointer;
-        display: block;
-        height: 22px;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        width: 24px;
-        z-index: 2;
+	button.removeBox {
+		background: url(/content/images/close.png) 0 22px;
+		border: 0;
+		cursor: pointer;
+		display: block;
+		height: 22px;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		width: 24px;
+		z-index: 2;
 
-        &:hover {
-            background: url(/content/images/close.png) 0 0;
-        }
-    }
+		&:hover {
+			background: url(/content/images/close.png) 0 0;
+		}
+	}
 }
 
 /* ==========================================================================
  ROWS HEIGHTS
  ========================================================================== */
 .rows1 {
-    height: 180px;
+	height: 180px;
 }
 
 .rows2 {
-    height: 370px;
+	height: 370px;
 }
 
 .rows3 {
-    height: 560px;
+	height: 560px;
 }
 
 .rows4 {
-    height: 750px;
+	height: 750px;
 }
 /* ==========================================================================
  BOX POSITION & SIZE CLASSES
  ========================================================================== */
 .smallCarousel .small-slide > li {
-    height: 100%;
+	height: 100%;
 }
 
 .h_1,
 .h_1.hyperBox img,
 .h_1.bigHyperBox img,
-.h_1.smallCarousel .small-slide>li,
+.h_1.smallCarousel .small-slide > li,
 .h_1.smallCarousel .small-slide a.slide,
 .h_1.horizontalCarouselText .text-slide a.slide,
-.h_1.horizontalCarouselText .text-slide>li,
+.h_1.horizontalCarouselText .text-slide > li,
 .h_1.bigCarousel .big-slide .slide,
 .h_1.bigCarousel .big-slide img {
-    height: 180px; /*!important;*/
+	height: 180px; /*!important;*/
 }
 
 .email-updates.h_1 {
@@ -171,14 +172,14 @@ span.mobile {
 .h_2.hyperBox img,
 .h_2.bigHyperBox img,
 .h_2.verticalCarouselText .text-slide a.slide,
-.h_2.verticalCarouselText .text-slide>li,
-.h_2.smallCarousel .small-slide>li,
+.h_2.verticalCarouselText .text-slide > li,
+.h_2.smallCarousel .small-slide > li,
 .h_2.smallCarousel .small-slide a.slide,
 .h_2.horizontalCarouselText .text-slide a.slide,
-.h_2.horizontalCarouselText .text-slide>li,
+.h_2.horizontalCarouselText .text-slide > li,
 .h_2.bigCarousel .big-slide .slide,
 .h_2.bigCarousel .big-slide img {
-    height: 370px; /*!important;*/
+	height: 370px; /*!important;*/
 }
 
 .email-updates.h_2 {
@@ -189,39 +190,39 @@ span.mobile {
 .h_3.hyperBox img,
 .h_3.bigHyperBox img,
 .h_3.verticalCarouselText .text-slide a.slide,
-.h_3.verticalCarouselText .text-slide>li,
-.h_3.smallCarousel .small-slide>li,
+.h_3.verticalCarouselText .text-slide > li,
+.h_3.smallCarousel .small-slide > li,
 .h_3.smallCarousel .small-slide a.slide,
 .h_3.horizontalCarouselText .text-slide a.slide,
-.h_3.horizontalCarouselText .text-slide>li,
+.h_3.horizontalCarouselText .text-slide > li,
 .h_3.bigCarousel .big-slide .slide,
 .h_3.bigCarousel .big-slide img {
-    height: 560px; /*!important;*/
+	height: 560px; /*!important;*/
 }
 
 .h_4,
 .h_4.hyperBox img,
 .h_4.bigHyperBox img,
 .h_4.verticalCarouselText .text-slide a.slide,
-.h_4.verticalCarouselText .text-slide>li,
-.h_4.smallCarousel .small-slide>li,
+.h_4.verticalCarouselText .text-slide > li,
+.h_4.smallCarousel .small-slide > li,
 .h_4.smallCarousel .small-slide a.slide,
 .h_4.horizontalCarouselText .text-slide a.slide,
-.h_4.horizontalCarouselText .text-slide>li,
+.h_4.horizontalCarouselText .text-slide > li,
 .h_4.bigCarousel .big-slide .slide,
 .h_4.bigCarousel .big-slide img {
-    height: 750px; /*!important;*/
+	height: 750px; /*!important;*/
 }
 
 .w_1,
 .w_1.hyperBox img,
 .w_1.bigHyperBox img,
-.w_1.smallCarousel .small-slide>li,
+.w_1.smallCarousel .small-slide > li,
 .w_1.smallCarousel .small-slide a.slide,
 .w_1.verticalCarouselText .text-slide a.slide,
-.w_1.verticalCarouselText .text-slide > li, 
+.w_1.verticalCarouselText .text-slide > li,
 .w_1.smallCarousel .small-slide > li {
-    width: 230px;
+	width: 230px;
 }
 
 .w_2,
@@ -230,121 +231,121 @@ span.mobile {
 .w_2.horizontalCarouselText .text-slide a.slide,
 .w_2.horizontalCarouselText .text-slide > li,
 .w_2.smallCarousel .small-slide a.slide,
-.w_2.smallCarousel .small-slide > li, 
-.w_2.smallCarousel .small-slide > li .text, 
+.w_2.smallCarousel .small-slide > li,
+.w_2.smallCarousel .small-slide > li .text,
 .w_2.bigCarousel .big-slide .slide,
 .w_2.bigCarousel .big-slide img,
 .w_2.verticalCarouselText .text-slide a.slide,
 .w_2.verticalCarouselText .text-slide > li {
-    width: 470px;
+	width: 470px;
 }
 
 .w_3,
 .w_3.hyperBox img,
 .w_3.bigHyperBox img,
 .w_3.horizontalCarouselText .text-slide a.slide,
-.w_3.horizontalCarouselText .text-slide>li,
-.w_3.smallCarousel .small-slide>li,
+.w_3.horizontalCarouselText .text-slide > li,
+.w_3.smallCarousel .small-slide > li,
 .w_3.smallCarousel .small-slide a.slide,
 .w_3.bigCarousel .big-slide .slide,
 .w_3.bigCarousel .big-slide img,
 .w_3.verticalCarouselText .text-slide a.slide,
-.w_3.verticalCarouselText .text-slide>li {
-    width: 710px;
+.w_3.verticalCarouselText .text-slide > li {
+	width: 710px;
 }
 
 .w_4,
 .w_4.hyperBox img,
 .w_4.bigHyperBox img,
 .w_4.horizontalCarouselText .text-slide a.slide,
-.w_4.horizontalCarouselText .text-slide>li,
-.w_4.smallCarousel .small-slide>li,
+.w_4.horizontalCarouselText .text-slide > li,
+.w_4.smallCarousel .small-slide > li,
 .w_4.smallCarousel .small-slide a.slide,
 .w_4.bigCarousel .big-slide .slide,
 .w_4.bigCarousel .big-slide img,
 .w_4.verticalCarouselText .text-slide a.slide,
-.w_4.verticalCarouselText .text-slide>li {
-    width: 950px;
+.w_4.verticalCarouselText .text-slide > li {
+	width: 950px;
 }
 
 .p_1x1 {
-    top: 10px;
-    left: 0px;
+	top: 10px;
+	left: 0px;
 }
 
 .p_1x2 {
-    top: 10px;
-    left: 240px;
+	top: 10px;
+	left: 240px;
 }
 
 .p_1x3 {
-    top: 10px;
-    left: 480px;
+	top: 10px;
+	left: 480px;
 }
 
 .p_1x4 {
-    top: 10px;
-    left: 720px;
+	top: 10px;
+	left: 720px;
 }
 
 .p_2x1 {
-    top: 200px;
-    left: 0px;
+	top: 200px;
+	left: 0px;
 }
 
 .p_2x2 {
-    top: 200px;
-    left: 240px;
+	top: 200px;
+	left: 240px;
 }
 
 .p_2x3 {
-    top: 200px;
-    left: 480px;
+	top: 200px;
+	left: 480px;
 }
 
 .p_2x4 {
-    top: 200px;
-    left: 720px;
+	top: 200px;
+	left: 720px;
 }
 
 .p_3x1 {
-    top: 390px;
-    left: 0px;
+	top: 390px;
+	left: 0px;
 }
 
 .p_3x2 {
-    top: 390px;
-    left: 240px;
+	top: 390px;
+	left: 240px;
 }
 
 .p_3x3 {
-    top: 390px;
-    left: 480px;
+	top: 390px;
+	left: 480px;
 }
 
 .p_3x4 {
-    top: 390px;
-    left: 720px;
+	top: 390px;
+	left: 720px;
 }
 
 .p_4x1 {
-    top: 580px;
-    left: 0px;
+	top: 580px;
+	left: 0px;
 }
 
 .p_4x2 {
-    top: 580px;
-    left: 240px;
+	top: 580px;
+	left: 240px;
 }
 
 .p_4x3 {
-    top: 580px;
-    left: 480px;
+	top: 580px;
+	left: 480px;
 }
 
 .p_4x4 {
-    top: 580px;
-    left: 720px;
+	top: 580px;
+	left: 720px;
 }
 /* ==========================================================================
  BOX OPACITY
@@ -352,109 +353,109 @@ span.mobile {
 .bigHyperBox.opacity1 .text .Bg,
 .opacity1 .big-slide .frame .Bg,
 .hyperBox.opacity1 .boxBg {
-    opacity: 0.1;
-    filter: alpha(opacity=10);
+	opacity: 0.1;
+	filter: alpha(opacity=10);
 }
 
 .NewCategoryBoxStyle .NewCategoryBoxEl .Opacity_1 .NewCategoryBoxElText {
-    background-color: rgba(128, 128, 128, .1);
-    opacity: 1;
+	background-color: rgba(128, 128, 128, 0.1);
+	opacity: 1;
 }
 
 .bigHyperBox.opacity2 .text .Bg,
 .opacity2 .big-slide .frame .Bg,
 .hyperBox.opacity2 .boxBg {
-    opacity: 0.2;
-    filter: alpha(opacity=20);
+	opacity: 0.2;
+	filter: alpha(opacity=20);
 }
 
 .NewCategoryBoxStyle .NewCategoryBoxEl .Opacity_2 .NewCategoryBoxElText {
-    background-color: rgba(128, 128, 128, .2);
-    opacity: 1;
+	background-color: rgba(128, 128, 128, 0.2);
+	opacity: 1;
 }
 
 .bigHyperBox.opacity3 .text .Bg,
 .opacity3 .big-slide .frame .Bg,
 .hyperBox.opacity3 .boxBg {
-    opacity: 0.3;
-    filter: alpha(opacity=30);
+	opacity: 0.3;
+	filter: alpha(opacity=30);
 }
 
 .NewCategoryBoxStyle .NewCategoryBoxEl .Opacity_3 .NewCategoryBoxElText {
-    background-color: rgba(128, 128, 128, .3);
-    opacity: 1;
+	background-color: rgba(128, 128, 128, 0.3);
+	opacity: 1;
 }
 
 .bigHyperBox.opacity4 .text .Bg,
 .opacity4 .big-slide .frame .Bg,
 .hyperBox.opacity4 .boxBg {
-    opacity: 0.4;
-    filter: alpha(opacity=40);
+	opacity: 0.4;
+	filter: alpha(opacity=40);
 }
 
 .NewCategoryBoxStyle .NewCategoryBoxEl .Opacity_4 .NewCategoryBoxElText {
-    background-color: rgba(128, 128, 128, .4);
-    opacity: 1;
+	background-color: rgba(128, 128, 128, 0.4);
+	opacity: 1;
 }
 
 .bigHyperBox.opacity5 .text .Bg,
 .opacity5 .big-slide .frame .Bg,
 .hyperBox.opacity5 .boxBg {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+	opacity: 0.5;
+	filter: alpha(opacity=50);
 }
 
 .NewCategoryBoxStyle .NewCategoryBoxEl .Opacity_5 .NewCategoryBoxElText {
-    background-color: rgba(128, 128, 128, .5);
-    opacity: 1;
+	background-color: rgba(128, 128, 128, 0.5);
+	opacity: 1;
 }
 
 .bigHyperBox.opacity6 .text .Bg,
 .opacity6 .big-slide .frame .Bg,
 .hyperBox.opacity6 .boxBg {
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+	opacity: 0.6;
+	filter: alpha(opacity=60);
 }
 
 .NewCategoryBoxStyle .NewCategoryBoxEl .Opacity_6 .NewCategoryBoxElText {
-    background-color: rgba(128, 128, 128, .6);
-    opacity: 1;
+	background-color: rgba(128, 128, 128, 0.6);
+	opacity: 1;
 }
 
 .bigHyperBox.opacity7 .text .Bg,
 .opacity7 .big-slide .frame .Bg,
 .hyperBox.opacity7 .boxBg {
-    opacity: 0.7;
-    filter: alpha(opacity=70);
+	opacity: 0.7;
+	filter: alpha(opacity=70);
 }
 
 .NewCategoryBoxStyle .NewCategoryBoxEl .Opacity_7 .NewCategoryBoxElText {
-    background-color: rgba(128, 128, 128, .7);
-    opacity: 1;
+	background-color: rgba(128, 128, 128, 0.7);
+	opacity: 1;
 }
 
 .bigHyperBox.opacity8 .text .Bg,
 .opacity8 .big-slide .frame .Bg,
 .hyperBox.opacity8 .boxBg {
-    opacity: 0.8;
-    filter: alpha(opacity=80);
+	opacity: 0.8;
+	filter: alpha(opacity=80);
 }
 
 .NewCategoryBoxStyle .NewCategoryBoxEl .Opacity_8 .NewCategoryBoxElText {
-    background-color: rgba(128, 128, 128, .8);
-    opacity: 1;
+	background-color: rgba(128, 128, 128, 0.8);
+	opacity: 1;
 }
 
 .bigHyperBox.opacity9 .text .Bg,
 .opacity9 .big-slide .frame .Bg,
 .hyperBox.opacity9 .boxBg {
-    opacity: 0.9;
-    filter: alpha(opacity=90);
+	opacity: 0.9;
+	filter: alpha(opacity=90);
 }
 
 .NewCategoryBoxStyle .NewCategoryBoxEl .Opacity_9 .NewCategoryBoxElText {
-    background-color: rgba(128, 128, 128, .9);
-    opacity: 1;
+	background-color: rgba(128, 128, 128, 0.9);
+	opacity: 1;
 }
 
 .hyperBox.opacity1,
@@ -466,861 +467,892 @@ span.mobile {
 .hyperBox.opacity7,
 .hyperBox.opacity8,
 .hyperBox.opacity9 {
-    background-color: transparent;
+	background-color: transparent;
 }
 /* ==========================================================================
  BOX TYPE
  ========================================================================== */
 .dark-text {
-    h2 {
-        color: #000;
-    }
+	h2 {
+		color: #000;
+	}
 
-    .text p {
-        color: #686869;
-    }
+	.text p {
+		color: #686869;
+	}
 }
 
 .light-text {
-    h2,
-    p {
-        color: #fff;
-    }
+	h2,
+	p {
+		color: #fff;
+	}
 }
 /*HTML BOX*/
-.html-box { 
-    overflow: hidden;
-    text-align: left;
+.html-box {
+	overflow: hidden;
+	text-align: left;
 
-    > * {
-        padding: 0 15px;
-    }
+	> * {
+		padding: 0 15px;
+	}
 
-    h2 {
-        padding: 10px;
-        text-transform: uppercase;
-    }
+	h2 {
+		padding: 10px;
+		text-transform: uppercase;
+	}
 
-    &.Prewall {
-        background: none !important;
-        height: 100% !important;
-        width: 100% !important;
-    }
+	&.Prewall {
+		background: none !important;
+		height: 100% !important;
+		width: 100% !important;
+	}
 
-    p {
-        margin: 0;
-    }
+	p {
+		margin: 0;
+	}
 }
 
 /*EMAIL UPDATES BOX*/
 .email-updates {
-    > * {
-        padding: 0 15px;
-    }
+	> * {
+		padding: 0 15px;
+	}
 
-    h2 {
-        padding: 10px;
-        text-transform: uppercase;
-    }
+	h2 {
+		padding: 10px;
+		text-transform: uppercase;
+	}
 
-    .email-updates-form {
-        padding-bottom: 10px;
-        padding-top: 10px;
+	.email-updates-form {
+		padding-bottom: 10px;
+		padding-top: 10px;
 
-        input[type="text"] {
-            border: 1px solid transparent;
-            box-sizing: border-box;
-            height: 30px;
-            line-height: 30px;
-            margin-bottom: 10px;
-            padding: 0 2%;
-            width: 100%;
-        }
+		input[type='text'] {
+			border: 1px solid transparent;
+			box-sizing: border-box;
+			height: 30px;
+			line-height: 30px;
+			margin-bottom: 10px;
+			padding: 0 2%;
+			width: 100%;
+		}
 
-        .whoiam {
-            //border: 1px solid transparent;
-            border: none;
-            float: left;
-            width: 49%;
-        }
+		.whoiam {
+			//border: 1px solid transparent;
+			border: none;
+			float: left;
+			width: 49%;
+		}
 
-        .email-updates-select .selectLight .styleSelect_item {
-            width: 100%;
-        }
-    }
+		.email-updates-select .selectLight .styleSelect_item {
+			width: 100%;
+		}
+	}
 
-    .email-updates-form input[type="text"].invalid,
-    .whoiam.invalid {
-        border: 1px solid #de2626;
-    }
+	.email-updates-form input[type='text'].invalid,
+	.whoiam.invalid {
+		border: 1px solid #de2626;
+	}
 
-    .AgreeText {
-        clear: both;
-        height: 160px;
-        overflow: hidden;
-        padding: 20px 0 0;
+	.AgreeText {
+		clear: both;
+		height: 160px;
+		overflow: hidden;
+		padding: 20px 0 0;
 
-        input[type="checkbox"] {
-            float: left;
-            margin: 4px 7px 0 0;
-        }
-    }
+		input[type='checkbox'] {
+			float: left;
+			margin: 4px 7px 0 0;
+		}
+	}
 
-    input[type="submit"] {
-        border: 1px solid transparent;
-        display: block;
-        float: right;
-        left: 0px;
-        margin: 0;
-        //padding: 8px 0;
-        padding: 5px 0;
-        position: relative;
-        top: 0px;
-        width: 48%;
-        z-index: 1;
-    }
+	input[type='submit'] {
+		border: 1px solid transparent;
+		display: block;
+		float: right;
+		left: 0px;
+		margin: 0;
+		//padding: 8px 0;
+		padding: 5px 0;
+		position: relative;
+		top: 0px;
+		width: 48%;
+		z-index: 1;
+	}
 
-    .validationMessages {
-        background: #fff;
-        border: 1px solid #c2c2c2;
-        box-shadow: 0px 0px 10px #BBB;
-        display: none;
-        left: 50%;
-        padding: 10% 5%;
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 84%;
-        z-index: 100;
+	.validationMessages {
+		background: #fff;
+		border: 1px solid #c2c2c2;
+		box-shadow: 0px 0px 10px #bbb;
+		display: none;
+		left: 50%;
+		padding: 10% 5%;
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 84%;
+		z-index: 100;
 
-        p {
-            color: #de2626;
-            display: none;
-            font-weight: bold;
-            padding: 5px 10px;
+		p {
+			color: #de2626;
+			display: none;
+			font-weight: bold;
+			padding: 5px 10px;
 
-            &.success {
-                color: #0c803c;
-            }
-        }
+			&.success {
+				color: #0c803c;
+			}
+		}
 
-        .close {
-            background: url(/content/images/closePopup.png);
-            cursor: pointer;
-            display: block;
-            height: 15px;
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            width: 16px;
-        }
-    }
+		.close {
+			background: url(/content/images/closePopup.png);
+			cursor: pointer;
+			display: block;
+			height: 15px;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			width: 16px;
+		}
+	}
 }
 
 .h_2.email-updates .email-updates-form .whoiam {
-    margin-bottom: 10px;
-    width: 100%;
+	margin-bottom: 10px;
+	width: 100%;
 }
 
 /*HYPER_BOX*/
 .hyperBox {
-    position : relative;
-    cursor: pointer;
-    overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
 
-    a,
-    .boxBg {
-        display: block;
-        height: 100%;
-        left: 0px;
-        position: absolute;
-        top: 0px;
-        width: 100%;
-    }
+	a,
+	.boxBg {
+		display: block;
+		height: 100%;
+		left: 0px;
+		position: absolute;
+		top: 0px;
+		width: 100%;
+	}
 
-    a:hover {
-        background: transparent !important;
-    }
+	a:hover {
+		background: transparent !important;
+	}
 
-    a .text,
-    .text {
-        left: 0;
-        padding-right: 10px;
-        position: absolute;
-        top: 0;
-    }
+	a .text,
+	.text {
+		left: 0;
+		padding-right: 10px;
+		position: absolute;
+		top: 0;
+	}
 
-    .text {
-        a {
-            color: #fff;
-            display: inline;
-            position: relative;
-        }
+	.text {
+		a {
+			color: #fff;
+			display: inline;
+			position: relative;
+		}
 
-        h2 {
-            text-transform: none;
-        }
-        p {
-            text-align: left;
-            line-height: 1.2;
-        }
-    }
+		h2 {
+			text-transform: none;
+		}
+		p {
+			text-align: left;
+			line-height: 1.2;
+		}
+	}
 
-    &:hover img {
-        visibility: hidden;
-    }
+	&:hover img {
+		visibility: hidden;
+	}
 
-    &.stopMouseover {
-        &:hover img {
-            visibility: visible;
-        }
-    }
+	&.stopMouseover {
+		&:hover img {
+			visibility: visible;
+		}
+	}
 }
 
-.bigHyperBox, 
+.bigHyperBox,
 .hyperBox {
-    &.gradientOn {
-        .backgroundGradient {
-            height: 100%;
-            position: relative;
-            pointer-events: none;
-            width: 100%;
-            z-index: 1;
-        }
+	&.gradientOn {
+		.backgroundGradient {
+			height: 100%;
+			position: relative;
+			pointer-events: none;
+			width: 100%;
+			z-index: 1;
+		}
 
-        a {
-            color: #FFF;
-            z-index: 1;
-        }
-    }
+		a {
+			color: #fff;
+			z-index: 1;
+		}
+	}
 }
 
 .pageeditor {
-    .hyperBox a {
-        height: auto;
-    }
+	.hyperBox a {
+		height: auto;
+	}
 }
 
 body:not(.pageeditor) .hyperBox .text {
-    line-height : 28px;
-    max-height : 85%;
-    overflow : hidden;
-    padding: 20px;
-    z-index: 2;
-    @media (max-width: 767px) {
-        padding: 0;
-    }
+	line-height: 28px;
+	max-height: 85%;
+	overflow: hidden;
+	padding: 20px;
+	z-index: 2;
+	@media (max-width: 767px) {
+		padding: 0;
+	}
 }
 
 /*BIG_HYPER_BOX*/
 .bigHyperBox {
-    overflow: hidden;
+	overflow: hidden;
 
-    .text {
-        background: transparent!important;
-        //bottom: 30px !important;
-        display: inline-block;
-        left: 0 !important;
-        margin-right: 20px;
-        padding: 20px;
-        position: absolute;
-        top: 0;
+	.text {
+		background: transparent !important;
+		//bottom: 30px !important;
+		display: inline-block;
+		left: 0 !important;
+		margin-right: 20px;
+		padding: 20px;
+		position: absolute;
+		top: 0;
 
-        .Bg {
-            background: #fff;
-            height: 100%;
-            left: 0px;
-            position: absolute;
-            top: 0px;
-            width: 100%;
-        }
+		.Bg {
+			background: #fff;
+			height: 100%;
+			left: 0px;
+			position: absolute;
+			top: 0px;
+			width: 100%;
+		}
 
-        h2 {
-            position: relative;
-            text-transform: none;
-        }
+		h2 {
+			position: relative;
+			text-transform: none;
+		}
 
-        p {
-            position: relative;
-        }
-    }
+		p {
+			position: relative;
+		}
+	}
 }
 
 .lt-ie8 .bigHyperBox .text h2 {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 /*HORIZONTAL CAROUSEL TEXT*/
 .horizontalCarouselText {
-    margin-top: 0px;
-    overflow: hidden;
+	margin-top: 0px;
+	overflow: hidden;
 
-    .text-slide {
-        float: left;
+	.text-slide {
+		float: left;
 
-        a,
-        > li {
-            display: block;
-            margin-top: 0px;
+		a,
+		> li {
+			display: block;
+			margin-top: 0px;
 
-            .text {
-                float: left;
-                padding: 15px 15px;
-            }
-        }
-    }
+			.text {
+				float: left;
+				padding: 15px 15px;
+			}
+		}
+	}
 }
 
 .text-slide {
-    .text {
-        h2 {
-            text-transform: uppercase;
-        }
+	.text {
+		h2 {
+			text-transform: uppercase;
+		}
 
-        p {
-            margin-top: 10px;
-        }
-    }
+		p {
+			margin-top: 10px;
+		}
+	}
 
-    .image-contener {
-        float: right;
-    }
+	.image-contener {
+		float: right;
+	}
 
-    a img {
-        display: block;
-    }
+	a img {
+		display: block;
+	}
 }
 
 .other-position {
-    .text-slide {
-        a {
-            display: block;
+	.text-slide {
+		a {
+			display: block;
 
-            .text {
-                float: right;
-            }
-        }
+			.text {
+				float: right;
+			}
+		}
 
-        li {
-            display: block;
-            position: relative;
-        }
+		li {
+			display: block;
+			position: relative;
+		}
 
-        .image-contener {
-            float: left;
-        }
-    }
+		.image-contener {
+			float: left;
+		}
+	}
 }
 
 .h_1.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                height: 180px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				height: 180px;
+			}
+		}
+	}
 }
 
 .h_2.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                height: 370px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				height: 370px;
+			}
+		}
+	}
 }
 
 .h_3.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                height: 560px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				height: 560px;
+			}
+		}
+	}
 }
 
 .h_4.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                height: 750px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				height: 750px;
+			}
+		}
+	}
 }
 
 .w_2.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                width: 230px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				width: 230px;
+			}
+		}
+	}
 }
 
-.w_3.horizontalCarouselText, 
+.w_3.horizontalCarouselText,
 .w_4.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                width: 470px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				width: 470px;
+			}
+		}
+	}
 }
 
 .h_1.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                height: 150px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				height: 150px;
+			}
+		}
+	}
 }
 
 .h_2.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                height: 340px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				height: 340px;
+			}
+		}
+	}
 }
 
 .h_3.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                height: 530px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				height: 530px;
+			}
+		}
+	}
 }
 
 .h_4.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                height: 720px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				height: 720px;
+			}
+		}
+	}
 }
 
-.w_2.horizontalCarouselText, 
+.w_2.horizontalCarouselText,
 .w_3.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                width: 210px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				width: 210px;
+			}
+		}
+	}
 }
 
 .w_4.horizontalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                width: 450px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				width: 450px;
+			}
+		}
+	}
 }
 
 /*VERTICAL CAROUSEL TEXT*/
 .verticalCarouselText {
-    margin-top: 0px;
-    overflow: hidden;
+	margin-top: 0px;
+	overflow: hidden;
 
-    .text-slide {
-        a, > li {
-            .text {
-                padding: 15px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				padding: 15px;
+			}
+		}
+	}
 }
 
 .other-position {
-    &.verticalCarouselText {
-        .text-slide {
-            a, > li {
-                img {
-                    bottom: 0px;
-                    left: 0px;
-                    position: absolute;
-                }
-            }
-        }
-    }
+	&.verticalCarouselText {
+		.text-slide {
+			a,
+			> li {
+				img {
+					bottom: 0px;
+					left: 0px;
+					position: absolute;
+				}
+			}
+		}
+	}
 }
 
 .h_2.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                height: 370px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				height: 370px;
+			}
+		}
+	}
 }
 
 .h_3.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                height: 560px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				height: 560px;
+			}
+		}
+	}
 }
 
 .h_4.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                height: 750px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				height: 750px;
+			}
+		}
+	}
 }
 
 .w_1.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                width: 230px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				width: 230px;
+			}
+		}
+	}
 }
 
 .w_2.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                width: 470px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				width: 470px;
+			}
+		}
+	}
 }
 
 .w_3.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                width: 710px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				width: 710px;
+			}
+		}
+	}
 }
 
 .w_4.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            img {
-                width: 950px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			img {
+				width: 950px;
+			}
+		}
+	}
 }
 
-.h_2.verticalCarouselText, 
-.h_3.verticalCarouselText, 
-.h_4.verticalCarouselText, 
+.h_2.verticalCarouselText,
+.h_3.verticalCarouselText,
+.h_4.verticalCarouselText,
 .h_5.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                left: 0;
-                position: absolute;
-                top: 0;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				left: 0;
+				position: absolute;
+				top: 0;
+			}
+		}
+	}
 }
 
-.h_2.verticalCarouselText, 
+.h_2.verticalCarouselText,
 .h_3.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                height: 160px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				height: 160px;
+			}
+		}
+	}
 }
 
 .h_4.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                height: 350px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				height: 350px;
+			}
+		}
+	}
 }
 
 .w_1.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                width: 200px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				width: 200px;
+			}
+		}
+	}
 }
 
 .w_2.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                width: 440px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				width: 440px;
+			}
+		}
+	}
 }
 
 .w_3.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                width: 680px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				width: 680px;
+			}
+		}
+	}
 }
 
 .w_4.verticalCarouselText {
-    .text-slide {
-        a, > li {
-            .text {
-                width: 920px;
-            }
-        }
-    }
+	.text-slide {
+		a,
+		> li {
+			.text {
+				width: 920px;
+			}
+		}
+	}
 }
 
 /*SMALL CAROUSEL*/
 .small-slide {
-    a, 
-    > li {
-        display: block;
-        margin-top: 0px;
+	a,
+	> li {
+		display: block;
+		margin-top: 0px;
 
-        .text {
-            float: left;
-            padding: 15px 15px;
-        }
-    }
+		.text {
+			float: left;
+			padding: 15px 15px;
+		}
+	}
 
-    .text {
-        h2 {
-            text-transform: uppercase;
-        }
+	.text {
+		h2 {
+			text-transform: uppercase;
+		}
 
-        p {
-            margin-top: 10px;
-        }
-    }
+		p {
+			margin-top: 10px;
+		}
+	}
 }
 
 .smallCarousel {
-    margin-top: 0px;
-    overflow: hidden;
+	margin-top: 0px;
+	overflow: hidden;
 
-    .small-slide {
-        float: left;
-        max-height: 100%;
-    }
+	.small-slide {
+		float: left;
+		max-height: 100%;
+	}
 }
 
 .h_1.smallCarousel .small-slide a .text {
-    height: 150px;
+	height: 150px;
 }
 
 .h_2.smallCarousel .small-slide a .text {
-    height: 340px;
+	height: 340px;
 }
 
 .h_3.smallCarousel .small-slide a .text {
-    height: 530px;
+	height: 530px;
 }
 
 .h_4.smallCarousel .small-slide a .text {
-    height: 720px;
+	height: 720px;
 }
 
 .w_1.smallCarousel .small-slide a .text {
-    width: 200px;
+	width: 200px;
 }
 
 .w_2.smallCarousel .small-slide a .text {
-    width: 440px;
+	width: 440px;
 }
 
 .w_3.smallCarousel .small-slide a .text {
-    width: 680px;
+	width: 680px;
 }
 
 .w_4.smallCarousel .small-slide a .text {
-    width: 920px;
+	width: 920px;
 }
 
 /*BIG CAROUSEL*/
 .bigCarousel {
-    overflow: hidden;
-    margin-top: 0px;
+	overflow: hidden;
+	margin-top: 0px;
 }
 
 .big-slide {
-    .slide {
-        display: block;
-        margin-top: 0px;
-        position: relative;
+	.slide {
+		display: block;
+		margin-top: 0px;
+		position: relative;
 
-        a {
-            display: block;
-        }
-    }
+		a {
+			display: block;
+		}
+	}
 
-    .frame {
-        //bottom: 40px;
-        left: 0;
-        margin-right: 0;
-        position: absolute;
-        top: 0;
+	.frame {
+		//bottom: 40px;
+		left: 0;
+		margin-right: 0;
+		position: absolute;
+		top: 0;
 
-        .Bg {
-            background: #fff;
-            height: 100%;
-            left: 0px;
-            position: absolute;
-            top: 0px;
-            width: 100%;
-        }
+		.Bg {
+			background: #fff;
+			height: 100%;
+			left: 0px;
+			position: absolute;
+			top: 0px;
+			width: 100%;
+		}
 
-        .text {
-            background: transparent!important;
-            position: relative;
-        }
+		.text {
+			background: transparent !important;
+			position: relative;
+		}
 
-        h2 {
-            margin: 0px 15px;
-            padding-top: 15px;
-            text-transform: uppercase;
-        }
+		h2 {
+			margin: 0px 15px;
+			padding-top: 15px;
+			text-transform: uppercase;
+		}
 
-        p {
-            margin: 0px 15px;
-            padding-bottom: 10px;
-        }
+		p {
+			margin: 0px 15px;
+			padding-bottom: 10px;
+		}
 
-        .link-contener {
-            float: right;
-        }
+		.link-contener {
+			float: right;
+		}
 
-        a {
-            display: block;
-            float: right;
-            margin-top: 10px;
-            padding: 7px 12px 7px 12px;
-        }
-    }
+		a {
+			display: block;
+			float: right;
+			margin-top: 10px;
+			padding: 7px 12px 7px 12px;
+		}
+	}
 }
 
-.lt-ie8, .lt-ie9 {
-    .big-slide {
-        .frame {
-            h2, p {
-                clear: both;
-                display: block;
-                float: none;
-            }
-        }
-    }
+.lt-ie8,
+.lt-ie9 {
+	.big-slide {
+		.frame {
+			h2,
+			p {
+				clear: both;
+				display: block;
+				float: none;
+			}
+		}
+	}
 }
 
 .NewCategoryBoxStyle {
-    float: left;
-    position: relative;
-    width: 475px;
+	float: left;
+	position: relative;
+	width: 475px;
 
-    &:nth-of-type(2n+1) .NewCategoryBoxEl {
-        margin-left: 0;
-        margin-right: 1%;
-    }
+	&:nth-of-type(2n + 1) .NewCategoryBoxEl {
+		margin-left: 0;
+		margin-right: 1%;
+	}
 
-    &:nth-of-type(2n) .NewCategoryBoxEl {
-        margin-left: 1%;
-        margin-right: 0;
-    }
+	&:nth-of-type(2n) .NewCategoryBoxEl {
+		margin-left: 1%;
+		margin-right: 0;
+	}
 
-    .NewCategoryBoxEl {
-        background-color: #FFF;
-        margin-bottom: 1%;
-        margin-top: 1%;
-        position: relative;
+	.NewCategoryBoxEl {
+		background-color: #fff;
+		margin-bottom: 1%;
+		margin-top: 1%;
+		position: relative;
 
-        > div {
-            height: 215px;
-        }
+		> div {
+			height: 215px;
+		}
 
-        .NewCategoryBoxElText {
-            background-color: #808080;
-            color: #FFF;
-            left: 10px;
-            max-width: 50%;
-            padding: 10px 15px;
-            position: absolute;
-            text-transform: uppercase;
-            top: 10px;
-            width: auto;
+		.NewCategoryBoxElText {
+			background-color: #808080;
+			color: #fff;
+			left: 10px;
+			max-width: 50%;
+			padding: 10px 15px;
+			position: absolute;
+			text-transform: uppercase;
+			top: 10px;
+			width: auto;
 
-            p {
-                margin: 0;
-                padding: 30px 0 0 0;
-            }
-        }
+			p {
+				margin: 0;
+				padding: 30px 0 0 0;
+			}
+		}
 
-        img {
-            display: block;
-            margin: 0 auto;
-            max-height: 215px;
-            max-width: 100%;
-            top: 50%;
-            position: relative;
-            -ms-transform: translate(0%, -50%);
-            -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
-            width: auto;
-        }
-    }
+		img {
+			display: block;
+			margin: 0 auto;
+			max-height: 215px;
+			max-width: 100%;
+			top: 50%;
+			position: relative;
+			-ms-transform: translate(0%, -50%);
+			-webkit-transform: translate(0%, -50%);
+			transform: translate(0%, -50%);
+			width: auto;
+		}
+	}
 
-    &:hover {
-        .NewCategoryBoxElText {
-            background-color: #000 !important;
-        }
-    }
+	&:hover {
+		.NewCategoryBoxElText {
+			background-color: #000 !important;
+		}
+	}
 }
 
 .lt-ie8 {
-    .big-slide {
-        .frame {
-            .link-contener, a {
-                float: left;
-            }
-        }
-    }
+	.big-slide {
+		.frame {
+			.link-contener,
+			a {
+				float: left;
+			}
+		}
+	}
 }
 
 /* ==========================================================================
@@ -1329,531 +1361,565 @@ body:not(.pageeditor) .hyperBox .text {
 
 /* Large desktop display */
 @media (min-width: 1380px) {
-    body:not(.pageeditor) {
-       /* ==========================================================================
+	body:not(.pageeditor) {
+		/* ==========================================================================
          MAIN STYLE
          ========================================================================== */
-        .box-page {
-            height: 890px;
+		.box-page {
+			height: 890px;
 
-            ul.box_composer {
-                height: 890px;
-            }
-        }
+			ul.box_composer {
+				height: 890px;
+			}
+		}
 
-        /* ==========================================================================
+		/* ==========================================================================
          ROWS HEIGHTS
          ========================================================================== */
-        .rows1 {
-            height: 215px;
-        }
+		.rows1 {
+			height: 215px;
+		}
 
-        .rows2 {
-            height: 440px;
-        }
+		.rows2 {
+			height: 440px;
+		}
 
-        .rows3 {
-            height: 665px;
-        }
+		.rows3 {
+			height: 665px;
+		}
 
-        .rows4 {
-            height: 890px;
-        }
+		.rows4 {
+			height: 890px;
+		}
 
-        /* ==========================================================================
+		/* ==========================================================================
          BOX POSITION & SIZE CLASSES
          ========================================================================== */
 
-        .h_1,
-        .h_1.hyperBox img,
-        .h_1.bigHyperBox img,
-        .h_1.smallCarousel .small-slide>li,
-        .h_1.smallCarousel .small-slide a.slide,
-        .h_1.horizontalCarouselText .text-slide a.slide,
-        .h_1.horizontalCarouselText .text-slide>li,
-        .h_1.bigCarousel .big-slide .slide,
-        .h_1.bigCarousel .big-slide img {
-            height: 215px; /*!important;*/
-        }
+		.h_1,
+		.h_1.hyperBox img,
+		.h_1.bigHyperBox img,
+		.h_1.smallCarousel .small-slide > li,
+		.h_1.smallCarousel .small-slide a.slide,
+		.h_1.horizontalCarouselText .text-slide a.slide,
+		.h_1.horizontalCarouselText .text-slide > li,
+		.h_1.bigCarousel .big-slide .slide,
+		.h_1.bigCarousel .big-slide img {
+			height: 215px; /*!important;*/
+		}
 
-        .h_2,
-        .h_2.hyperBox img,
-        .h_2.bigHyperBox img,
-        .h_2.verticalCarouselText .text-slide a.slide,
-        .h_2.verticalCarouselText .text-slide>li,
-        .h_2.smallCarousel .small-slide>li,
-        .h_2.smallCarousel .small-slide a.slide,
-        .h_2.horizontalCarouselText .text-slide a.slide,
-        .h_2.horizontalCarouselText .text-slide>li,
-        .h_2.bigCarousel .big-slide .slide,
-        .h_2.bigCarousel .big-slide img {
-            height: 440px; /*!important;*/
-        }
+		.h_2,
+		.h_2.hyperBox img,
+		.h_2.bigHyperBox img,
+		.h_2.verticalCarouselText .text-slide a.slide,
+		.h_2.verticalCarouselText .text-slide > li,
+		.h_2.smallCarousel .small-slide > li,
+		.h_2.smallCarousel .small-slide a.slide,
+		.h_2.horizontalCarouselText .text-slide a.slide,
+		.h_2.horizontalCarouselText .text-slide > li,
+		.h_2.bigCarousel .big-slide .slide,
+		.h_2.bigCarousel .big-slide img {
+			height: 440px; /*!important;*/
+		}
 
-        .h_3,
-        .h_3.hyperBox img,
-        .h_3.bigHyperBox img,
-        .h_3.verticalCarouselText .text-slide a.slide,
-        .h_3.verticalCarouselText .text-slide>li,
-        .h_3.smallCarousel .small-slide>li,
-        .h_3.smallCarousel .small-slide a.slide,
-        .h_3.horizontalCarouselText .text-slide a.slide,
-        .h_3.horizontalCarouselText .text-slide>li,
-        .h_3.bigCarousel .big-slide .slide,
-        .h_3.bigCarousel .big-slide img {
-            height: 665px; /*!important;*/
-        }
+		.h_3,
+		.h_3.hyperBox img,
+		.h_3.bigHyperBox img,
+		.h_3.verticalCarouselText .text-slide a.slide,
+		.h_3.verticalCarouselText .text-slide > li,
+		.h_3.smallCarousel .small-slide > li,
+		.h_3.smallCarousel .small-slide a.slide,
+		.h_3.horizontalCarouselText .text-slide a.slide,
+		.h_3.horizontalCarouselText .text-slide > li,
+		.h_3.bigCarousel .big-slide .slide,
+		.h_3.bigCarousel .big-slide img {
+			height: 665px; /*!important;*/
+		}
 
-        .h_4,
-        .h_4.hyperBox img,
-        .h_4.bigHyperBox img,
-        .h_4.verticalCarouselText .text-slide a.slide,
-        .h_4.verticalCarouselText .text-slide > li,
-        .h_4.smallCarousel .small-slide>li,
-        .h_4.smallCarousel .small-slide a.slide,
-        .h_4.horizontalCarouselText .text-slide a.slide,
-        .h_4.horizontalCarouselText .text-slide > li,
-        .h_4.bigCarousel .big-slide .slide,
-        .h_4.bigCarousel .big-slide img {
-            height: 890px; /*!important;*/
-        }
+		.h_4,
+		.h_4.hyperBox img,
+		.h_4.bigHyperBox img,
+		.h_4.verticalCarouselText .text-slide a.slide,
+		.h_4.verticalCarouselText .text-slide > li,
+		.h_4.smallCarousel .small-slide > li,
+		.h_4.smallCarousel .small-slide a.slide,
+		.h_4.horizontalCarouselText .text-slide a.slide,
+		.h_4.horizontalCarouselText .text-slide > li,
+		.h_4.bigCarousel .big-slide .slide,
+		.h_4.bigCarousel .big-slide img {
+			height: 890px; /*!important;*/
+		}
 
-        .w_1,
-        .w_1.hyperBox img,
-        .w_1.bigHyperBox img,
-        .w_1.smallCarousel .small-slide>li,
-        .w_1.smallCarousel .small-slide a.slide,
-        .w_1.verticalCarouselText .text-slide a.slide,
-        .w_1.verticalCarouselText .text-slide > li, 
-        .w_1.smallCarousel .small-slide > li {
-            width: 275px;
-        }
+		.w_1,
+		.w_1.hyperBox img,
+		.w_1.bigHyperBox img,
+		.w_1.smallCarousel .small-slide > li,
+		.w_1.smallCarousel .small-slide a.slide,
+		.w_1.verticalCarouselText .text-slide a.slide,
+		.w_1.verticalCarouselText .text-slide > li,
+		.w_1.smallCarousel .small-slide > li {
+			width: 275px;
+		}
 
-        .w_2,
-        .w_2.hyperBox img,
-        .w_2.bigHyperBox img,
-        .w_2.horizontalCarouselText .text-slide a.slide,
-        .w_2.horizontalCarouselText .text-slide>li,
-        .w_2.smallCarousel .small-slide>li,
-        .w_2.smallCarousel .small-slide a.slide,
-        .w_2.bigCarousel .big-slide .slide,
-        .w_2.bigCarousel .big-slide img,
-        .w_2.verticalCarouselText .text-slide a.slide,
-        .w_2.verticalCarouselText .text-slide>li {
-            width: 560px;
-        }
+		.w_2,
+		.w_2.hyperBox img,
+		.w_2.bigHyperBox img,
+		.w_2.horizontalCarouselText .text-slide a.slide,
+		.w_2.horizontalCarouselText .text-slide > li,
+		.w_2.smallCarousel .small-slide > li,
+		.w_2.smallCarousel .small-slide a.slide,
+		.w_2.bigCarousel .big-slide .slide,
+		.w_2.bigCarousel .big-slide img,
+		.w_2.verticalCarouselText .text-slide a.slide,
+		.w_2.verticalCarouselText .text-slide > li {
+			width: 560px;
+		}
 
-        .w_3,
-        .w_3.hyperBox img,
-        .w_3.bigHyperBox img,
-        .w_3.horizontalCarouselText .text-slide a.slide,
-        .w_3.horizontalCarouselText .text-slide>li,
-        .w_3.smallCarousel .small-slide>li,
-        .w_3.smallCarousel .small-slide a.slide,
-        .w_3.bigCarousel .big-slide .slide,
-        .w_3.bigCarousel .big-slide img,
-        .w_3.verticalCarouselText .text-slide a.slide,
-        .w_3.verticalCarouselText .text-slide>li {
-            width: 845px;
-        }
+		.w_3,
+		.w_3.hyperBox img,
+		.w_3.bigHyperBox img,
+		.w_3.horizontalCarouselText .text-slide a.slide,
+		.w_3.horizontalCarouselText .text-slide > li,
+		.w_3.smallCarousel .small-slide > li,
+		.w_3.smallCarousel .small-slide a.slide,
+		.w_3.bigCarousel .big-slide .slide,
+		.w_3.bigCarousel .big-slide img,
+		.w_3.verticalCarouselText .text-slide a.slide,
+		.w_3.verticalCarouselText .text-slide > li {
+			width: 845px;
+		}
 
-        .w_4,
-        .w_4.hyperBox img,
-        .w_4.bigHyperBox img,
-        .w_4.horizontalCarouselText .text-slide a.slide,
-        .w_4.horizontalCarouselText .text-slide>li,
-        .w_4.smallCarousel .small-slide>li,
-        .w_4.smallCarousel .small-slide a.slide,
-        .w_4.bigCarousel .big-slide .slide,
-        .w_4.bigCarousel .big-slide img,
-        .w_4.verticalCarouselText .text-slide a.slide,
-        .w_4.verticalCarouselText .text-slide>li {
-            width: 1130px;
-        }
+		.w_4,
+		.w_4.hyperBox img,
+		.w_4.bigHyperBox img,
+		.w_4.horizontalCarouselText .text-slide a.slide,
+		.w_4.horizontalCarouselText .text-slide > li,
+		.w_4.smallCarousel .small-slide > li,
+		.w_4.smallCarousel .small-slide a.slide,
+		.w_4.bigCarousel .big-slide .slide,
+		.w_4.bigCarousel .big-slide img,
+		.w_4.verticalCarouselText .text-slide a.slide,
+		.w_4.verticalCarouselText .text-slide > li {
+			width: 1130px;
+		}
 
-        .p_1x1 {
-            left: 0px;
-            top: 10px;
-        }
+		.p_1x1 {
+			left: 0px;
+			top: 10px;
+		}
 
-        .p_1x2 {
-            left: 285px;
-            top: 10px;
-        }
+		.p_1x2 {
+			left: 285px;
+			top: 10px;
+		}
 
-        .p_1x3 {
-            left: 570px;
-            top: 10px;
-        }
+		.p_1x3 {
+			left: 570px;
+			top: 10px;
+		}
 
-        .p_1x4 {
-            left: 855px;
-            top: 10px;
-        }
+		.p_1x4 {
+			left: 855px;
+			top: 10px;
+		}
 
-        .p_2x1 {
-            left: 0px;
-            top: 235px;
-        }
+		.p_2x1 {
+			left: 0px;
+			top: 235px;
+		}
 
-        .p_2x2 {
-            left: 285px;
-            top: 235px;
-        }
+		.p_2x2 {
+			left: 285px;
+			top: 235px;
+		}
 
-        .p_2x3 {
-            left: 570px;
-            top: 235px;
-        }
+		.p_2x3 {
+			left: 570px;
+			top: 235px;
+		}
 
-        .p_2x4 {
-            left: 855px;
-            top: 235px;
-        }
+		.p_2x4 {
+			left: 855px;
+			top: 235px;
+		}
 
-        .p_3x1 {
-            left: 0px;
-            top: 460px;
-        }
+		.p_3x1 {
+			left: 0px;
+			top: 460px;
+		}
 
-        .p_3x2 {
-            left: 285px;
-            top: 460px;
-        }
+		.p_3x2 {
+			left: 285px;
+			top: 460px;
+		}
 
-        .p_3x3 {
-            left: 570px;
-            top: 460px;
-        }
+		.p_3x3 {
+			left: 570px;
+			top: 460px;
+		}
 
-        .p_3x4 {
-            left: 855px;
-            top: 460px;
-        }
+		.p_3x4 {
+			left: 855px;
+			top: 460px;
+		}
 
-        .p_4x1 {
-            left: 0px;
-            top: 685px;
-        }
+		.p_4x1 {
+			left: 0px;
+			top: 685px;
+		}
 
-        .p_4x2 {
-            left: 285px;
-            top: 685px;
-        }
+		.p_4x2 {
+			left: 285px;
+			top: 685px;
+		}
 
-        .p_4x3 {
-            left: 570px;
-            top: 685px;
-        }
+		.p_4x3 {
+			left: 570px;
+			top: 685px;
+		}
 
-        .p_4x4 {
-            left: 855px;
-            top: 685px;
-        }
+		.p_4x4 {
+			left: 855px;
+			top: 685px;
+		}
 
-        /* ==========================================================================
+		/* ==========================================================================
          BOX TYPE
          ========================================================================== */
-        /*HORIZONTAL CAROUSEL TEXT*/
-        /*BIG CAROUSEL*/
-        .h_1.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        height: 215px;
-                    }
-                }
-            }
-        }
+		/*HORIZONTAL CAROUSEL TEXT*/
+		/*BIG CAROUSEL*/
+		.h_1.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						height: 215px;
+					}
+				}
+			}
+		}
 
-        .h_2.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        height: 440px;
-                    }
-                }
-            }
-        }
+		.h_2.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						height: 440px;
+					}
+				}
+			}
+		}
 
-        .h_3.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        height: 665px;
-                    }
-                }
-            }
-        }
+		.h_3.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						height: 665px;
+					}
+				}
+			}
+		}
 
-        .h_4.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        height: 890px;
-                    }
-                }
-            }
-        }
+		.h_4.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						height: 890px;
+					}
+				}
+			}
+		}
 
-        .w_2.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        width: 275px;
-                    }
-                }
-            }
-        }
+		.w_2.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						width: 275px;
+					}
+				}
+			}
+		}
 
-        .w_3.horizontalCarouselText, 
-        .w_4.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        width: 560px;
-                    }
-                }
-            }
-        }
+		.w_3.horizontalCarouselText,
+		.w_4.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						width: 560px;
+					}
+				}
+			}
+		}
 
-        .h_1.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        height: 185px;
-                    }
-                }
-            }
-        }
+		.h_1.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						height: 185px;
+					}
+				}
+			}
+		}
 
-        .h_2.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        height: 410px;
-                    }
-                }
-            }
-        }
+		.h_2.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						height: 410px;
+					}
+				}
+			}
+		}
 
-        .h_3.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        height: 635px;
-                    }
-                }
-            }
-        }
+		.h_3.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						height: 635px;
+					}
+				}
+			}
+		}
 
-        .h_4.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        height: 860px;
-                    }
-                }
-            }
-        }
+		.h_4.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						height: 860px;
+					}
+				}
+			}
+		}
 
-        .w_2.horizontalCarouselText, 
-        .w_3.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        width: 255px;
-                    }
-                }
-            }
-        }
+		.w_2.horizontalCarouselText,
+		.w_3.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						width: 255px;
+					}
+				}
+			}
+		}
 
-        .w_4.horizontalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        width: 540px;
-                    }
-                }
-            }
-        }
+		.w_4.horizontalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						width: 540px;
+					}
+				}
+			}
+		}
 
-        /*VERTICAL CAROUSEL TEXT*/
-        .h_1.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        height: 215px;
-                    }
-                }
-            }
-        }
+		/*VERTICAL CAROUSEL TEXT*/
+		.h_1.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						height: 215px;
+					}
+				}
+			}
+		}
 
-        .h_2.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        height: 440px;
-                    }
-                }
-            }
-        }
+		.h_2.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						height: 440px;
+					}
+				}
+			}
+		}
 
-        .h_3.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        height: 665px;
-                    }
-                }
-            }
-        }
+		.h_3.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						height: 665px;
+					}
+				}
+			}
+		}
 
-        .h_4.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        height: 890px;
-                    }
-                }
-            }
-        }
+		.h_4.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						height: 890px;
+					}
+				}
+			}
+		}
 
-        .w_1.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        width: 275px;
-                    }
-                }
-            }
-        }
+		.w_1.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						width: 275px;
+					}
+				}
+			}
+		}
 
-        .w_2.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        width: 560px;
-                    }
-                }
-            }
-        }
+		.w_2.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						width: 560px;
+					}
+				}
+			}
+		}
 
-        .w_3.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        width: 845px;
-                    }
-                }
-            }
-        }
+		.w_3.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						width: 845px;
+					}
+				}
+			}
+		}
 
-        .w_4.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    img {
-                        width: 1130px;
-                    }
-                }
-            }
-        }
+		.w_4.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					img {
+						width: 1130px;
+					}
+				}
+			}
+		}
 
-        .h_2.verticalCarouselText, 
-        .h_3.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        height: 195px;
-                    }
-                }
-            }
-        }
+		.h_2.verticalCarouselText,
+		.h_3.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						height: 195px;
+					}
+				}
+			}
+		}
 
-        .h_4.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        height: 420px;
-                    }
-                }
-            }
-        }
+		.h_4.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						height: 420px;
+					}
+				}
+			}
+		}
 
-        .w_1.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        width: 245px;
-                    }
-                }
-            }
-        }
+		.w_1.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						width: 245px;
+					}
+				}
+			}
+		}
 
-        .w_2.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        width: 530px;
-                    }
-                }
-            }
-        }
+		.w_2.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						width: 530px;
+					}
+				}
+			}
+		}
 
-        .w_3.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        width: 815px;
-                    }
-                }
-            }
-        }
+		.w_3.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						width: 815px;
+					}
+				}
+			}
+		}
 
-        .w_4.verticalCarouselText {
-            .text-slide {
-                a, > li {
-                    .text {
-                        width: 1100px;
-                    }
-                }
-            }
-        }
+		.w_4.verticalCarouselText {
+			.text-slide {
+				a,
+				> li {
+					.text {
+						width: 1100px;
+					}
+				}
+			}
+		}
 
-        .NewCategoryBoxStyle {
-            width: 565px;
-        }
-    }
+		.NewCategoryBoxStyle {
+			width: 565px;
+		}
+	}
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 979px) {
-    /* ==========================================================================
+	/* ==========================================================================
      ROWS HEIGHTS - like default desctop
      ========================================================================== */
-    body:not(.pageeditor) {
-        .trows1, .trows2, .trows3, .trows4, .trows5, 
-        .trows6, .trows7, .trows8, .trows9, .trows10 {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: flex;
-            height: auto;
-            -webkit-flex-wrap: wrap !important;
-            -webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: inherit;
-	-webkit-align-items: center;
-	        align-items: center;
-            flex-wrap: wrap !important;
-            -webkit-justify-content: space-between !important;
-            justify-content: space-between !important;
-            left: 50%;
-            margin: 0;
-            -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-        }
+	body:not(.pageeditor) {
+		.trows1,
+		.trows2,
+		.trows3,
+		.trows4,
+		.trows5,
+		.trows6,
+		.trows7,
+		.trows8,
+		.trows9,
+		.trows10 {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+			height: auto;
+			-webkit-flex-wrap: wrap !important;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-webkit-flex-direction: inherit;
+			-webkit-align-items: center;
+			align-items: center;
+			flex-wrap: wrap !important;
+			-webkit-justify-content: space-between !important;
+			justify-content: space-between !important;
+			left: 50%;
+			margin: 0;
+			-webkit-transform: translate(-50%, 0);
+			transform: translate(-50%, 0);
+		}
 
-        /*.trows2 {
+		/*.trows2 {
             height: 380px;
         }
 
@@ -1889,71 +1955,89 @@ body:not(.pageeditor) .hyperBox .text {
             height: 1900px;
         }*/
 
-        /* ==========================================================================
+		/* ==========================================================================
          BOX POSITION & SIZE CLASSES
          ========================================================================== */
 
-        .w_4,
-        .w_4.hyperBox img,
-        .w_4.bigHyperBox img,
-        .w_4.horizontalCarouselText .text-slide a.slide,
-        .w_4.horizontalCarouselText .text-slide>li,
-        .w_4.smallCarousel .small-slide a.slide,
-        .w_4.bigCarousel .big-slide .slide,
-        .w_4.bigCarousel .big-slide img,
-        .w_4.verticalCarouselText .text-slide a.slide,
-        .w_4.verticalCarouselText .text-slide>li {
-            width: 710px;
-        }
+		.w_4,
+		.w_4.hyperBox img,
+		.w_4.bigHyperBox img,
+		.w_4.horizontalCarouselText .text-slide a.slide,
+		.w_4.horizontalCarouselText .text-slide > li,
+		.w_4.smallCarousel .small-slide a.slide,
+		.w_4.bigCarousel .big-slide .slide,
+		.w_4.bigCarousel .big-slide img,
+		.w_4.verticalCarouselText .text-slide a.slide,
+		.w_4.verticalCarouselText .text-slide > li {
+			width: 710px;
+		}
 
-        .w_3, .w_4 {
-            &.bigCarousel, 
-            &.bigCarousel .big-slide .slide, 
-            &.bigCarousel .big-slide img, 
-            &.bigHyperBox img {
-                display: block;
-                height: auto;
-            }
-        }
+		.w_3,
+		.w_4 {
+			&.bigCarousel,
+			&.bigCarousel .big-slide .slide,
+			&.bigCarousel .big-slide img,
+			&.bigHyperBox img {
+				display: block;
+				height: auto;
+			}
+		}
 
-        .w_3, .w_4 {
-            &.bigCarousel, 
-            &.bigHyperBox {
-                -webkit-flex: 0 0 100% !important;
-                flex: 0 0 100% !important;
-                margin-bottom: 10px !important;
-                -webkit-box-ordinal-group: 1;
-                -webkit-order: 1;
-                order: 1;
-            }
-        }
-        
-        .box-page > div {
-            margin-bottom: 10px;
-            -webkit-box-ordinal-group: 2;
-            -webkit-order: 2;
-            -webkit-flex: none;
-            order: 2;
-            position: relative;
+		.w_3,
+		.w_4 {
+			&.bigCarousel,
+			&.bigHyperBox {
+				-webkit-flex: 0 0 100% !important;
+				flex: 0 0 100% !important;
+				margin-bottom: 10px !important;
+				-webkit-box-ordinal-group: 1;
+				-webkit-order: 1;
+				order: 1;
+			}
+		}
 
-            &:last-of-type {
-                margin: 0;
-            }
-        }
+		.box-page > div {
+			margin-bottom: 10px;
+			-webkit-box-ordinal-group: 2;
+			-webkit-order: 2;
+			-webkit-flex: none;
+			order: 2;
+			position: relative;
 
-        .tp_1x1, .tp_1x2, .tp_1x3, 
-        .tp_2x1, .tp_2x2, .tp_2x3, 
-        .tp_3x1, .tp_3x2, .tp_3x3, 
-        .tp_4x1, .tp_4x2, .tp_4x3, 
-        .tp_5x1, .tp_5x2, .tp_5x3, 
-        .tp_6x1, .tp_6x2, .tp_6x3, 
-        .tp_7x1, .tp_7x2, .tp_7x3, 
-        .tp_8x1, .tp_8x2, .tp_8x3 {
-            left: 0;
-            top: 0;
-        }
+			&:last-of-type {
+				margin: 0;
+			}
+		}
 
-        /*.tp_1x1 {
+		.tp_1x1,
+		.tp_1x2,
+		.tp_1x3,
+		.tp_2x1,
+		.tp_2x2,
+		.tp_2x3,
+		.tp_3x1,
+		.tp_3x2,
+		.tp_3x3,
+		.tp_4x1,
+		.tp_4x2,
+		.tp_4x3,
+		.tp_5x1,
+		.tp_5x2,
+		.tp_5x3,
+		.tp_6x1,
+		.tp_6x2,
+		.tp_6x3,
+		.tp_7x1,
+		.tp_7x2,
+		.tp_7x3,
+		.tp_8x1,
+		.tp_8x2,
+		.tp_8x3 {
+			left: 0;
+			top: 0;
+		}
+
+		/*.tp_1x1 {
             left: 0px;
             top: 10px;
         }
@@ -2073,145 +2157,156 @@ body:not(.pageeditor) .hyperBox .text {
             top: 1340px;
         }*/
 
-        /* ==========================================================================
+		/* ==========================================================================
          BOX TYPE
          ========================================================================== */
 
-        /*HORIZONTAL CAROUSEL TEXT*/
-        .w_4.horizontalCarouselText .text-slide {
-            a .text,
-            > li .text {
-                width: 160px;
-            }
-        }
+		/*HORIZONTAL CAROUSEL TEXT*/
+		.w_4.horizontalCarouselText .text-slide {
+			a .text,
+			> li .text {
+				width: 160px;
+			}
+		}
 
-        /*VERTICAL CAROUSEL TEXT*/
-        .w_4.verticalCarouselText .text-slide {
-            a img,
-            > li img {
-                width: 710px;
-            }
+		/*VERTICAL CAROUSEL TEXT*/
+		.w_4.verticalCarouselText .text-slide {
+			a img,
+			> li img {
+				width: 710px;
+			}
 
-            a .text,
-            > li .text {
-                width: 680px;
-            }
-        }
+			a .text,
+			> li .text {
+				width: 680px;
+			}
+		}
 
-        .w_4.smallCarousel .small-slide a .text {
-            width: 510px;
-        }
+		.w_4.smallCarousel .small-slide a .text {
+			width: 510px;
+		}
 
-        /* ==========================================================================
+		/* ==========================================================================
          BOX IMAGES CSS CROP
          ========================================================================== */
 
-        .w_4.hyperBox img,
-        .w_4.bigHyperBox img {
-            height: 100%;
-            left: 0;
-            min-height: 100%;
-            min-width: 100%;
-            position: relative;
-            width: auto;
-        }
+		.w_4.hyperBox img,
+		.w_4.bigHyperBox img {
+			height: 100%;
+			left: 0;
+			min-height: 100%;
+			min-width: 100%;
+			position: relative;
+			width: auto;
+		}
 
-        .NewCategoryBoxStyle {
-            width: 355px;
+		.NewCategoryBoxStyle {
+			width: 355px;
 
-            .NewCategoryBoxEl {
-                > div {
-                    height: 215px;
-                }
-            }
-        }
-    }
+			.NewCategoryBoxEl {
+				> div {
+					height: 215px;
+				}
+			}
+		}
+	}
 }
 
 /* Mobile */
 @media (max-width: 767px) {
-    body:not(.pageeditor) .box-page > div, /*transition clear*/
+	body:not(.pageeditor) .box-page > div, /*transition clear*/
     body:not(.pageeditor) .main-content,
     body:not(.pageeditor) .slide {
-        -moz-transition: none;
-        -webkit-transition: none;
-        -o-transition: none;
-        transition: none;
-    }
+		-moz-transition: none;
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
 
-    body:not(.pageeditor) .main-content {
-        padding: 0;
+	body:not(.pageeditor) .main-content {
+		padding: 0;
 
-        &.box-page {
-            display: flex !important;
-            flex-wrap: wrap !important;
-            height: 100% !important;
-            justify-content: space-between !important;
-            position: relative !important;
+		&.box-page {
+			display: flex !important;
+			flex-wrap: wrap !important;
+			height: 100% !important;
+			justify-content: space-between !important;
+			position: relative !important;
 
-            .bigCarousel, 
-            .bigHyperBox {
-                height: auto !important;
-                flex: 0 0 100% !important;
-                margin: 10px 0 !important;
-                order: 1;
-                position: relative !important;
-                top: auto !important;
-            }
+			.bigCarousel,
+			.bigHyperBox {
+				height: auto !important;
+				flex: 0 0 100% !important;
+				margin: 10px 0 !important;
+				order: 1;
+				position: relative !important;
+				top: auto !important;
+			}
 
-            .hyperBox {
-                left: auto !important;
-                margin: 10px 0 !important;
-                order: 2;
-                position: relative !important;
-                right: auto !important;
-                top: auto !important;
+			.hyperBox {
+				left: auto !important;
+				margin: 10px 0 !important;
+				order: 2;
+				position: relative !important;
+				right: auto !important;
+				top: auto !important;
 
-                &.w_1 {
-                    width: 48% !important;
+				&.w_1 {
+					width: 48% !important;
 
-                    &.h_2, &.h_3, &.h_4 {
-                        order: 100;
-                    }
-                }
+					&.h_2,
+					&.h_3,
+					&.h_4 {
+						order: 100;
+					}
+				}
 
-                &.w_2, &.w_3, &.w_4 {
-                    &.h_1, &.h_2, &.h_3, &.h_4 {
-                        order: 90;
-                    }
-                }
-            }
-        }
-    }
+				&.w_2,
+				&.w_3,
+				&.w_4 {
+					&.h_1,
+					&.h_2,
+					&.h_3,
+					&.h_4 {
+						order: 90;
+					}
+				}
+			}
+		}
+	}
 
-    body:not(.pageeditor) .hyperBox, body:not(.pageeditor) .bigHyperBox, body:not(.pageeditor) .bigCarousel, body:not(.pageeditor) .horizontalCarouselText, body:not(.pageeditor) .verticalCarouselText, body:not(.pageeditor) .smallCarousel {
-        top: 0px;
-        left: 0px;
-    }
+	body:not(.pageeditor) .hyperBox,
+	body:not(.pageeditor) .bigHyperBox,
+	body:not(.pageeditor) .bigCarousel,
+	body:not(.pageeditor) .horizontalCarouselText,
+	body:not(.pageeditor) .verticalCarouselText,
+	body:not(.pageeditor) .smallCarousel {
+		top: 0px;
+		left: 0px;
+	}
 
-    /* ==========================================================================
+	/* ==========================================================================
  BOX POSITION & SIZE CLASSES
  ========================================================================== */
-    /*.h_1,*/
-    body:not(.pageeditor) .h_1.hyperBox img,
-    body:not(.pageeditor) .h_1.bigHyperBox img,
-    body:not(.pageeditor) .h_2.hyperBox img,
-    body:not(.pageeditor) .h_2.bigHyperBox img,
-    body:not(.pageeditor) .h_3.hyperBox img,
-    body:not(.pageeditor) .h_3.bigHyperBox img,
-    body:not(.pageeditor) .h_4.hyperBox img,
-    body:not(.pageeditor) .h_4.bigHyperBox img {
-        height: 100%;
-    }
+	/*.h_1,*/
+	body:not(.pageeditor) .h_1.hyperBox img,
+	body:not(.pageeditor) .h_1.bigHyperBox img,
+	body:not(.pageeditor) .h_2.hyperBox img,
+	body:not(.pageeditor) .h_2.bigHyperBox img,
+	body:not(.pageeditor) .h_3.hyperBox img,
+	body:not(.pageeditor) .h_3.bigHyperBox img,
+	body:not(.pageeditor) .h_4.hyperBox img,
+	body:not(.pageeditor) .h_4.bigHyperBox img {
+		height: 100%;
+	}
 
+	body:not(.pageeditor) .w_1,
+	body:not(.pageeditor) .w_1.bigHyperBox img,
+	body:not(.pageeditor) .w_1.verticalCarouselText .text-slide a.slide {
+		width: 49%;
+	}
 
-    body:not(.pageeditor) .w_1,
-    body:not(.pageeditor) .w_1.bigHyperBox img,
-    body:not(.pageeditor) .w_1.verticalCarouselText .text-slide a.slide {
-        width: 49%;
-    }
-
-        body:not(.pageeditor) .w_1.hyperBox img,
+	body:not(.pageeditor) .w_1.hyperBox img,
         body:not(.pageeditor) .w_1.smallCarousel .small-slide a.slide,
         body:not(.pageeditor) .w_2,
         body:not(.pageeditor) .w_2.hyperBox img,
@@ -2237,579 +2332,590 @@ body:not(.pageeditor) .hyperBox .text {
         /*body:not(.pageeditor) .w_4.bigCarousel .big-slide .slide,*/
         body:not(.pageeditor) .w_4.bigCarousel .big-slide img,
         body:not(.pageeditor) .w_4.verticalCarouselText .text-slide a.slide {
-            width: 100%;
-        }
+		width: 100%;
+	}
 
-            body:not(.pageeditor) .w_2.bigCarousel .big-slide .slide,
-            body:not(.pageeditor) .w_3.bigCarousel .big-slide .slide,
-            body:not(.pageeditor) .w_4.bigCarousel .big-slide .slide {
-                width: 450px;
-            }
+	body:not(.pageeditor) .w_2.bigCarousel .big-slide .slide,
+	body:not(.pageeditor) .w_3.bigCarousel .big-slide .slide,
+	body:not(.pageeditor) .w_4.bigCarousel .big-slide .slide {
+		width: 450px;
+	}
 
-    body:not(.pageeditor) {
-        .mp_1x1 {
-            top: 10px;
-            left: 0px;
-        }
+	body:not(.pageeditor) {
+		.mp_1x1 {
+			top: 10px;
+			left: 0px;
+		}
 
-        .mp_1x2 {
-            top: 10px;
-            left: 0px;
-        }
-    }
+		.mp_1x2 {
+			top: 10px;
+			left: 0px;
+		}
+	}
 
-    body:not(.pageeditor) .mp_1x1 body:not(.pageeditor) .mp_2x1,
-    body:not(.pageeditor) .mp_3x1,
-    body:not(.pageeditor) .mp_4x1,
-    body:not(.pageeditor) .mp_5x1,
-    body:not(.pageeditor) .mp_6x1,
-    body:not(.pageeditor) .mp_7x1,
-    body:not(.pageeditor) .mp_8x1,
-    body:not(.pageeditor) .mp_9x1,
-    body:not(.pageeditor) .mp_10x1 {
-        left: 0px;
-    }
+	body:not(.pageeditor) .mp_1x1 body:not(.pageeditor) .mp_2x1,
+	body:not(.pageeditor) .mp_3x1,
+	body:not(.pageeditor) .mp_4x1,
+	body:not(.pageeditor) .mp_5x1,
+	body:not(.pageeditor) .mp_6x1,
+	body:not(.pageeditor) .mp_7x1,
+	body:not(.pageeditor) .mp_8x1,
+	body:not(.pageeditor) .mp_9x1,
+	body:not(.pageeditor) .mp_10x1 {
+		left: 0px;
+	}
 
-    body:not(.pageeditor) .mp_1x2,
-    body:not(.pageeditor) .mp_2x2,
-    body:not(.pageeditor) .mp_3x2,
-    body:not(.pageeditor) .mp_4x2,
-    body:not(.pageeditor) .mp_5x2,
-    body:not(.pageeditor) .mp_6x2,
-    body:not(.pageeditor) .mp_7x2,
-    body:not(.pageeditor) .mp_8x2,
-    body:not(.pageeditor) .mp_9x2,
-    body:not(.pageeditor) .mp_10x1 {
-        left: 51%;
-    }
-    /* ==========================================================================
+	body:not(.pageeditor) .mp_1x2,
+	body:not(.pageeditor) .mp_2x2,
+	body:not(.pageeditor) .mp_3x2,
+	body:not(.pageeditor) .mp_4x2,
+	body:not(.pageeditor) .mp_5x2,
+	body:not(.pageeditor) .mp_6x2,
+	body:not(.pageeditor) .mp_7x2,
+	body:not(.pageeditor) .mp_8x2,
+	body:not(.pageeditor) .mp_9x2,
+	body:not(.pageeditor) .mp_10x1 {
+		left: 51%;
+	}
+	/* ==========================================================================
  BOX IMAGES CSS CROP
  ========================================================================== */
-    body:not(.pageeditor) .w_3.hyperBox img,
-    body:not(.pageeditor) .w_3.bigHyperBox img,
-    body:not(.pageeditor) .w_4.hyperBox img,
-    body:not(.pageeditor) .w_4.bigHyperBox img {
-        display: block;
-        max-width: 100%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        position: relative;
-        /*left: -25%;*/
-    }
-    /*.w_4.hyperBox img,
+	body:not(.pageeditor) .w_3.hyperBox img,
+	body:not(.pageeditor) .w_3.bigHyperBox img,
+	body:not(.pageeditor) .w_4.hyperBox img,
+	body:not(.pageeditor) .w_4.bigHyperBox img {
+		display: block;
+		max-width: 100%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		position: relative;
+		/*left: -25%;*/
+	}
+	/*.w_4.hyperBox img,
     .w_4.bigHyperBox img {
         left: -50%;
     }*/
-    /* ==========================================================================
+	/* ==========================================================================
  BOX TYPE
  ========================================================================== */
-    body:not(.pageeditor) .hyperBox a .text,
-    body:not(.pageeditor) .hyperBox .text {
-        top: 10px;
-        left: 10px;
-    }
-    /*HTML BOX -- no change*/
-    body:not(.pageeditor) .html-box > * {
-        padding: 0 15px;
-    }
+	body:not(.pageeditor) .hyperBox a .text,
+	body:not(.pageeditor) .hyperBox .text {
+		top: 10px;
+		left: 10px;
+	}
+	/*HTML BOX -- no change*/
+	body:not(.pageeditor) .html-box > * {
+		padding: 0 15px;
+	}
 
-    /*HORIZONTAL CAROUSEL TEXT*/
-    body:not(.pageeditor) .horizontalCarouselText .text-slide a {
-        width: 100%;
-        height: 100%;
-    }
+	/*HORIZONTAL CAROUSEL TEXT*/
+	body:not(.pageeditor) .horizontalCarouselText .text-slide a {
+		width: 100%;
+		height: 100%;
+	}
 
-    body:not(.pageeditor) .text-slide .image-contener {
-        float: right;
-        height: 100%;
-        width: 49%;
-    }
+	body:not(.pageeditor) .text-slide .image-contener {
+		float: right;
+		height: 100%;
+		width: 49%;
+	}
 
-    body:not(.pageeditor) .text-slide .text h2 {
-        padding: 15px 15px 0 15px;
-    }
+	body:not(.pageeditor) .text-slide .text h2 {
+		padding: 15px 15px 0 15px;
+	}
 
-    body:not(.pageeditor) {
-        .text-slide .text p {
-            padding: 0 15px;
-        }
-    }
+	body:not(.pageeditor) {
+		.text-slide .text p {
+			padding: 0 15px;
+		}
+	}
 
-    body:not(.pageeditor) .h_1.horizontalCarouselText .text-slide a img,
-    body:not(.pageeditor) .h_2.horizontalCarouselText .text-slide a img,
-    body:not(.pageeditor) .h_3.horizontalCarouselText .text-slide a img,
-    body:not(.pageeditor) .h_4.horizontalCarouselText .text-slide a img,
-    body:not(.pageeditor) .h_1.horizontalCarouselText .text-slide>li img,
-    body:not(.pageeditor) .h_2.horizontalCarouselText .text-slide>li img,
-    body:not(.pageeditor) .h_3.horizontalCarouselText .text-slide>li img,
-    body:not(.pageeditor) .h_4.horizontalCarouselText .text-slide>li img {
-        height: 100%;
-    }
+	body:not(.pageeditor) .h_1.horizontalCarouselText .text-slide a img,
+	body:not(.pageeditor) .h_2.horizontalCarouselText .text-slide a img,
+	body:not(.pageeditor) .h_3.horizontalCarouselText .text-slide a img,
+	body:not(.pageeditor) .h_4.horizontalCarouselText .text-slide a img,
+	body:not(.pageeditor) .h_1.horizontalCarouselText .text-slide > li img,
+	body:not(.pageeditor) .h_2.horizontalCarouselText .text-slide > li img,
+	body:not(.pageeditor) .h_3.horizontalCarouselText .text-slide > li img,
+	body:not(.pageeditor) .h_4.horizontalCarouselText .text-slide > li img {
+		height: 100%;
+	}
 
-    body:not(.pageeditor) .w_2.horizontalCarouselText .text-slide a img,
-    body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide a img,
-    body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide a img,
-    body:not(.pageeditor) .w_2.horizontalCarouselText .text-slide>li img,
-    body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide>li img,
-    body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide>li img {
-        width: 100%;
-    }
+	body:not(.pageeditor) .w_2.horizontalCarouselText .text-slide a img,
+	body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide a img,
+	body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide a img,
+	body:not(.pageeditor) .w_2.horizontalCarouselText .text-slide > li img,
+	body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide > li img,
+	body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide > li img {
+		width: 100%;
+	}
 
-    body:not(.pageeditor) .h_1.horizontalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .h_2.horizontalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .h_3.horizontalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .h_4.horizontalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .h_1.horizontalCarouselText .text-slide>li .text,
-    body:not(.pageeditor) .h_2.horizontalCarouselText .text-slide>li .text,
-    body:not(.pageeditor) .h_3.horizontalCarouselText .text-slide>li .text,
-    body:not(.pageeditor) .h_4.horizontalCarouselText .text-slide>li .text {
-        height: 100%;
-    }
+	body:not(.pageeditor) .h_1.horizontalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .h_2.horizontalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .h_3.horizontalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .h_4.horizontalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .h_1.horizontalCarouselText .text-slide > li .text,
+	body:not(.pageeditor) .h_2.horizontalCarouselText .text-slide > li .text,
+	body:not(.pageeditor) .h_3.horizontalCarouselText .text-slide > li .text,
+	body:not(.pageeditor) .h_4.horizontalCarouselText .text-slide > li .text {
+		height: 100%;
+	}
 
-    body:not(.pageeditor) .w_1.smallCarousel .small-slide > li .text,
-    body:not(.pageeditor) .w_2.horizontalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .w_2.horizontalCarouselText .text-slide>li .text,
-    body:not(.pageeditor) .w_2.smallCarousel .small-slide > li .text,
-    body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide>li .text,
-    body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide>li .text {
-        width: 51%;
-        padding: 0;
-    }
+	body:not(.pageeditor) .w_1.smallCarousel .small-slide > li .text,
+	body:not(.pageeditor) .w_2.horizontalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .w_2.horizontalCarouselText .text-slide > li .text,
+	body:not(.pageeditor) .w_2.smallCarousel .small-slide > li .text,
+	body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide > li .text,
+	body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide > li .text {
+		width: 51%;
+		padding: 0;
+	}
 
-    /*HORIZONTAL CAROUSEL CROP*/
-    body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide a img,
-    body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide a img,
-    body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide>li img,
-    body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide>li img {
-        min-width: 100%;
-        min-height: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
-        position: relative;
-        left: -50%;
-    }
+	/*HORIZONTAL CAROUSEL CROP*/
+	body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide a img,
+	body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide a img,
+	body:not(.pageeditor) .w_3.horizontalCarouselText .text-slide > li img,
+	body:not(.pageeditor) .w_4.horizontalCarouselText .text-slide > li img {
+		min-width: 100%;
+		min-height: 100%;
+		max-height: 100%;
+		width: auto;
+		height: auto;
+		position: relative;
+		left: -50%;
+	}
 
-    body:not(.pageeditor) {
-        .image-contener {
-            overflow: hidden;
-        }
-    }
+	body:not(.pageeditor) {
+		.image-contener {
+			overflow: hidden;
+		}
+	}
 
-    /*VERTICAL CAROUSEL TEXT*/
-    body:not(.pageeditor) .verticalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .verticalCarouselText .text-slide>li .text {
-        padding: 0;
-    }
+	/*VERTICAL CAROUSEL TEXT*/
+	body:not(.pageeditor) .verticalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .verticalCarouselText .text-slide > li .text {
+		padding: 0;
+	}
 
-    body:not(.pageeditor) .other-position.verticalCarouselText .text-slide a img,
-    body:not(.pageeditor) .other-position.verticalCarouselText .text-slide>li img {
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-    }
+	body:not(.pageeditor) .other-position.verticalCarouselText .text-slide a img,
+	body:not(.pageeditor)
+		.other-position.verticalCarouselText
+		.text-slide
+		> li
+		img {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+	}
 
-    body:not(.pageeditor) .h_2.verticalCarouselText .text-slide a img,
-    body:not(.pageeditor) .h_3.verticalCarouselText .text-slide a img,
-    body:not(.pageeditor) .h_4.verticalCarouselText .text-slide a img,
-    body:not(.pageeditor) .h_2.verticalCarouselText .text-slide>li img,
-    body:not(.pageeditor) .h_3.verticalCarouselText .text-slide>li img,
-    body:not(.pageeditor) .h_4.verticalCarouselText .text-slide>li img {
-        height: 49%;
-    }
+	body:not(.pageeditor) .h_2.verticalCarouselText .text-slide a img,
+	body:not(.pageeditor) .h_3.verticalCarouselText .text-slide a img,
+	body:not(.pageeditor) .h_4.verticalCarouselText .text-slide a img,
+	body:not(.pageeditor) .h_2.verticalCarouselText .text-slide > li img,
+	body:not(.pageeditor) .h_3.verticalCarouselText .text-slide > li img,
+	body:not(.pageeditor) .h_4.verticalCarouselText .text-slide > li img {
+		height: 49%;
+	}
 
-    body:not(.pageeditor) .w_1.verticalCarouselText .text-slide a img,
-    body:not(.pageeditor) .w_2.verticalCarouselText .text-slide a img,
-    body:not(.pageeditor) .w_3.verticalCarouselText .text-slide a img,
-    body:not(.pageeditor) .w_4.verticalCarouselText .text-slide a img,
-    body:not(.pageeditor) .w_1.verticalCarouselText .text-slide>li img,
-    body:not(.pageeditor) .w_2.verticalCarouselText .text-slide>li img,
-    body:not(.pageeditor) .w_3.verticalCarouselText .text-slide>li img,
-    body:not(.pageeditor) .w_4.verticalCarouselText .text-slide>li img {
-        width: 100%;
-        display: block;
-    }
+	body:not(.pageeditor) .w_1.verticalCarouselText .text-slide a img,
+	body:not(.pageeditor) .w_2.verticalCarouselText .text-slide a img,
+	body:not(.pageeditor) .w_3.verticalCarouselText .text-slide a img,
+	body:not(.pageeditor) .w_4.verticalCarouselText .text-slide a img,
+	body:not(.pageeditor) .w_1.verticalCarouselText .text-slide > li img,
+	body:not(.pageeditor) .w_2.verticalCarouselText .text-slide > li img,
+	body:not(.pageeditor) .w_3.verticalCarouselText .text-slide > li img,
+	body:not(.pageeditor) .w_4.verticalCarouselText .text-slide > li img {
+		width: 100%;
+		display: block;
+	}
 
-    body:not(.pageeditor) .h_2.verticalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .h_3.verticalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .h_4.verticalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .h_2.verticalCarouselText .text-slide>li .text,
-    body:not(.pageeditor) .h_3.verticalCarouselText .text-slide>li .text,
-    body:not(.pageeditor) .h_4.verticalCarouselText .text-slide>li .text {
-        height: 51%;
-    }
+	body:not(.pageeditor) .h_2.verticalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .h_3.verticalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .h_4.verticalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .h_2.verticalCarouselText .text-slide > li .text,
+	body:not(.pageeditor) .h_3.verticalCarouselText .text-slide > li .text,
+	body:not(.pageeditor) .h_4.verticalCarouselText .text-slide > li .text {
+		height: 51%;
+	}
 
-    body:not(.pageeditor) .w_1.verticalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .w_2.verticalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .w_3.verticalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .w_4.verticalCarouselText .text-slide a .text,
-    body:not(.pageeditor) .w_1.verticalCarouselText .text-slide>li .text,
-    body:not(.pageeditor) .w_2.verticalCarouselText .text-slide>li .text,
-    body:not(.pageeditor) .w_3.verticalCarouselText .text-slide>li .text,
-    body:not(.pageeditor) .w_4.verticalCarouselText .text-slide>li .text {
-        width: 100%;
-    }
+	body:not(.pageeditor) .w_1.verticalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .w_2.verticalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .w_3.verticalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .w_4.verticalCarouselText .text-slide a .text,
+	body:not(.pageeditor) .w_1.verticalCarouselText .text-slide > li .text,
+	body:not(.pageeditor) .w_2.verticalCarouselText .text-slide > li .text,
+	body:not(.pageeditor) .w_3.verticalCarouselText .text-slide > li .text,
+	body:not(.pageeditor) .w_4.verticalCarouselText .text-slide > li .text {
+		width: 100%;
+	}
 
-    /*SMALL CAROUSEL*/
-    body:not(.pageeditor) .small-slide a .text {
-        padding: 0;
-    }
+	/*SMALL CAROUSEL*/
+	body:not(.pageeditor) .small-slide a .text {
+		padding: 0;
+	}
 
-    body:not(.pageeditor) .small-slide .text p {
-        padding: 0 15px;
-    }
+	body:not(.pageeditor) .small-slide .text p {
+		padding: 0 15px;
+	}
 
-    body:not(.pageeditor) .small-slide .text h2 {
-        padding: 15px 15px 0 15px;
-    }
+	body:not(.pageeditor) .small-slide .text h2 {
+		padding: 15px 15px 0 15px;
+	}
 
-    body:not(.pageeditor) .h_1.smallCarousel .small-slide a .text,
-    body:not(.pageeditor) .h_2.smallCarousel .small-slide a .text,
-    body:not(.pageeditor) .h_3.smallCarousel .small-slide a .text,
-    body:not(.pageeditor) .h_4.smallCarousel .small-slide a .text {
-        height: 100%;
-    }
+	body:not(.pageeditor) .h_1.smallCarousel .small-slide a .text,
+	body:not(.pageeditor) .h_2.smallCarousel .small-slide a .text,
+	body:not(.pageeditor) .h_3.smallCarousel .small-slide a .text,
+	body:not(.pageeditor) .h_4.smallCarousel .small-slide a .text {
+		height: 100%;
+	}
 
-    body:not(.pageeditor) .w_1.smallCarousel .small-slide a .text,
-    body:not(.pageeditor) .w_2.smallCarousel .small-slide a .text,
-    body:not(.pageeditor) .w_3.smallCarousel .small-slide a .text,
-    body:not(.pageeditor) .w_4.smallCarousel .small-slide a .text {
-        width: 100%;
-    }
+	body:not(.pageeditor) .w_1.smallCarousel .small-slide a .text,
+	body:not(.pageeditor) .w_2.smallCarousel .small-slide a .text,
+	body:not(.pageeditor) .w_3.smallCarousel .small-slide a .text,
+	body:not(.pageeditor) .w_4.smallCarousel .small-slide a .text {
+		width: 100%;
+	}
 
-    /*BIG CAROUSEL*/
-    body:not(.pageeditor) .big-slide .slide a {
-        height: 100%;
-    }
-    body:not(.pageeditor) .big-slide .slide a> img,
-    body:not(.pageeditor) .big-slide .slide img, 
-    .hyperBox.w_3 a img, .hyperBox.w_3 .boxBg img, 
-    .hyperBox.w_4 a img, .hyperBox.w_4 .boxBg img {
-        /*height: 55%!important;*/
-        height: 100%!important;
-        display: block;
-    }
+	/*BIG CAROUSEL*/
+	body:not(.pageeditor) .big-slide .slide a {
+		height: 100%;
+	}
+	body:not(.pageeditor) .big-slide .slide a > img,
+	body:not(.pageeditor) .big-slide .slide img,
+	.hyperBox.w_3 a img,
+	.hyperBox.w_3 .boxBg img,
+	.hyperBox.w_4 a img,
+	.hyperBox.w_4 .boxBg img {
+		/*height: 55%!important;*/
+		height: 100% !important;
+		display: block;
+	}
 
-    .w_3.bigCarousel, 
-    .w_3.bigCarousel .big-slide .slide, 
-    .w_4.bigCarousel, 
-    .w_4.bigCarousel .big-slide .slide, 
-    .w_3.hyperBox .boxBg img, 
-    .w_4.hyperBox .boxBg img, 
-    .hyperBox.w_3 a, .hyperBox.w_3 .boxBg, 
-    .hyperBox.w_4 a, .hyperBox.w_4 .boxBg {
-        height: auto !important;
-    }
-    
-    body:not(.pageeditor) .big-slide .frame {
-        /*position: relative;*/
-        position: absolute;
-        /*width: 100%;
+	.w_3.bigCarousel,
+	.w_3.bigCarousel .big-slide .slide,
+	.w_4.bigCarousel,
+	.w_4.bigCarousel .big-slide .slide,
+	.w_3.hyperBox .boxBg img,
+	.w_4.hyperBox .boxBg img,
+	.hyperBox.w_3 a,
+	.hyperBox.w_3 .boxBg,
+	.hyperBox.w_4 a,
+	.hyperBox.w_4 .boxBg {
+		height: auto !important;
+	}
+
+	body:not(.pageeditor) .big-slide .frame {
+		/*position: relative;*/
+		position: absolute;
+		/*width: 100%;
         margin: 0;
         top:0px;
         left:0px;
         height: 45%;*/
-    }
+	}
 
-        body:not(.pageeditor) .big-slide .frame h2 {
-            padding-top: 5px;
-        }
+	body:not(.pageeditor) .big-slide .frame h2 {
+		padding-top: 5px;
+	}
 
-        body:not(.pageeditor) .big-slide .frame p {
-            padding-bottom: 0px;
-        }
+	body:not(.pageeditor) .big-slide .frame p {
+		padding-bottom: 0px;
+	}
 
-        body:not(.pageeditor) .big-slide .frame .link-contener {
-            float: left;
-            margin-left: 15px;
-        }
+	body:not(.pageeditor) .big-slide .frame .link-contener {
+		float: left;
+		margin-left: 15px;
+	}
 
-    body:not(.pageeditor) .bigCarousel .pagination {
-        left: 50%;
-        right: auto;
-        padding: 0;
-        text-align: center;
-        -ms-transform: translate(-50%, 0px);
-        -webkit-transform: translate(-50%, 0px);
-        transform: translate(-50%, 0px);
-        width: 100%;
+	body:not(.pageeditor) .bigCarousel .pagination {
+		left: 50%;
+		right: auto;
+		padding: 0;
+		text-align: center;
+		-ms-transform: translate(-50%, 0px);
+		-webkit-transform: translate(-50%, 0px);
+		transform: translate(-50%, 0px);
+		width: 100%;
 
-        button {
-            display: inline-block;
-            float: none;
-            margin: 10px 1px;
-        }
-    }
+		button {
+			display: inline-block;
+			float: none;
+			margin: 10px 1px;
+		}
+	}
 
-    body:not(.pageeditor) {
-        .NewCategoryBoxStyle {
-            width: 50%;
-        }
-    }
-    body:not(.pageeditor) #mainform .boxes-bottom.boxes-bottom-width .boxes-bottom-pos {
-        width: 100%!important;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        height: 100% !important;
-        justify-content: space-between !important;
-        position: relative !important;
-    }
-    #mainform .boxes-bottom.boxes-bottom-width {
-        background: none!important;
-        .boxes-bottom-pos {
-            > div {
-                left: auto !important;
-                margin: 10px 0 !important;
-                order: 2;
-                position: relative !important;
-                right: auto !important;
-                top: auto !important;
-            }
-            .hyperBox.w_1 {
-                width: 48% !important;
-            }
-        }
-    }
+	body:not(.pageeditor) {
+		.NewCategoryBoxStyle {
+			width: 50%;
+		}
+	}
+	body:not(.pageeditor)
+		#mainform
+		.boxes-bottom.boxes-bottom-width
+		.boxes-bottom-pos {
+		width: 100% !important;
+		display: flex !important;
+		flex-wrap: wrap !important;
+		height: 100% !important;
+		justify-content: space-between !important;
+		position: relative !important;
+	}
+	#mainform .boxes-bottom.boxes-bottom-width {
+		background: none !important;
+		.boxes-bottom-pos {
+			> div {
+				left: auto !important;
+				margin: 10px 0 !important;
+				order: 2;
+				position: relative !important;
+				right: auto !important;
+				top: auto !important;
+			}
+			.hyperBox.w_1 {
+				width: 48% !important;
+			}
+		}
+	}
 }
 
 /* Mobile - special media */
 @media (max-width: 460px) {
-    body:not(.pageeditor) .email-updates > * {
-        padding: 0 2%;
-    }
+	body:not(.pageeditor) .email-updates > * {
+		padding: 0 2%;
+	}
 
-    body:not(.pageeditor) .email-updates h2 {
-        padding: 5px 2%;
-    }
+	body:not(.pageeditor) .email-updates h2 {
+		padding: 5px 2%;
+	}
 
-    body:not(.pageeditor) .email-updates .email-updates-form {
-        padding-bottom: 5px;
-        padding-top: 5px;
-    }
+	body:not(.pageeditor) .email-updates .email-updates-form {
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
 
-    body:not(.pageeditor) .email-updates .email-updates-form input[type="text"] {
-        margin-bottom: 5px;
-    }
+	body:not(.pageeditor) .email-updates .email-updates-form input[type='text'] {
+		margin-bottom: 5px;
+	}
 
-    body:not(.pageeditor) .h_2.email-updates .email-updates-form .whoiam {
-        margin-bottom: 5px;
-    }
+	body:not(.pageeditor) .h_2.email-updates .email-updates-form .whoiam {
+		margin-bottom: 5px;
+	}
 
-    body:not(.pageeditor) {
-        .NewCategoryBoxStyle {
-            .NewCategoryBoxEl {
-                > div {
-                    height: 215px;
-                }
-            }
-        }
-    }
+	body:not(.pageeditor) {
+		.NewCategoryBoxStyle {
+			.NewCategoryBoxEl {
+				> div {
+					height: 215px;
+				}
+			}
+		}
+	}
 
-    body:not(.pageeditor) .hyperBox .text {
-        line-height: 1.4;
-        word-break: normal;
-    }
+	body:not(.pageeditor) .hyperBox .text {
+		line-height: 1.4;
+		word-break: normal;
+	}
 }
 
 @media (max-width: 360px) {
-    body:not(.pageeditor) .email-updates .email-updates-form {
-        padding-top: 0px;
-    }
+	body:not(.pageeditor) .email-updates .email-updates-form {
+		padding-top: 0px;
+	}
 
-    body:not(.pageeditor) .email-updates .email-updates-form input[type="text"] {
-        margin-bottom: 3px;
-    }
+	body:not(.pageeditor) .email-updates .email-updates-form input[type='text'] {
+		margin-bottom: 3px;
+	}
 
-    body:not(.pageeditor) {
-        .NewCategoryBoxStyle {
-            .NewCategoryBoxEl {
-                > div {
-                    height: 180px;
-                }
-            }
-        }
-    }
+	body:not(.pageeditor) {
+		.NewCategoryBoxStyle {
+			.NewCategoryBoxEl {
+				> div {
+					height: 180px;
+				}
+			}
+		}
+	}
 
-    body:not(.pageeditor) .bigCarousel .pagination {
-        button {
-            margin: 10px 0;
-        }
-    }
+	body:not(.pageeditor) .bigCarousel .pagination {
+		button {
+			margin: 10px 0;
+		}
+	}
 }
 
 /* Style for IE8 */
-.lt-ie9 .w_1, 
-.lt-ie9 .w_1.hyperBox img, 
-.lt-ie9 .w_1.bigHyperBox img, 
-.lt-ie9 .w_1.smallCarousel .small-slide a.slide, 
-.lt-ie9 .w_1.verticalCarouselText .text-slide a.slide, 
+.lt-ie9 .w_1,
+.lt-ie9 .w_1.hyperBox img,
+.lt-ie9 .w_1.bigHyperBox img,
+.lt-ie9 .w_1.smallCarousel .small-slide a.slide,
+.lt-ie9 .w_1.verticalCarouselText .text-slide a.slide,
 .lt-ie9 .w_1.verticalCarouselText .text-slide > li {
-    max-width: 270px;
+	max-width: 270px;
 	width: 100%;
 }
 
-.lt-ie9 .h_1, 
-.lt-ie9 .h_1.hyperBox img, 
-.lt-ie9 .h_1.bigHyperBox img, 
-.lt-ie9 .h_1.smallCarousel .small-slide a.slide, 
-.lt-ie9 .h_1.horizontalCarouselText .text-slide a.slide, 
-.lt-ie9 .h_1.horizontalCarouselText .text-slide > li, 
-.lt-ie9 .h_1.bigCarousel .big-slide .slide, 
+.lt-ie9 .h_1,
+.lt-ie9 .h_1.hyperBox img,
+.lt-ie9 .h_1.bigHyperBox img,
+.lt-ie9 .h_1.smallCarousel .small-slide a.slide,
+.lt-ie9 .h_1.horizontalCarouselText .text-slide a.slide,
+.lt-ie9 .h_1.horizontalCarouselText .text-slide > li,
+.lt-ie9 .h_1.bigCarousel .big-slide .slide,
 .lt-ie9 .h_1.bigCarousel .big-slide img {
 	height: 215px;
 }
 
-.lt-ie9, 
+.lt-ie9,
 .lt-ie8 {
-    .h_1 {
-        //height : 100%;
-        max-height : 215px;
-    }
+	.h_1 {
+		//height : 100%;
+		max-height: 215px;
+	}
 }
 
-.lt-ie9 .h_2, 
-.lt-ie9 .h_2.hyperBox img, 
-.lt-ie9 .h_2.bigHyperBox img, 
-.lt-ie9 .h_2.verticalCarouselText .text-slide a.slide, 
-.lt-ie9 .h_2.verticalCarouselText .text-slide > li, 
-.lt-ie9 .h_2.smallCarousel .small-slide a.slide, 
-.lt-ie9 .h_2.horizontalCarouselText .text-slide a.slide, 
-.lt-ie9 .h_2.horizontalCarouselText .text-slide > li, 
-.lt-ie9 .h_2.bigCarousel .big-slide .slide, 
+.lt-ie9 .h_2,
+.lt-ie9 .h_2.hyperBox img,
+.lt-ie9 .h_2.bigHyperBox img,
+.lt-ie9 .h_2.verticalCarouselText .text-slide a.slide,
+.lt-ie9 .h_2.verticalCarouselText .text-slide > li,
+.lt-ie9 .h_2.smallCarousel .small-slide a.slide,
+.lt-ie9 .h_2.horizontalCarouselText .text-slide a.slide,
+.lt-ie9 .h_2.horizontalCarouselText .text-slide > li,
+.lt-ie9 .h_2.bigCarousel .big-slide .slide,
 .lt-ie9 .h_2.bigCarousel .big-slide img {
 	height: 440px;
 }
 
-.lt-ie9 .w_2, 
-.lt-ie9 .w_2.hyperBox img, 
-.lt-ie9 .w_2.bigHyperBox img, 
-.lt-ie9 .w_2.horizontalCarouselText .text-slide a.slide, 
-.lt-ie9 .w_2.horizontalCarouselText .text-slide > li, 
-.lt-ie9 .w_2.smallCarousel .small-slide a.slide, 
-.lt-ie9 .w_2.bigCarousel .big-slide .slide, 
-.lt-ie9 .w_2.bigCarousel .big-slide img, 
-.lt-ie9 .w_2.verticalCarouselText .text-slide a.slide, 
+.lt-ie9 .w_2,
+.lt-ie9 .w_2.hyperBox img,
+.lt-ie9 .w_2.bigHyperBox img,
+.lt-ie9 .w_2.horizontalCarouselText .text-slide a.slide,
+.lt-ie9 .w_2.horizontalCarouselText .text-slide > li,
+.lt-ie9 .w_2.smallCarousel .small-slide a.slide,
+.lt-ie9 .w_2.bigCarousel .big-slide .slide,
+.lt-ie9 .w_2.bigCarousel .big-slide img,
+.lt-ie9 .w_2.verticalCarouselText .text-slide a.slide,
 .lt-ie9 .w_2.verticalCarouselText .text-slide > li {
 	max-width: 555px;
 	width: 100%;
 }
 
-.lt-ie9 .w_3, 
-.lt-ie9 .w_3.hyperBox img, 
-.lt-ie9 .w_3.bigHyperBox img, 
-.lt-ie9 .w_3.horizontalCarouselText .text-slide a.slide, 
-.lt-ie9 .w_3.horizontalCarouselText .text-slide > li, 
-.lt-ie9 .w_3.smallCarousel .small-slide a.slide, 
-.lt-ie9 .w_3.bigCarousel .big-slide .slide, 
-.lt-ie9 .w_3.bigCarousel .big-slide img, 
-.lt-ie9 .w_3.verticalCarouselText .text-slide a.slide, 
+.lt-ie9 .w_3,
+.lt-ie9 .w_3.hyperBox img,
+.lt-ie9 .w_3.bigHyperBox img,
+.lt-ie9 .w_3.horizontalCarouselText .text-slide a.slide,
+.lt-ie9 .w_3.horizontalCarouselText .text-slide > li,
+.lt-ie9 .w_3.smallCarousel .small-slide a.slide,
+.lt-ie9 .w_3.bigCarousel .big-slide .slide,
+.lt-ie9 .w_3.bigCarousel .big-slide img,
+.lt-ie9 .w_3.verticalCarouselText .text-slide a.slide,
 .lt-ie9 .w_3.verticalCarouselText .text-slide > li {
-    max-width: 840px;
+	max-width: 840px;
 	width: 100%;
 }
 
-.lt-ie9 .w_4, 
-.lt-ie9 .w_4.hyperBox img, 
-.lt-ie9 .w_4.bigHyperBox img, 
-.lt-ie9 .w_4.horizontalCarouselText .text-slide a.slide, 
-.lt-ie9 .w_4.horizontalCarouselText .text-slide > li, 
-.lt-ie9 .w_4.smallCarousel .small-slide a.slide, 
-.lt-ie9 .w_4.bigCarousel .big-slide .slide, 
-.lt-ie9 .w_4.bigCarousel .big-slide img, 
-.lt-ie9 .w_4.verticalCarouselText .text-slide a.slide, 
+.lt-ie9 .w_4,
+.lt-ie9 .w_4.hyperBox img,
+.lt-ie9 .w_4.bigHyperBox img,
+.lt-ie9 .w_4.horizontalCarouselText .text-slide a.slide,
+.lt-ie9 .w_4.horizontalCarouselText .text-slide > li,
+.lt-ie9 .w_4.smallCarousel .small-slide a.slide,
+.lt-ie9 .w_4.bigCarousel .big-slide .slide,
+.lt-ie9 .w_4.bigCarousel .big-slide img,
+.lt-ie9 .w_4.verticalCarouselText .text-slide a.slide,
 .lt-ie9 .w_4.verticalCarouselText .text-slide > li {
 	max-width: 1130px;
 	width: 100%;
 }
 
-.lt-ie9 .p_2x4, 
+.lt-ie9 .p_2x4,
 .lt-ie9 .p_1x4 {
-    left: 860px;
-    top: 235px;
+	left: 860px;
+	top: 235px;
 }
 
 .lt-ie9 .p_1x4 {
-    top: 10px;
+	top: 10px;
 }
 
-.lt-ie9 .p_3x1, 
+.lt-ie9 .p_3x1,
 .lt-ie9 .p_3x3 {
-    left: 0;
-    top: 460px;
+	left: 0;
+	top: 460px;
 }
 
 .lt-ie9 .p_3x3 {
 	left: 570px;
 }
 
-.lt-ie9 .p_1x1, 
-.lt-ie9 .p_1x3, 
-.lt-ie9 .p_2x1, 
-.lt-ie9 .p_3x1, 
+.lt-ie9 .p_1x1,
+.lt-ie9 .p_1x3,
+.lt-ie9 .p_2x1,
+.lt-ie9 .p_3x1,
 .lt-ie9 .p_4x1 {
 	left: 0;
 	top: 10px;
 }
 
-.lt-ie9 .p_2x1, 
-.lt-ie9 .p_2x2, 
+.lt-ie9 .p_2x1,
+.lt-ie9 .p_2x2,
 .lt-ie9 .p_2x3 {
-    top: 235px;
+	top: 235px;
 }
 
 .lt-ie9 .p_2x2 {
-    left: 285px;
+	left: 285px;
 }
 
 .lt-ie9 .p_3x1 {
-    top: 460px;
+	top: 460px;
 }
 
-.lt-ie9 .p_3x2, 
-.lt-ie9 .p_3x3, 
-.lt-ie9 .p_3x4, 
+.lt-ie9 .p_3x2,
+.lt-ie9 .p_3x3,
+.lt-ie9 .p_3x4,
 .lt-ie9 .p_4x2 {
-    left: 285px;
-    top: 460px;
+	left: 285px;
+	top: 460px;
 }
 
 .lt-ie9 .p_1x2 {
-    left: 285px;
-    top: 10px;
+	left: 285px;
+	top: 10px;
 }
 
-.lt-ie9 .p_1x3, 
-.lt-ie9 .p_2x3, 
-.lt-ie9 .p_3x3, 
+.lt-ie9 .p_1x3,
+.lt-ie9 .p_2x3,
+.lt-ie9 .p_3x3,
 .lt-ie9 .p_4x3 {
-    left: 570px;
+	left: 570px;
 }
 
 .lt-ie9 .p_3x4 {
-    left: 855px;
+	left: 855px;
 }
 
-.lt-ie9 .p_4x1, 
-.lt-ie9 .p_4x2, 
-.lt-ie9 .p_4x3, 
+.lt-ie9 .p_4x1,
+.lt-ie9 .p_4x2,
+.lt-ie9 .p_4x3,
 .lt-ie9 .p_4x4 {
-    top: 685px;
+	top: 685px;
 }
 
 .lt-ie9 .p_4x4 {
-    left: 855px;
+	left: 855px;
 }
 
 .lt-ie9 .rows1 {
-    height: 215px;
+	height: 215px;
 }
 
 .lt-ie9 .rows2 {
-    height: 440px;
+	height: 440px;
 }
 
 .lt-ie9 .rows3 {
@@ -2817,13 +2923,13 @@ body:not(.pageeditor) .hyperBox .text {
 }
 
 .lt-ie9 .rows4 {
-    height: 890px;
+	height: 890px;
 }
 
-.lt-ie9 .bigCarousel.h_3, 
-.lt-ie9 .bigCarousel.h_3 .big-slide .slide, 
-.lt-ie9 .bigCarousel.h_3 .big-slide img, 
-.lt-ie9 .bigHyperBox.h_3, 
+.lt-ie9 .bigCarousel.h_3,
+.lt-ie9 .bigCarousel.h_3 .big-slide .slide,
+.lt-ie9 .bigCarousel.h_3 .big-slide img,
+.lt-ie9 .bigHyperBox.h_3,
 .lt-ie9 .bigHyperBox.h_3 img {
-    height: 665px;
+	height: 665px;
 }
