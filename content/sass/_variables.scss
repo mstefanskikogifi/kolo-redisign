@@ -1,0 +1,61 @@
+// Colors
+// Greys
+$colorGrey100: '#000000';
+$colorGrey90: '#333333';
+$colorGrey80: '#4C4C4C';
+$colorGrey70: '#666666';
+$colorGrey60: '#7F7F7F';
+$colorGrey50: '#999999';
+$colorGrey40: '#B2B2B2';
+$colorGrey30: '#CCCCCC';
+$colorGrey20: '#E5E5E5';
+$colorGrey10: '#F2F2F2';
+$colorGrey0: '#FFFFFF';
+// Accents
+$colorAccent1: '#3CC0D0';
+$colorAccent2: '#FF9324';
+$colorAccent3: '#526676';
+$colorAccent4: '#CFDBE1';
+// Additional
+$colorBrown: '#D1CABB';
+$colorBrownLight: '#F3ECDD';
+$colorRed: '#ECC1B4';
+$colorRedLight: '#F9D6CB';
+$colorGreen: '#B7D2A2';
+$colorGreenLight: '#DAF0C9';
+$colorPurple: '#BBABC2';
+$colorPurpleLight: '#DBCFE0';
+$colorBlue: '#ADD5E9';
+$colorBlueLight: '#DAEFFA';
+
+// Breakpoints
+$breakpoints: (
+	'mobile': (
+		max-width: 767px,
+	),
+	'tablet': (
+		min-width: 768px,
+	),
+	'desk': (
+		min-width: 1440px,
+	),
+) !default;
+
+/// Mixin to manage responsive breakpoints
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin ss($breakpoint) {
+	// If the key exists in the map
+	@if map-has-key($breakpoints, $breakpoint) {
+		// Prints a media query based on the value
+		@media #{inspect(map-get($breakpoints, $breakpoint))} {
+			@content;
+		}
+	}
+
+	// If the key doesn't exist in the map
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+	}
+}
