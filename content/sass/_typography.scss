@@ -1,59 +1,145 @@
 h1 {
 	font-size: 22px;
+	line-height: 1.3em;
 	@include ss('tablet') {
 		font-size: 28px;
 	}
 	@include ss('desk') {
 		font-size: 36px;
+		letter-spacing: -0.2em;
 	}
 }
 
 h2 {
 	font-size: 22px;
+	line-height: 1.3em;
 	@include ss('tablet') {
 		font-size: 25px;
 	}
 	@include ss('desk') {
 		font-size: 32px;
+		letter-spacing: -0.2em;
 	}
 }
 
 h3 {
 	font-size: 20px;
+	line-height: 1.3em;
 	@include ss('tablet') {
 		font-size: 22px;
 	}
 	@include ss('desk') {
 		font-size: 26px;
+		letter-spacing: -0.1em;
 	}
 }
 
 h4 {
 	font-size: 18px;
+	line-height: 1.3em;
 	@include ss('tablet') {
 		font-size: 20px;
 	}
 	@include ss('desk') {
 		font-size: 22px;
+		letter-spacing: -0.1em;
 	}
 }
 
 h5 {
 	font-size: 16px;
+	line-height: 1.3em;
 	@include ss('tablet') {
 		font-size: 18px;
 	}
 	@include ss('desk') {
 		font-size: 19px;
+		letter-spacing: -0.1em;
 	}
 }
 
 h6 {
 	font-size: 14px;
+	line-height: 1.3em;
 	@include ss('tablet') {
 		font-size: 15px;
 	}
 	@include ss('desk') {
 		font-size: 16px;
+	}
+}
+
+.paragraph {
+	font-weight: 400;
+	line-height: 1.45em;
+	&-small {
+		font-size: 12px;
+		@include ss('tablet') {
+			font-size: 12px;
+		}
+		@include ss('desk') {
+			font-size: 13px;
+		}
+	}
+	&-reg {
+		font-size: 14px;
+		@include ss('tablet') {
+			font-size: 14px;
+		}
+		@include ss('desk') {
+			font-size: 15px;
+		}
+	}
+	&-big {
+		font-size: 15px;
+		@include ss('tablet') {
+			font-size: 16px;
+		}
+		@include ss('desk') {
+			font-size: 17px;
+		}
+	}
+	& > a {
+		font-weight: 600;
+		text-decoration: underline;
+	}
+}
+
+ul,
+ol {
+	li {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.45em;
+		@include ss('tablet') {
+			font-size: 14px;
+		}
+		@include ss('desk') {
+			font-size: 15px;
+		}
+	}
+}
+
+table {
+	th {
+		font-size: 14px;
+		font-weight: 400;
+		background-color: $colorGrey100;
+		color: $colorGrey0;
+		letter-spacing: 0.01em;
+		line-height: 1.5em;
+		@include ss('desk') {
+			font-size: 15px;
+		}
+	}
+	td {
+		font-size: 14px;
+		font-weight: 400;
+		color: $colorGrey100;
+		letter-spacing: 0.01em;
+		line-height: 1.5em;
+		@include ss('desk') {
+			font-size: 15px;
+		}
 	}
 }
