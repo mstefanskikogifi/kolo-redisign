@@ -14,27 +14,36 @@ input {
 		font-size: 16px;
 		color: $colorGrey100;
 		width: 100%;
+		line-height: 1em;
 		&::placeholder,
 		&:-moz-placeholder,
 		&:-ms-input-placeholder {
 			color: $colorGrey30;
-			font-size: 16px;
+			font-size: 10px;
 		}
 		transition: all 0.3s ease;
-		&:not(.disabled):hover {
+		&:not(:disabled):not(.error):hover {
 			border-color: $colorGrey80;
 		}
 		&:focus {
-			border-width: 2px;
 			border-color: $colorGrey100;
 			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 		}
+		&:disabled {
+			background-color: $colorGrey10;
+			border-color: $colorGrey10;
+		}
 		.error > &,
-		.error {
+		&.error {
 			border-color: $colorError;
 			border-width: 2px;
 			background-color: $colorErrorLight;
 			color: $colorError;
+			&::placeholder,
+			&:-moz-placeholder,
+			&:-ms-input-placeholder {
+				color: $colorError;
+			}
 		}
 		.disabled {
 			border-color: $colorGrey10;
