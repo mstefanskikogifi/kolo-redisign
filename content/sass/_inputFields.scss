@@ -1,3 +1,8 @@
+.input-wrapper {
+  padding: 26px 30px 30px;
+  width: 100%;
+}
+
 input {
   &[type="text"], &[type="password"], &[type="number"] {
     background: $colorGrey0;
@@ -6,6 +11,7 @@ input {
     border-radius: 5px;
     font-size: 16px;
     color: $colorGrey100;
+    width: 100%;
     &::placeholder,
     &:-moz-placeholder,
     &:-ms-input-placeholder {
@@ -19,7 +25,7 @@ input {
     &:focus {
       border-width: 2px;
       border-color: $colorGrey100;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     }
     .error > &, .error {
       border-color: $colorError;
@@ -30,6 +36,25 @@ input {
     .disabled {
       border-color: $colorGrey10;
       background-color: $colorGrey10;
+    }
+  }
+}
+
+.select {
+  & > select {
+    display: none;
+    visibility: hidden;
+  }
+  &-wrapper {
+    padding: 26px 30px 30px;
+    width: 100%;
+  }
+  &-element {
+    position: relative;
+    width: 100%;
+    
+    &:not(.disabled):hover {
+      border-color: $colorGrey80;
     }
   }
 }
