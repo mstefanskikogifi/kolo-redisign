@@ -1,0 +1,142 @@
+
+$checkbox-background: $colorGrey0;
+$checkbox-border: $colorGrey100;
+$checkbox-checked: $checkbox-border;
+$checkbox-background-checked: $colorGrey50;
+
+.radios,
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  //margin-bottom: 1rem;
+}
+
+@mixin vh() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+label {
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+
+  @include vh();
+  &:focus {
+    + label {
+      &:before {
+      }
+    }
+  }
+  + label {
+    position: relative;
+    //padding: 4px 6px 0 32px;
+    //padding: 0.5rem 0 0 2rem;
+    margin-bottom: 1rem;
+    user-select: none;
+    color: $checkbox-background;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      border: 1px solid $checkbox-border;
+      border-radius: 4px;
+      background: $checkbox-background;
+      text-align: center;
+      transition: background 200ms ease-out;
+    }
+    &:after {
+      content: "";
+      //background-color: $checkbox-background;
+      position: absolute;
+      // top: 0.45rem;
+      // left:  0.5rem;
+      // width: 1rem;
+      // height:  1rem;
+      transform: scale(0);
+      transition: transform 200ms ease-out;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  + label {
+    &:after {
+      background-color: transparent;
+      content: "";
+      display: block;
+      position: absolute;
+      //left: 0.65rem;
+      //top: 0.25rem;
+      // margin-left: 0;
+      // margin-top: 0;
+      width: 14px;
+      height: 24px;
+
+      opacity: 0.2;
+
+      border-bottom: 3px solid $checkbox-checked;
+      border-right: 3px solid $checkbox-checked;
+      transform: rotate(45deg);
+      transition: border-color 0.3s ease;
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        content: "";
+        //change checked background color
+        background: $checkbox-background-checked;
+      }
+
+      &:after {
+        content: "";
+        opacity: 1;
+        //border-bottom: 3px solid $checkbox-checked; change checked checkedbox color
+        //border-right: 3px solid $checkbox-checked; change checked checkedbox color
+      }
+    }
+  }
+}
+
+input[type="radio"] {
+  + label {
+    &:before,
+    &:after {
+      border-radius: 50%;
+    }
+    &:after {
+      //left: 0.35rem;
+      //top: 0.35rem;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        //background: $checkbox-background-checked;
+        animation: borderscale 300ms ease-in;
+      }
+      &:after {
+        background: $checkbox-checked;
+        transform: scale(1);
+      }
+    }
+  }
+}
