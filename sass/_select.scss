@@ -1,0 +1,58 @@
+.select {
+	& > select {
+		display: none;
+		visibility: hidden;
+	}
+	&-wrapper {
+		padding: 26px 30px 30px;
+		width: 100%;
+	}
+	&-element {
+		position: relative;
+		width: 100%;
+		font-size: 16px;
+		padding: 18px;
+		&:not(.disabled):hover {
+			border-color: $colorGrey80;
+			cursor: pointer;
+		}
+		&.selected {
+			border-width: 2px;
+			border-color: $colorGrey100;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		}
+	}
+	&-content {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		margin-top: -5px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		border-bottom-left-radius: $radius;
+		border-bottom-right-radius: $radius;
+	}
+	&-option {
+		font-size: 15px;
+		border-radius: $radius;
+		background-color: $colorGrey0;
+		position: relative;
+		padding: 22px 10px;
+		transition: all 0.3s ease;
+		&:not(:last-child) {
+			&:before {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 1px;
+				content: '';
+				width: 100%;
+				background-color: $colorGrey10;
+			}
+		}
+		&:hover,
+		&.hover {
+			background-color: $colorGrey10;
+			cursor: pointer;
+		}
+	}
+}
