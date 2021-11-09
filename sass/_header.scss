@@ -2,5 +2,27 @@
 	&-top {
 		border-top: 4px solid $colorGrey100;
 		background-color: $colorGrey10;
+		&__inner {
+			@include ss('tablet') {
+				display: flex;
+				width: 100%;
+				justify-content: flex-end;
+			}
+		}
+		&__button {
+			font-size: 12px;
+			color: $colorGrey0;
+			text-transform: uppercase;
+			padding: 7px 12px 5px 12px;
+			display: block;
+			background-color: $colorGrey100;
+			margin-left: 25px;
+			border: 2px solid $colorGrey100;
+			margin-top: -2px;
+			&:hover {
+				background-color: transparent;
+				color: $colorGrey100;
+			}
+		}
 	}
 }
