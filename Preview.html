@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bundle.min.css">
+    <style type="text/css">
+        .checkboxes, .radios {
+            /*height: 50px;*/
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body style="padding: 30px">
+
+<div style="border-bottom: 1px solid #000000; margin-bottom: 20px">Buttons</div>
+<div class="button black">Czytaj więcej</div>
+<a class="button white">Czytaj więcej</a>
+<a class="button on-gray">Czytaj więcej</a>
+<a class="button on-black">Czytaj więcej</a>
+<a class="button accent1">Czytaj więcej</a>
+<a class="button accent2">Czytaj więcej</a>
+<a class="button accent3">Czytaj więcej</a>
+
+
+<div style="border-bottom: 1px solid #000000; margin-top: 50px; margin-bottom: 20px">Navigation</div>
+<div class="back-navigation">
+    <div class="back-button"></div>
+    <span class="back-text">wróć do porad</span>
+</div>
+
+<div style="background: #1a1a1a; display: flex; margin-top: 20px;">
+    <div class="carousel-navigation carousel-back"></div>
+    <div class="carousel-navigation carousel-next"></div>
+</div>
+
+<div style="background: #1a1a1a; margin-top: 20px; padding: 10px">
+    <div class="zoom-pin">
+        <div class="zoom-icon"></div>
+    </div>
+</div>
+
+<div style="border-bottom: 1px solid #000000; margin-top: 50px; margin-bottom: 20px">Form elements</div>
+
+
+<div class="checkboxes">
+    <input id="a" type="checkbox" tabindex="1"/>
+    <label for="a">1</label>
+
+    <input id="b" type="checkbox" tabindex="2" disabled/>
+    <label for="b">2</label>
+</div>
+
+<div class="radios">
+    <input type="radio" name="yesno" value="Yes" id="radio_0" tabindex="1" checked="checked">
+    <label for="radio_0">Yes</label>
+
+    <input type="radio" name="yesno" value="No" id="radio_1" tabindex="2">
+    <label for="radio_1">No</label>
+
+    <input type="radio" name="yesno" value="No" id="radio_2" tabindex="3" disabled checked>
+    <label for="radio_2">maybe</label>
+
+    <input type="radio" name="yesno" value="No" id="radio_3" tabindex="4" disabled>
+    <label for="radio_3">I don't know</label>
+
+</div>
+
+</body>
+</html>
