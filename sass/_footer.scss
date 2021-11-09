@@ -1,0 +1,34 @@
+@mixin expand() {
+	overflow: hidden;
+	height: 0;
+	max-height: 0;
+}
+
+.footer {
+	margin-top: auto;
+	margin-bottom: 26px;
+	&-top {
+		background-color: $colorGrey100;
+		border-radius: $radius;
+		padding: 0 30px;
+		&__upper {
+			padding: 30px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&__languages {
+			@include expand;
+		}
+		&__sitemap {
+			@include expand;
+		}
+	}
+	&-bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 18px;
+		padding-bottom: 18px;
+	}
+}
