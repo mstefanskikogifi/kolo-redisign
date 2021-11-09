@@ -1,0 +1,33 @@
+.search-form {
+	margin-left: auto;
+	position: relative;
+	&:hover {
+		box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.05);
+	}
+	.search-term {
+		padding: 15px 30px 15px 10px;
+	}
+	.submit {
+		height: 0;
+		width: 0;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		visibility: hidden;
+		display: none;
+		&-label {
+			height: 100%;
+			width: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			right: 0;
+			top: 0;
+			border-radius: $radius;
+		}
+	}
+	.autoComplete {
+		display: none;
+	}
+}
