@@ -1,9 +1,14 @@
 @import 'variables';
 @import 'typography';
+@import 'grid';
+@import 'utils';
 @import 'input';
 @import 'select';
 @import 'boxes';
-@import 'grid';
+@import 'header';
+@import 'navigation';
+@import 'searchMain';
+@import 'gridOld';
 @import 'main';
 @import 'boxes';
 @import 'inputStyle';
@@ -24,4 +29,4 @@
 @import 'jquery.ui.dialog';
 @import 'brands';
 @import 'swiper.min.scss';
-@import 'kolonew';
+// @import 'kolonew';

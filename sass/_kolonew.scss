@@ -3,58 +3,65 @@
  ========================================================================== */
 
 @font-face {
-    font-family: 'kolo_black';
-    src: url('/content/fonts/kolo/koloblack-webfont.eot');
-    src: url('/content/fonts/kolo/koloblack-webfont.eot?#iefix') format('embedded-opentype'), /**/
-    url('/-/media/Fonts/koloblack-webfont.woff') format('woff'), /**/
-    url('/content/fonts/kolo/koloblack-webfont.ttf') format('truetype'), /**/
-    url('/content/fonts/kolo/koloblack-webfont.svg#kolo_black') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'kolo_black';
+	src: url('/content/fonts/kolo/koloblack-webfont.eot');
+	src: url('/content/fonts/kolo/koloblack-webfont.eot?#iefix')
+			format('embedded-opentype'),
+		/**/ url('/-/media/Fonts/koloblack-webfont.woff') format('woff'),
+		/**/ url('/content/fonts/kolo/koloblack-webfont.ttf') format('truetype'),
+		/**/ url('/content/fonts/kolo/koloblack-webfont.svg#kolo_black')
+			format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'kolo_bold';
-    src: url('/content/fonts/kolo/kolobold-webfont.eot');
-    src: url('/content/fonts/kolo/kolobold-webfont.eot?#iefix') format('embedded-opentype'), /**/
-    url('/-/media/Fonts/kolobold-webfont.woff') format('woff'), /**/
-    url('/content/fonts/kolo/kolobold-webfont.ttf') format('truetype'), /**/
-    url('/content/fonts/kolo/kolobold-webfont.svg#kolo_bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'kolo_bold';
+	src: url('/content/fonts/kolo/kolobold-webfont.eot');
+	src: url('/content/fonts/kolo/kolobold-webfont.eot?#iefix')
+			format('embedded-opentype'),
+		/**/ url('/-/media/Fonts/kolobold-webfont.woff') format('woff'),
+		/**/ url('/content/fonts/kolo/kolobold-webfont.ttf') format('truetype'),
+		/**/ url('/content/fonts/kolo/kolobold-webfont.svg#kolo_bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'kolo_book';
-    src: url('/content/fonts/kolo/kolobook-webfont.eot');
-    src: url('/content/fonts/kolo/kolobook-webfont.eot?#iefix') format('embedded-opentype'), /**/
-    url('/-/media/Fonts/kolobook-webfont.woff') format('woff'), /**/
-    url('/content/fonts/kolo/kolobook-webfont.ttf') format('truetype'), /**/
-    url('/content/fonts/kolo/kolobook-webfont.svg#kolo_book') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'kolo_book';
+	src: url('/content/fonts/kolo/kolobook-webfont.eot');
+	src: url('/content/fonts/kolo/kolobook-webfont.eot?#iefix')
+			format('embedded-opentype'),
+		/**/ url('/-/media/Fonts/kolobook-webfont.woff') format('woff'),
+		/**/ url('/content/fonts/kolo/kolobook-webfont.ttf') format('truetype'),
+		/**/ url('/content/fonts/kolo/kolobook-webfont.svg#kolo_book') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'kolo_medium';                             
-    src: url('/content/fonts/kolo/kolomedium-webfont.eot');
-    src: url('/content/fonts/kolo/kolomedium-webfont.eot?#iefix') format('embedded-opentype'), /**/
-    url('/-/media/Fonts/kolomedium-webfont.woff') format('woff'), /**/
-    url('/content/fonts/kolo/kolomedium-webfont.ttf') format('truetype'),
-    url('/content/fonts/kolo/kolomedium-webfont.svg#kolo_medium') format('svg'); /**/
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'kolo_medium';
+	src: url('/content/fonts/kolo/kolomedium-webfont.eot');
+	src: url('/content/fonts/kolo/kolomedium-webfont.eot?#iefix')
+			format('embedded-opentype'),
+		/**/ url('/-/media/Fonts/kolomedium-webfont.woff') format('woff'),
+		/**/ url('/content/fonts/kolo/kolomedium-webfont.ttf') format('truetype'),
+		url('/content/fonts/kolo/kolomedium-webfont.svg#kolo_medium') format('svg'); /**/
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'kolo_light';
-    src: url('/content/fonts/kolo/kololight-webfont.eot');
-    src: url('/content/fonts/kolo/kololight-webfont.eot?#iefix') format('embedded-opentype'), /**/
-    url('/-/media/Fonts/kololight-webfont.woff') format('woff'), /**/
-    url('/content/fonts/kolo/kololight-webfont.ttf') format('truetype'), /**/
-    url('/content/fonts/kolo/kololight-webfont.svg#kolo_light') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'kolo_light';
+	src: url('/content/fonts/kolo/kololight-webfont.eot');
+	src: url('/content/fonts/kolo/kololight-webfont.eot?#iefix')
+			format('embedded-opentype'),
+		/**/ url('/-/media/Fonts/kololight-webfont.woff') format('woff'),
+		/**/ url('/content/fonts/kolo/kololight-webfont.ttf') format('truetype'),
+		/**/ url('/content/fonts/kolo/kololight-webfont.svg#kolo_light')
+			format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /*@media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -154,10 +161,10 @@ h1.products-filters-header,
 .scfValidationSummary,
 .html-component, /*content pages*/
 .job-offers {
-    font-family: 'kolo_book';
+	font-family: 'kolo_book';
 }
 
-    body,
+body,
     .header nav ul li a,
     .button,
     .big-slide .frame a,
@@ -175,10 +182,10 @@ h1.products-filters-header,
     .showroom-gallery a.button,
     .copyrights p, 
     .scfSubmitButtonBorder input {
-        font-family: 'kolo_medium';
-    }
+	font-family: 'kolo_medium';
+}
 
-    .short-header h1,
+.short-header h1,
     #HeaderId h1,
     .item-list h3,
     .button-map_content a,
@@ -214,10 +221,10 @@ h1.products-filters-header,
     .scfForm .scfRadioButtonListLabel, 
     .scfForm .scfDateSelectorLabel, 
     .scfCaptchaLabel*/ {
-        font-family: 'kolo_bold';
-    }
+	font-family: 'kolo_bold';
+}
 
-        .breadcrumb, /*main*/
+.breadcrumb, /*main*/
         .item-list ul li .text span.code, /*products*/
         .simple-slider .simple-slider-list li .text span.code,
         .index-list a,
@@ -226,12 +233,12 @@ h1.products-filters-header,
         .index-list h3,
         .index-list h3 a,
         .two-brands-tabs ul li input,
-        .searchResults-element .searchResults-elementSmaller { /*search results*/
-            font-size: 10px;
-        }
+        .searchResults-element .searchResults-elementSmaller {
+	/*search results*/
+	font-size: 10px;
+}
 
-
-    .cookies-content, /*main*/
+.cookies-content, /*main*/
     .brands-desc p,
     .brands-desc a,
     .button-map_content a,
@@ -279,18 +286,19 @@ h1.products-filters-header,
     .styled-input-light .style-input, /*faq*/
     .copyrights p,
     .button {
-        font-size: 12px;
-    }
+	font-size: 12px;
+}
 
-    .selectLight, 
-    .selectLight .passiveSelect,
-    .selectLight .activeSelect,
-    .selectLight li {
-        font-size: 14px;
-    }
+.selectLight,
+.selectLight .passiveSelect,
+.selectLight .activeSelect,
+.selectLight li {
+	font-size: 14px;
+}
 
-.brand-point a span { /*main*/
-    font-size: 13px;
+.brand-point a span {
+	/*main*/
+	font-size: 13px;
 }
 
 body, /*main*/
@@ -306,7 +314,7 @@ body, /*main*/
 .scfValidator, /*forms*/
 .scfValidationSummary,
 .scfCaptchaLabel {
-    font-size: 14px;
+	font-size: 14px;
 }
 
 .text-slide .text h2, /*boxes*/
@@ -321,8 +329,9 @@ body, /*main*/
 .job-offers h3,
 .google-search-result h2,
 .faq-partials h3, /*faq*/
-.errorPage-wrapper h2 { /*error*/
-    font-size: 16px;
+.errorPage-wrapper h2 {
+	/*error*/
+	font-size: 16px;
 }
 
 .hyperBox .text h2,
@@ -331,47 +340,54 @@ h1.products-filters-header, /*products*/
 .main-inspiration .text h3, /*inspiration-brochures*/
 .press ul li .desc h2, /*press*/
 .item-list .tips-list li .desc h2, /*tips - instalationVideos*/
-.searchResults-search input[type=text] { /*search results*/
-    font-size: 18px;
+.searchResults-search input[type=text] {
+	/*search results*/
+	font-size: 18px;
 }
 
 #HeaderId h1 {
-    border-bottom-color: #686869;
+	border-bottom-color: #686869;
 }
 
 /*boxes*/
 .email-updates h2,
 .projectsDesc h3,
-.searchResults-search span { /*projects*/
-    font-size: 22px;
+.searchResults-search span {
+	/*projects*/
+	font-size: 22px;
 }
 
 .short-header h1, /*main*/
 #HeaderId h1,
 .main-product .product-name h1, /*products*/
-.errorPage-wrapper h1 { /*search results*/
-    font-size: 25px;
+.errorPage-wrapper h1 {
+	/*search results*/
+	font-size: 25px;
 }
 
 .brands-desc span.hdr, /*main*/
-.bigHyperBox .text h2 { /*boxes*/
-    font-size: 35px;
+.bigHyperBox .text h2 {
+	/*boxes*/
+	font-size: 35px;
 }
 
-.big-slide .frame h2 { /*boxes*/
-    font-size: 45px;
+.big-slide .frame h2 {
+	/*boxes*/
+	font-size: 45px;
 }
 
-.top-site-index span a span { /*main*/
-    line-height: 27px;
+.top-site-index span a span {
+	/*main*/
+	line-height: 27px;
 }
 
 .big-slide .frame p, /*boxes*/
 .text-slide .text p,
 .small-slide .text p,
 .bigHyperBox .text p, /*products*/
-.main-inspiration .text p { /*inspirations-brochures*/
-    color: #505152;
+.main-inspiration .text p {
+	/*inspirations-brochures*/
+	color: #505152;
 }
 
 .lt-ie8 .header img {
@@ -411,11 +427,12 @@ h1.products-filters-header, /*products*/
 .press ul li .desc p, /*press*/
 .item-list .brochures-list li .text span, /*inspirations-brohures*/
 .order-list ul li .text span {
-    color: #686869;
+	color: #686869;
 }
 
-.light .index-list a { /*main*/
-    color: #373534;
+.light .index-list a {
+	/*main*/
+	color: #373534;
 }
 
 .cookies-content span.hdr,
@@ -437,15 +454,17 @@ h1.products-filters-header, /*products*/
 .google-search-result ul li h4, /*google result*/
 .collections-categories,
 .searchResults-tabs .item-list .btnMore.button button, 
-.errorPage-wrapper h2 { /*collections*/
-    color: #000;
+.errorPage-wrapper h2 {
+	/*collections*/
+	color: #000;
 }
 
 .brands-desc p, /*main*/
 .checkboxes ul li.disable-checkbox label,
 .index-list a,
-.simple-slider .simple-slider-list li .text span.code { /*products*/
-    color: #e5e5e5;
+.simple-slider .simple-slider-list li .text span.code {
+	/*products*/
+	color: #e5e5e5;
 }
 
 .brands-desc span.hdr, /*main*/
@@ -494,7 +513,7 @@ h1.products-filters-header, /*products*/
 .main-inspiration .text .close-desc /*inspiration-mobile*/, 
 .google-search-result ul li.highlighted button, 
 .navSearch .button.active {
-    color: #fff;
+	color: #fff;
 }
 
 .button-map_content a, /*main*/
@@ -508,22 +527,23 @@ h1.products-filters-header, /*products*/
 .item-list ul li:hover .text span.code,
 .item-list ul li .text span.code, 
 .item-list ul li .text span.size {
-    color: #d2d2d2;
+	color: #d2d2d2;
 }
 
 .item-list.list-style ul li .text span.code,
 .item-list.list-style ul li:hover .text span.code,
 .item-list.list-style ul li .text span.size,
-.item-list.list-style ul li:hover .text span.size  {
-    color: #424242;
+.item-list.list-style ul li:hover .text span.size {
+	color: #424242;
 }
 
 .google-search-result ul li.highlighted {
-	background-color: #FFF;
+	background-color: #fff;
 }
 
-.scroll-pane .jspTrack { /*projects*/
-    color: #ccc;
+.scroll-pane .jspTrack {
+	/*projects*/
+	color: #ccc;
 }
 
 .googleMap.googleMapNew .small-filters {
@@ -533,42 +553,46 @@ h1.products-filters-header, /*products*/
 .faq-partials .details, /*faq*/
 .faq-answer,
 .downloads-mainPanel ul li p.secondLine /*downloads*/ {
-    color: #666;
+	color: #666;
 }
 
-.press ul li .desc span.date { /*press*/
-    color: #959596;
+.press ul li .desc span.date {
+	/*press*/
+	color: #959596;
 }
 
 .cookies-content span.more,
-.lt-ie8 .scfRequired { /*main*/
-    color: #fd0909;
+.lt-ie8 .scfRequired {
+	/*main*/
+	color: #fd0909;
 }
 
 .html-box:hover {
-    color: #fff !important;
+	color: #fff !important;
 }
 
 .hyperBox {
-    &:hover {
-        .text, 
-        .text h2,
-        .text p { /*boxes hover*/
-            color: #fff !important;
-        }
-    }
+	&:hover {
+		.text,
+		.text h2,
+		.text p {
+			/*boxes hover*/
+			color: #fff !important;
+		}
+	}
 }
 
 .hyperBox {
-    &.stopMouseover {
-        &:hover {
-            .text, 
-            .text h2,
-            .text p { /*boxes hover*/
-                color: inherit !important;
-            }
-        }
-    }
+	&.stopMouseover {
+		&:hover {
+			.text,
+			.text h2,
+			.text p {
+				/*boxes hover*/
+				color: inherit !important;
+			}
+		}
+	}
 }
 
 .Kontakt-mapka .html-box:hover {
@@ -577,138 +601,159 @@ h1.products-filters-header, /*products*/
 
 /* FOR PAGEEDITOR */
 .pageeditor .html-box:hover {
-    color: #000 !important;
+	color: #000 !important;
 }
 
 .pageeditor {
-    .hyperBox {
-        &:hover {
-            .text,
-            .text h2,
-            .text p { /*boxes hover*/
-                color: #000 !important;
-            }
-        }
-    }
+	.hyperBox {
+		&:hover {
+			.text,
+			.text h2,
+			.text p {
+				/*boxes hover*/
+				color: #000 !important;
+			}
+		}
+	}
 }
 
 .pageeditor {
-    .hyperBox {
-        &.stopMouseover {
-            &:hover {
-                .text,
-                .text h2,
-                .text p { /*boxes hover*/
-                    color: inherit !important;
-                }
-            }
-        }
-    }
+	.hyperBox {
+		&.stopMouseover {
+			&:hover {
+				.text,
+				.text h2,
+				.text p {
+					/*boxes hover*/
+					color: inherit !important;
+				}
+			}
+		}
+	}
 }
 
-.scroll-pane .jspDrag { /*projects*/
-    background: #333;
+.scroll-pane .jspDrag {
+	/*projects*/
+	background: #333;
 }
 
-.errorPage-main { /*error*/
-    background: url("/content/images/bg.gif");
+.errorPage-main {
+	/*error*/
+	background: url('/content/images/bg.gif');
 }
 
-.main nav, .main-menu li { /*main*/
-    border-right: 1px solid #5f5d5d;
-    background: #686869;
+.main nav,
+.main-menu li {
+	/*main*/
+	border-right: 1px solid #5f5d5d;
+	background: #686869;
 }
 
-.my-list-handler, 
-.basketProductRow .productDetails .delete a, 
-.ml-firstForm { /*main*/
-    background-color: #686869;
+.my-list-handler,
+.basketProductRow .productDetails .delete a,
+.ml-firstForm {
+	/*main*/
+	background-color: #686869;
 }
 
-.basketProductRow .productDetails .delete a:hover { /*main*/
-    background-color: #000;
+.basketProductRow .productDetails .delete a:hover {
+	/*main*/
+	background-color: #000;
 }
 
-.ml-firstForm input[type="text"] {
-	background-color : #FFF;
-	color : #37424a;
+.ml-firstForm input[type='text'] {
+	background-color: #fff;
+	color: #37424a;
 }
 
-.ml-firstForm .addProductByCodeForm ::-webkit-input-placeholder { /* WebKit browsers */
-	color: #929394
+.ml-firstForm .addProductByCodeForm ::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #929394;
 }
-.ml-firstForm .addProductByCodeForm :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+.ml-firstForm .addProductByCodeForm :-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
 	color: #929394;
 	opacity: 1;
 }
-.ml-firstForm .addProductByCodeForm ::-moz-placeholder { /* Mozilla Firefox 19+ */
+.ml-firstForm .addProductByCodeForm ::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
 	color: #929394;
 	opacity: 1;
 }
-.ml-firstForm addProductByCodeForm :-ms-input-placeholder { /* Internet Explorer 10+ */
+.ml-firstForm addProductByCodeForm :-ms-input-placeholder {
+	/* Internet Explorer 10+ */
 	color: #929394;
 }
 
 span.menuTitle {
-    color: #fff;
-    text-transform: uppercase;
+	color: #fff;
+	text-transform: uppercase;
 }
 
-.ez-checked { /*inputs*/
-    border: 5px solid #d2d2d2;
+.ez-checked {
+	/*inputs*/
+	border: 5px solid #d2d2d2;
 }
 
 .item-list ul.product-list > li, /*products*/
 .simple-slider .simple-slider-list li,
 .google-search-result ul li, /*google result*/
-.item-list .tips-list li { /*tips - instalationVideos*/
-    border: 1px solid #ededed;
+.item-list .tips-list li {
+	/*tips - instalationVideos*/
+	border: 1px solid #ededed;
 }
 
-.ui-tabs-panel table th { /*products*/
-    border-bottom: 1pt solid #000;
+.ui-tabs-panel table th {
+	/*products*/
+	border-bottom: 1pt solid #000;
 }
 
-.ui-tabs-panel table td { /*products*/
-    border-bottom: 1pt solid #d2d2d2;
+.ui-tabs-panel table td {
+	/*products*/
+	border-bottom: 1pt solid #d2d2d2;
 }
 
 .item-header, /*product*/
 .projectsDesc h3, /*projects*/
-.order-list ul li { /*inspiration-brochures*/
-    border-top: 1px solid #ccc;
+.order-list ul li {
+	/*inspiration-brochures*/
+	border-top: 1px solid #ccc;
 }
 
 .faq-partials > ul > li, /*faq*/
 .downloads-mainPanel ul li /*downloads*/,
-.searchResults-element { /*search results*/
-    border-bottom: 1px solid #ccc;
+.searchResults-element {
+	/*search results*/
+	border-bottom: 1px solid #ccc;
 }
 
 .price, /*product*/
-.order-list .headerWrap { /*inspiration-brochures*/
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 5px solid #000;
+.order-list .headerWrap {
+	/*inspiration-brochures*/
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 5px solid #000;
 }
 
 .description, /*product*/
 .technical {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 /*.independent,*/ /*product*/
-.job-offers h2 { /*content pages*/
-    border-bottom: 5px solid #000;
+.job-offers h2 {
+	/*content pages*/
+	border-bottom: 5px solid #000;
 }
 
 .borderDiv {
-    border-bottom: 5px solid #000;
-    border-top: 5px solid #000;
+	border-bottom: 5px solid #000;
+	border-top: 5px solid #000;
 }
 
-.main-inspiration .text .collections-list { /*inspirations-brochures*/
-    border-top: 1px solid #aaa;
+.main-inspiration .text .collections-list {
+	/*inspirations-brochures*/
+	border-top: 1px solid #aaa;
 }
 
 /*.main-inspiration .text,*/ /*inspirations-brochures*/
@@ -717,12 +762,12 @@ span.menuTitle {
 .main-inspiration .text h3, 
 .projectsDesc, /*projects*/
 .projectsDesc h3 {
-    border-bottom: 4px solid #000;
+	border-bottom: 4px solid #000;
 }
 
 .two-brands-tabs ul li,
 .two-brands-tabs ul li input {
-    background-color: #e5e5e5;
+	background-color: #e5e5e5;
 }
 
 .contener-site-index.light, /*main*/
@@ -748,17 +793,20 @@ span.menuTitle {
 .collections-categories li.active,
 .collection-filters,
 .simple-slider .prev.slick-disabled:hover, 
-.simple-slider .next.slick-disabled:hover { /*search results*/
-    background-color: #d2d2d2;
+.simple-slider .next.slick-disabled:hover {
+	/*search results*/
+	background-color: #d2d2d2;
 }
 
-.filters .checkboxes .disable-checkbox .ez-checked, 
-.checkboxes .ez-checked { /*collections*/
-    border: 5px solid #fff;
+.filters .checkboxes .disable-checkbox .ez-checked,
+.checkboxes .ez-checked {
+	/*collections*/
+	border: 5px solid #fff;
 }
 
-.checkboxes .disable-checkbox .ez-checked { /*collections*/
-    border: 5px solid #ebebeb;
+.checkboxes .disable-checkbox .ez-checked {
+	/*collections*/
+	border: 5px solid #ebebeb;
 }
 
 .itemsPgn a,
@@ -778,12 +826,14 @@ button[disabled="disabled"].dark-button:hover,
 .box-page ul li.active,
 .main-inspiration .text .close-desc, /*inspiration-mobile*/
 .simple-slider .simple-slider-list li .text,
-.simple-slider.category .simple-slider-list li .text { /*products*/
-    background-color: #686869;
+.simple-slider.category .simple-slider-list li .text {
+	/*products*/
+	background-color: #686869;
 }
 
-.scfForm .file-upload-button { /*products*/
-    background-color: #AAA;
+.scfForm .file-upload-button {
+	/*products*/
+	background-color: #aaa;
 }
 
 .two-brands-tabs ul li input.active {
@@ -796,7 +846,7 @@ button[disabled="disabled"].dark-button:hover,
 }
 /* END - CHANGE COLOR PRODUCT MENU */
 
-    .itemsPgn a:hover,
+.itemsPgn a:hover,
     .itemsPgn a.current,
     .big-slide .frame a, /*boxes*/
     .brands-desc a, /*main*/
@@ -805,17 +855,17 @@ button[disabled="disabled"].dark-button:hover,
     .button_map_contener,
     form .lineDown,
     .ez-checked /*inputs*/ {
-        background-color: #000;
-    }
+	background-color: #000;
+}
 
 .itemsPgn a {
 	border-right-color: #d2d2d2;
 }
 
 .checkboxes .ez-checkbox.ez-checked {
-    background-image: url(/content/images/check.png);
-    background-position: center;
-    background-repeat: no-repeat;
+	background-image: url(/content/images/check.png);
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .main-menu li:hover, /*main*/
@@ -837,20 +887,20 @@ button[disabled="disabled"].dark-button:hover,
 /*.html-box:hover,*/ 
 .google-search-result ul li.highlighted button, 
 .navSearch .button.active {
-    background-color: #000;
+	background-color: #000;
 }
 
 .hyperBox.defaultHover:hover {
-    background-color: #000 !important;
+	background-color: #000 !important;
 }
 
 .hyperBox.stopMouseover:hover {
-    background: #fff !important;
+	background: #fff !important;
 }
 
-.selectLight li:hover, 
+.selectLight li:hover,
 .jspDrag {
-    background-color: #686869;
+	background-color: #686869;
 }
 
 /*.hyperBox, 
@@ -871,7 +921,7 @@ button[disabled="disabled"].dark-button:hover,
 
 /* FOR PAGEEDITOR */
 .pageeditor .hyperBox.defaultHover:hover {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 #HeaderId.short-header h1, /*main*/
@@ -928,8 +978,9 @@ input[type=text],
 .designer-description,
 .item-list .tips-list li,
 .press > ul > li,
-.errorPage-header /*tips*/ { /*brochures order form*/
-    background: #fff;
+.errorPage-header /*tips*/ {
+	/*brochures order form*/
+	background: #fff;
 }
 
 /* DOWNLOAD */
@@ -937,17 +988,24 @@ body:not(.pageeditor) .downloads-filters-new .search {
 	border-color: #686868;
 }
 
-body:not(.pageeditor) .downloads-filters-new .underline, 
-body:not(.pageeditor) .downloads-leftFilters-new .underline, 
-body:not(.pageeditor) .downloads-active-filters .underline, 
-body:not(.pageeditor) .downloads-active-filters .active-filters .active-filters-element, 
+body:not(.pageeditor) .downloads-filters-new .underline,
+body:not(.pageeditor) .downloads-leftFilters-new .underline,
+body:not(.pageeditor) .downloads-active-filters .underline,
+body:not(.pageeditor)
+	.downloads-active-filters
+	.active-filters
+	.active-filters-element,
 body:not(.pageeditor) .results-panel .downloads-filters .underline {
-    background-color: #d2d2d2;
+	background-color: #d2d2d2;
 }
 
-body:not(.pageeditor) .downloads-leftFilters-new .select-filter, 
-body:not(.pageeditor) .downloads-leftFilters-new .select-filter .checkbox-list .default-value, 
-body:not(.pageeditor) .downloads-active-filters .clear-all-active-filters span, 
+body:not(.pageeditor) .downloads-leftFilters-new .select-filter,
+body:not(.pageeditor)
+	.downloads-leftFilters-new
+	.select-filter
+	.checkbox-list
+	.default-value,
+body:not(.pageeditor) .downloads-active-filters .clear-all-active-filters span,
 body:not(.pageeditor) .results-panel .underline {
 	background-color: #333;
 }
@@ -956,27 +1014,65 @@ body:not(.pageeditor) .results-panel .results ul li {
 	border-color: #d2d2d2;
 }
 
-body:not(.pageeditor) #overlaps.ui-tabs #download.ui-tabs-panel table.tableHead .tableDetailsLink span, 
+body:not(.pageeditor)
+	#overlaps.ui-tabs
+	#download.ui-tabs-panel
+	table.tableHead
+	.tableDetailsLink
+	span,
 body:not(.pageeditor) #overlaps #product_variants table td:nth-child(6) a {
 	color: #000;
 }
 
-body:not(.pageeditor) #overlaps.ui-tabs #download.ui-tabs-panel table.tableHead .tableDetailsLink span::after, 
-body:not(.pageeditor) #overlaps #product_variants table td:nth-child(6) a::after {
-	background-image: url("/content/images/arrowBlackNew.png");
+body:not(.pageeditor)
+	#overlaps.ui-tabs
+	#download.ui-tabs-panel
+	table.tableHead
+	.tableDetailsLink
+	span::after,
+body:not(.pageeditor)
+	#overlaps
+	#product_variants
+	table
+	td:nth-child(6)
+	a::after {
+	background-image: url('/content/images/arrowBlackNew.png');
 }
 
-body:not(.pageeditor) #overlaps.ui-tabs #download.ui-tabs-panel table.tableContent button, 
+body:not(.pageeditor)
+	#overlaps.ui-tabs
+	#download.ui-tabs-panel
+	table.tableContent
+	button,
 body:not(.pageeditor) #overlaps #product_variants table td:nth-child(7) a {
-	color: #FFF;
+	color: #fff;
 	background-color: #686869;
 }
 
-body:not(.pageeditor) #overlaps.ui-tabs #download.ui-tabs-panel table.tableContent td a, 
-body:not(.pageeditor) #overlaps.ui-tabs #download.ui-tabs-panel table.tableContent td a:hover, 
-body:not(.pageeditor) #overlaps.ui-tabs #download.ui-tabs-panel table.tableContent button:hover, 
-body:not(.pageeditor) #overlaps #product_variants table td:nth-child(7) a:hover {
-	color: #FFF;
+body:not(.pageeditor)
+	#overlaps.ui-tabs
+	#download.ui-tabs-panel
+	table.tableContent
+	td
+	a,
+body:not(.pageeditor)
+	#overlaps.ui-tabs
+	#download.ui-tabs-panel
+	table.tableContent
+	td
+	a:hover,
+body:not(.pageeditor)
+	#overlaps.ui-tabs
+	#download.ui-tabs-panel
+	table.tableContent
+	button:hover,
+body:not(.pageeditor)
+	#overlaps
+	#product_variants
+	table
+	td:nth-child(7)
+	a:hover {
+	color: #fff;
 	background-color: #000;
 }
 /* END - DOWNLOAD */
@@ -986,7 +1082,7 @@ body:not(.pageeditor) #overlaps #product_variants table td:nth-child(7) a:hover 
 	padding: 10px 7px;
 }
 
-body:not(.pageeditor) .subcategories-page .filters .marker-item, 
+body:not(.pageeditor) .subcategories-page .filters .marker-item,
 body:not(.pageeditor) .subcategories-page .filters .clearBtn.button {
 	background-color: #d2d2d2;
 	margin-left: 7px;
@@ -999,17 +1095,17 @@ body:not(.pageeditor) .filters .marker-item .close {
 /* END - PRODUCT */
 
 /* NEW GOOGLE SEARCH */
-.rich-text h2, 
+.rich-text h2,
 .resultTitle h2 {
-    border-bottom: 1px solid #d2d2d2;
+	border-bottom: 1px solid #d2d2d2;
 }
 
 .resultTitle h2 {
-    border-bottom: 3px solid #5f5d5d;
+	border-bottom: 3px solid #5f5d5d;
 }
 
-.googleMap.googleMapNew .panel .currLocation a, 
-.googleMap.googleMapNew .panel input[type="button"] {
+.googleMap.googleMapNew .panel .currLocation a,
+.googleMap.googleMapNew .panel input[type='button'] {
 	background-color: #686869;
 }
 
@@ -1017,168 +1113,201 @@ body:not(.pageeditor) .filters .marker-item .close {
 	margin-right: 10px;
 }
 
-.googleMap.googleMapNew .panel .currLocation a:hover, 
-.googleMap.googleMapNew .panel input[type="button"]:hover {
+.googleMap.googleMapNew .panel .currLocation a:hover,
+.googleMap.googleMapNew .panel input[type='button']:hover {
 	background-color: #000;
 }
 @media (min-width: 768px) {
-    .googleMap.googleMapNew .panel {
-        input[type="text"] {
-            width: 210px;
-        }
-        input[type="button"] {
-            float: left;
-        }
-        .selectStyle {
-            margin-left: 0px;
-        }
-    }
-    .googleMap.googleMapNew {
-        .small-filters.panel {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            .filterCity {
-                padding-right: 0px;
-                width: auto;
-            }
-            .filterZip {
-                margin-bottom: 10px;
-            }
-        }
-    }
+	.googleMap.googleMapNew .panel {
+		input[type='text'] {
+			width: 210px;
+		}
+		input[type='button'] {
+			float: left;
+		}
+		.selectStyle {
+			margin-left: 0px;
+		}
+	}
+	.googleMap.googleMapNew {
+		.small-filters.panel {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			.filterCity {
+				padding-right: 0px;
+				width: auto;
+			}
+			.filterZip {
+				margin-bottom: 10px;
+			}
+		}
+	}
 }
 
 .googleMap.googleMapNew .small-filters.panel .selectStyle {
-    border: 1px solid #686868;
+	border: 1px solid #686868;
 }
 /* END - NEW GOOGLE SEARCH */
 
-.html-component a, 
+.html-component a,
 .double-text a {
-	color: #3B3D43 !important;
+	color: #3b3d43 !important;
 	text-decoration: underline !important;
 }
 
 .html-component a span {
-	color: #3B3D43 !important;
+	color: #3b3d43 !important;
 }
 
 .checkboxes ul li.disable-checkbox .ez-checkbox {
-    background-color: #ebebeb;
+	background-color: #ebebeb;
 }
 
 body:not(.pageeditor) .item-list ul.content-list-new li {
-    border: none;
+	border: none;
 }
 
-.cookies { /*main*/
-    background: #f6f4d2;
+.cookies {
+	/*main*/
+	background: #f6f4d2;
 }
 
-.item-list .brochures-list li .text .no-print .no-print-label { /*brochures*/
-    background: #fd010d;
+.item-list .brochures-list li .text .no-print .no-print-label {
+	/*brochures*/
+	background: #fd010d;
 }
 
 .filters .ui-slider-range.rightActive {
-    background: #373534; /* Old browsers */
-    background: -moz-linear-gradient(left, #373534 0%, #767472 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#373534), color-stop(100%,#767472)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #373534 0%,#767472 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #373534 0%,#767472 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #373534 0%,#767472 100%); /* IE10+ */
-    background: linear-gradient(to right, #373534 0%,#767472 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373534', endColorstr='#767472',GradientType=1 ); /* IE6-9 */
+	background: #373534; /* Old browsers */
+	background: -moz-linear-gradient(left, #373534 0%, #767472 100%); /* FF3.6+ */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0%, #373534),
+		color-stop(100%, #767472)
+	); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(
+		left,
+		#373534 0%,
+		#767472 100%
+	); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(
+		left,
+		#373534 0%,
+		#767472 100%
+	); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #373534 0%, #767472 100%); /* IE10+ */
+	background: linear-gradient(to right, #373534 0%, #767472 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373534', endColorstr='#767472',GradientType=1 ); /* IE6-9 */
 }
 
 .filters .ui-slider-range.leftActive {
-    background: #767472; /* Old browsers */
-    background: -moz-linear-gradient(left, #767472 0%, #373534 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#767472), color-stop(100%,#373534)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #767472 0%,#373534 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #767472 0%,#373534 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #767472 0%,#373534 100%); /* IE10+ */
-    background: linear-gradient(to right, #767472 0%,#373534 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#767472', endColorstr='#373534',GradientType=1 ); /* IE6-9 */
+	background: #767472; /* Old browsers */
+	background: -moz-linear-gradient(left, #767472 0%, #373534 100%); /* FF3.6+ */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0%, #767472),
+		color-stop(100%, #373534)
+	); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(
+		left,
+		#767472 0%,
+		#373534 100%
+	); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(
+		left,
+		#767472 0%,
+		#373534 100%
+	); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #767472 0%, #373534 100%); /* IE10+ */
+	background: linear-gradient(to right, #767472 0%, #373534 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#767472', endColorstr='#373534',GradientType=1 ); /* IE6-9 */
 }
 
 hr {
-    border-color: #878687;
+	border-color: #878687;
 }
 
 .item-list.list-style ul li:hover .text, /*products*/
 .item-list.list-style ul li .text {
-    background: transparent;
+	background: transparent;
 }
 
 .main {
-    background: url("/content/images/bg.gif");
+	background: url('/content/images/bg.gif');
 }
 
 .main .buttonsAction {
-    border-color: #686869;
+	border-color: #686869;
 }
 
 /*MAIN*/
 .brand-point a {
-    background: url('/content/images/kolo/color1_point.png') no-repeat center;
+	background: url('/content/images/kolo/color1_point.png') no-repeat center;
 }
 
-    .brand-point a span {
-        background: url('/content/images/kolo/color1_lef.png') no-repeat 0 center;
-    }
+.brand-point a span {
+	background: url('/content/images/kolo/color1_lef.png') no-repeat 0 center;
+}
 
-        .brand-point a span.right {
-            background: url('/content/images/kolo/color1_right.png') no-repeat right center;
-        }
+.brand-point a span.right {
+	background: url('/content/images/kolo/color1_right.png') no-repeat right
+		center;
+}
 
-    .brand-point a.active,
-    .brand-point a.color2 {
-        background: url('/content/images/kolo/color2_point.png') no-repeat center;
-    }
+.brand-point a.active,
+.brand-point a.color2 {
+	background: url('/content/images/kolo/color2_point.png') no-repeat center;
+}
 
-        .brand-point a.active span,
-        .brand-point a.color2 span {
-            background: url('/content/images/kolo/color2_lef.png') no-repeat 0 center;
-        }
+.brand-point a.active span,
+.brand-point a.color2 span {
+	background: url('/content/images/kolo/color2_lef.png') no-repeat 0 center;
+}
 
-            .brand-point a.active span.right,
-            .brand-point a.color2 span.right {
-                background: url('/content/images/kolo/color2_right.png') no-repeat right center;
-            }
+.brand-point a.active span.right,
+.brand-point a.color2 span.right {
+	background: url('/content/images/kolo/color2_right.png') no-repeat right
+		center;
+}
 
-    .brand-point a.color3 {
-        background: url('/content/images/kolo/color3_point.png') no-repeat center;
-    }
+.brand-point a.color3 {
+	background: url('/content/images/kolo/color3_point.png') no-repeat center;
+}
 
-        .brand-point a.color3 span {
-            background: url('/content/images/kolo/color3_lef.png') no-repeat 0 center;
-        }
+.brand-point a.color3 span {
+	background: url('/content/images/kolo/color3_lef.png') no-repeat 0 center;
+}
 
-            .brand-point a.color3 span.right {
-                background: url('/content/images/kolo/color3_right.png') no-repeat right center;
-            }
+.brand-point a.color3 span.right {
+	background: url('/content/images/kolo/color3_right.png') no-repeat right
+		center;
+}
 
 .search-form .search-term {
-    border: 4px solid #fff;
-    border-right: 0px;
+	border: 4px solid #fff;
+	border-right: 0px;
 }
 
 .search-form .submit {
-    background: url("/content/images/search.png") no-repeat center;
-    border-color: #fff;
+	background: url('/content/images/search.png') no-repeat center;
+	border-color: #fff;
 }
 
 .search-form .autoComplete {
 	background: #686869;
 	border: 1px solid #aaa;
-	color: #FFF;
+	color: #fff;
 	text-transform: uppercase;
 }
 
 .search-form .autoComplete ul li {
-    background: #686869;
-    border-bottom: 1px solid #5f5d5d;
+	background: #686869;
+	border-bottom: 1px solid #5f5d5d;
 }
 
 .search-form .autoComplete ul li h3 {
@@ -1187,17 +1316,17 @@ hr {
 }
 
 .search-form .autoComplete ul li h3 a {
-    color: #FFF;
-    display: none;
-    font-size: 12px;
-    float: right;
-    padding: 0;
-    position: relative;
-    top: 0px;
+	color: #fff;
+	display: none;
+	font-size: 12px;
+	float: right;
+	padding: 0;
+	position: relative;
+	top: 0px;
 }
 
 .search-form .autoComplete ul li a {
-	color: #FFF;
+	color: #fff;
 	cursor: pointer;
 	border-bottom: 1px solid #5f5d5d;
 	display: block;
@@ -1206,239 +1335,246 @@ hr {
 }
 
 .search-form .autoComplete ul li.see-all h3 a {
-    border: none;
-    display: block;
-    float: none;
+	border: none;
+	display: block;
+	float: none;
 }
 
 .lt-ie8 {
-    .search-form {
-        border: 4px solid #fff;
-    }
+	.search-form {
+		border: 4px solid #fff;
+	}
 }
 
 .top-site-index > p {
-    background: url("/content/images/arrowBottom.png") no-repeat right center;
+	background: url('/content/images/arrowBottom.png') no-repeat right center;
 }
 
-    .top-site-index > p.open {
-        background: url("/content/images/arrowTop.png") no-repeat right center;
-    }
+.top-site-index > p.open {
+	background: url('/content/images/arrowTop.png') no-repeat right center;
+}
 
 .content-footer .social-media .facebook a {
-    background: url("/content/images/facebook.jpg");
+	background: url('/content/images/facebook.jpg');
 }
 
 .content-footer .social-media .you-tube a {
-    background: url("/content/images/you-tube.jpg");
+	background: url('/content/images/you-tube.jpg');
 }
 
 /*products*/
 .filters ul li a.active {
-    background: url('/content/images/kolo/activeColor.png');
+	background: url('/content/images/kolo/activeColor.png');
 }
 
 .item-header span.active span {
-    background: url('/content/images/pozzi-ginori/smallArrow.png');
+	background: url('/content/images/pozzi-ginori/smallArrow.png');
 }
 
 .item-header span.active:hover span {
-    background: url('/content/images/kolo/smallArrowActive.png');
+	background: url('/content/images/kolo/smallArrowActive.png');
 }
 
 .item-header span.list-button {
-    background: url('/content/images/kolo/listIcon.png') no-repeat 10px center;
+	background: url('/content/images/kolo/listIcon.png') no-repeat 10px center;
 }
 
 .item-header span.grid-button {
-    background: url('/content/images/kolo/girdIcon.png') no-repeat 10px center;
+	background: url('/content/images/kolo/girdIcon.png') no-repeat 10px center;
 }
 
 .item-header span.list-button.active {
-    background: url('/content/images/kolo/listIcon.png') no-repeat 10px center #c5c4c0;
+	background: url('/content/images/kolo/listIcon.png') no-repeat 10px center
+		#c5c4c0;
 }
 
 .item-header span.grid-button.active {
-    background: url('/content/images/kolo/girdIcon.png') no-repeat 10px center #c5c4c0;
+	background: url('/content/images/kolo/girdIcon.png') no-repeat 10px center
+		#c5c4c0;
 }
 
 .item-header span.list-button:hover {
-    background: url('/content/images/kolo/listIconWhite.png') no-repeat 10px center #000;
+	background: url('/content/images/kolo/listIconWhite.png') no-repeat 10px
+		center #000;
 }
 
 .item-header span.grid-button:hover {
-    background: url('/content/images/kolo/girdIconWhite.png') no-repeat 10px center #000;
+	background: url('/content/images/kolo/girdIconWhite.png') no-repeat 10px
+		center #000;
 }
 
 .filters .ui-slider-handle {
-    background: url('/content/images/pozzi-ginori/noactive.png');
+	background: url('/content/images/pozzi-ginori/noactive.png');
 }
 
-    .filters .ui-slider-handle.ui-state-hover,
-    .filters .ui-slider-handle.ui-state-active {
-        background: url('/content/images/pozzi-ginori/active.png');
-    }
+.filters .ui-slider-handle.ui-state-hover,
+.filters .ui-slider-handle.ui-state-active {
+	background: url('/content/images/pozzi-ginori/active.png');
+}
 
 .simple-slider .prev,
-.simple-slider .next, 
+.simple-slider .next,
 .product-slide-wraper input.next,
 .product-slide-wraper input.prev {
-    background-image: url(/content/images/carouselButtons.png);
-    background-repeat: no-repeat;
+	background-image: url(/content/images/carouselButtons.png);
+	background-repeat: no-repeat;
 }
 
 .simple-slider .next {
-    background-position: -44px 0px;
+	background-position: -44px 0px;
 }
 
 .simple-slider .prev:hover {
-    background-position: -88px 0;
+	background-position: -88px 0;
 }
 
 .simple-slider .next:hover {
-    background-position: -132px 0;
+	background-position: -132px 0;
 }
 
 .simple-slider .simple-slider-list li .text span.size {
-    bottom: 19px;
+	bottom: 19px;
 }
 
 .product-slide-wraper input.next {
-    background-position: -54px 47%;
+	background-position: -54px 47%;
 }
 
 .product-slide-wraper input.prev {
-    background-position: -11px 47%;
+	background-position: -11px 47%;
 }
 
 .product-slide-wraper input.next:hover {
-    background-position: -142px 47%;
+	background-position: -142px 47%;
 }
 
 .product-slide-wraper input.prev:hover {
-    background-position: -98px 47%;
+	background-position: -98px 47%;
 }
 
 .scroll {
-    background-image: url(/content/images/verticalButtons.png);
-    background-repeat: no-repeat;
+	background-image: url(/content/images/verticalButtons.png);
+	background-repeat: no-repeat;
 }
 
 .scrollBottom {
-    background-position: -44px 0px;
+	background-position: -44px 0px;
 }
 
 /*boxes*/
 .pagination button {
-    background: url(/content/images/kolo/slideNav.png) no-repeat 0 0;
+	background: url(/content/images/kolo/slideNav.png) no-repeat 0 0;
 }
 
-    .pagination button.active {
-        background: url(/content/images/kolo/slideNav.png) no-repeat -22px 0;
-    }
+.pagination button.active {
+	background: url(/content/images/kolo/slideNav.png) no-repeat -22px 0;
+}
 
 /*content pages*/
 .popupGallery .gallery-nav-left,
 .projectsGallery .gallery-nav-left {
-    background: url('/content/images/showroomLeft.png');
+	background: url('/content/images/showroomLeft.png');
 }
 
 .popupGallery .gallery-nav-right,
 .projectsGallery .gallery-nav-right {
-    background: url('/content/images/showroomRight.png');
+	background: url('/content/images/showroomRight.png');
 }
 
 .yt-player button {
-    background: url('/content/images/closePopup.png');
+	background: url('/content/images/closePopup.png');
 }
 
 .job-offers h3 span.arrow,
 .filters h2 span,
 .filters h3 span.mobile-element,
 .faq-partials h3 span.arrow /*faq*/ {
-    background: url("/content/images/darkArrow.png") no-repeat center;
+	background: url('/content/images/darkArrow.png') no-repeat center;
 }
 
-    .job-offers h3 span.arrow.open,
+.job-offers h3 span.arrow.open,
     .filters h2 span.open,
     .filters h3 span.mobile-element.open,
     .faq-partials h3 span.arrow.open /*faq*/ {
-        background: url("/content/images/darkArrowTop.png") no-repeat center;
-    }
+	background: url('/content/images/darkArrowTop.png') no-repeat center;
+}
 
 .index-list span.hdr span,
 .index-list h3 span /*products*/ {
-    background: url("/content/images/whiteArrow.png") no-repeat center;
+	background: url('/content/images/whiteArrow.png') no-repeat center;
 }
 
-    .index-list span.hdr span.open,
+.index-list span.hdr span.open,
     .index-list h3 span.open /*products*/ {
-        background: url("/content/images/arrowTop.png") no-repeat center;
-    }
+	background: url('/content/images/arrowTop.png') no-repeat center;
+}
 
 /*inputs*/
 .selectDark .passiveSelect {
-    background: url("/content/images/darkArrow.png") no-repeat top right;
+	background: url('/content/images/darkArrow.png') no-repeat top right;
 }
 
 .selectDark .activeSelect {
-    background: url("/content/images/whiteArrow.png") no-repeat top right;
+	background: url('/content/images/whiteArrow.png') no-repeat top right;
 }
 
 /*designers*/
 .single-designer .small-media .text {
-    background: url(/content/images/pozzi-ginori/designerBg.png);
+	background: url(/content/images/pozzi-ginori/designerBg.png);
 }
 
 /*inspirations-brochures*/
 .hot-spot span {
-    background: url('/content/images/kolo/sprite_point.png');
+	background: url('/content/images/kolo/sprite_point.png');
 }
 
 .hot-spot span:hover,
 .hot-spot.active span {
-    background: url('/content/images/kolo/sprite_point.png') 0 30px;
+	background: url('/content/images/kolo/sprite_point.png') 0 30px;
 }
 
 .small-carousel li.active .overlay,
 .small-carousel li:hover .overlay {
-    background: url('/content/images/kolo/activeBg1.png');
+	background: url('/content/images/kolo/activeBg1.png');
 }
 
 /*.item-list .brochures-list li .text .no-print {
     background: url(/content/images/noPrint.png);
 }*/
 
-    .item-list .brochures-list li .text .no-print .no-print-label span {
-        background: url(/content/images/redArrow.png);
-    }
-
-.scfForm, 
-.googleMapNew {
-    font-family: 'kolo_medium' !important;
-
-    .file-upload-button {
-        color: #FFF;
-        font-family: 'kolo_medium' !important;
-        
-        &:hover {
-            color: #FFF;
-        }
-    }
-
-    .panel .selectStyle, 
-    input[type="text"], input[type="password"], 
-    textarea, .scfDropListGeneralPanel, select, 
-    .scfDateSelectorGeneralPanel .selectLight, 
-    .scfCaptcha img, 
-    .selectLight .styleSelect_item_start, 
-    .selectLight .styleSelect_item_content, 
-    .selectLight .styleSelect_item_end {
-        border-color: #BBB;
-    }
+.item-list .brochures-list li .text .no-print .no-print-label span {
+	background: url(/content/images/redArrow.png);
 }
 
-    /*.scfForm label, .scfCaptchaLabel {
+.scfForm,
+.googleMapNew {
+	font-family: 'kolo_medium' !important;
+
+	.file-upload-button {
+		color: #fff;
+		font-family: 'kolo_medium' !important;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.panel .selectStyle,
+	input[type='text'],
+	input[type='password'],
+	textarea,
+	.scfDropListGeneralPanel,
+	select,
+	.scfDateSelectorGeneralPanel .selectLight,
+	.scfCaptcha img,
+	.selectLight .styleSelect_item_start,
+	.selectLight .styleSelect_item_content,
+	.selectLight .styleSelect_item_end {
+		border-color: #bbb;
+	}
+}
+
+/*.scfForm label, .scfCaptchaLabel {
         width: 13% !important;
     }*/
 
@@ -1446,127 +1582,126 @@ hr {
  Brands: specific styles for brand elements modifications
  ========================================================================== */
 .two-brands-tabs {
-    display: block;
+	display: block;
 }
 
 .index-list a {
-    line-height: 17px;
+	line-height: 17px;
 }
 
 .mobileApp-wrapper {
-    background-color: #fff;
+	background-color: #fff;
 }
 
-    /*.scfForm .scfCheckbox .ez-checkbox.ez-checked {
+/*.scfForm .scfCheckbox .ez-checkbox.ez-checked {
         border: 5px solid #fff;
         background-color: #000;
     }*/
 
-.googleMap .panel input[type="button"] {
-    border: 0;
-    height: 30px;
-    line-height: 30px; /*IE fix*/
-    margin: 0;
-    width: 26px;
-    float: left;
-    background: url(/content/images/dark_search.jpg);
-    padding-left: 0px;
-    cursor: pointer;
+.googleMap .panel input[type='button'] {
+	border: 0;
+	height: 30px;
+	line-height: 30px; /*IE fix*/
+	margin: 0;
+	width: 26px;
+	float: left;
+	background: url(/content/images/dark_search.jpg);
+	padding-left: 0px;
+	cursor: pointer;
 }
 
 .job-offers > ul > li {
-    padding: 0 10px 20px 10px;
-    border-bottom: 1px solid #e1e3e4;
+	padding: 0 10px 20px 10px;
+	border-bottom: 1px solid #e1e3e4;
 }
 
-    .job-offers > ul > li:last-child {
-        border-bottom: 4px solid #000;
-    }
-
+.job-offers > ul > li:last-child {
+	border-bottom: 4px solid #000;
+}
 
 .search-form input::-webkit-input-placeholder {
-    color: #fff;
+	color: #fff;
 }
 
 .search-form input:-moz-placeholder {
-    color: #fff;
+	color: #fff;
 }
 
 .search-form input::-moz-placeholder {
-    color: #fff;
+	color: #fff;
 }
 
 .search-form input:-ms-input-placeholder {
-    color: #fff;
+	color: #fff;
 }
 
 .mobileApp-wrapper,
 .small-subcontent-wrapper {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .errorPage-wrapper input {
-    margin: 10px 0;
-    padding: 5px 15px;
-    color: #000;
+	margin: 10px 0;
+	padding: 5px 15px;
+	color: #000;
 }
 
 .errorPage-wrapper .errorPage-searchWrap {
-    max-width: 390px;
-    right: 23px;
+	max-width: 390px;
+	right: 23px;
 }
 
 .errorPage-wrapper input.errorPage-search,
 .errorPage-wrapper input.errorPage-submit {
-    background-color: transparent !important;
-    color: #000;
+	background-color: transparent !important;
+	color: #000;
 }
 
 .errorPage-wrapper input.errorPage-search {
-    border: 5px solid #000;
-    border-right: 0;
+	border: 5px solid #000;
+	border-right: 0;
 }
 
 .errorPage-wrapper input.errorPage-submit {
-    border: 5px solid #000;
-    border-left: 0;
-    background-position: 70% center;
+	border: 5px solid #000;
+	border-left: 0;
+	background-position: 70% center;
 }
 
 .errorPage-wrapper input::-webkit-input-placeholder {
-    color: #000;
+	color: #000;
 }
 
 .errorPage-wrapper input:-moz-placeholder {
-    color: #000;
+	color: #000;
 }
 
 .errorPage-wrapper input::-moz-placeholder {
-    color: #000;
+	color: #000;
 }
 
 .errorPage-wrapper input:-ms-input-placeholder {
-    color: #000;
+	color: #000;
 }
 
 input.errorPage-submit {
-    background-image: url('/content/images/pozzi-ginori/lensDark.png');
-    background-repeat: no-repeat;
+	background-image: url('/content/images/pozzi-ginori/lensDark.png');
+	background-repeat: no-repeat;
 }
 
 .scfSubmitButtonBorder {
 }
 
-    .scfSubmitButtonBorder input:hover {
-        color: #fff;
-    }
+.scfSubmitButtonBorder input:hover {
+	color: #fff;
+}
 
 .errorPage-wrapper h1 {
-    padding: 120px 0 0 0;
+	padding: 120px 0 0 0;
 }
 
 .left-mobile-filters {
-    margin-top: 0px;
+	margin-top: 0px;
 }
 
 /* ==========================================================================
@@ -1638,12 +1773,12 @@ input.errorPage-submit {
 .ru .scfValidationSummary,
 .ru .html-component, /*content pages*/
 .ru .job-offers {
-    font-family: Verdana;
-    font-weight: normal;
-    font-style: normal;
+	font-family: Verdana;
+	font-weight: normal;
+	font-style: normal;
 }
 
-    body.ru,
+body.ru,
     .ru .button,
     .ru .big-slide .frame a,
     .ru .big-slide .frame p,
@@ -1659,12 +1794,12 @@ input.errorPage-submit {
     .ru .small-filters a,
     .ru .showroom-gallery a.button,
     .ru .copyrights p {
-        font-family: Verdana;
-        font-weight: normal;
-        font-style: normal;
-    }
+	font-family: Verdana;
+	font-weight: normal;
+	font-style: normal;
+}
 
-    .ru .header nav ul li a,
+.ru .header nav ul li a,
     .ru .short-header h1,
     .ru #HeaderId h1,
     .ru .button-map_content a,
@@ -1695,10 +1830,10 @@ input.errorPage-submit {
     .ru .collections-categories, /*collections*/
     .ru .errorPage-wrapper h1,
     .ru .errorPage-wrapper h2 {
-        font-family: Verdana;
-        font-weight: bold;
-        font-style: normal;
-    }
+	font-family: Verdana;
+	font-weight: bold;
+	font-style: normal;
+}
 
 .uk .cookies-content,
 .uk .search-form .search-term,
@@ -1765,12 +1900,12 @@ input.errorPage-submit {
 .uk .scfValidationSummary,
 .uk .html-component, /*content pages*/
 .uk .job-offers {
-    font-family: Verdana;
-    font-weight: normal;
-    font-style: normal;
+	font-family: Verdana;
+	font-weight: normal;
+	font-style: normal;
 }
 
-    body.ru,
+body.ru,
     .uk .button,
     .uk .big-slide .frame a,
     .uk .big-slide .frame p,
@@ -1786,12 +1921,12 @@ input.errorPage-submit {
     .uk .small-filters a,
     .uk .showroom-gallery a.button,
     .uk .copyrights p {
-        font-family: Verdana;
-        font-weight: normal;
-        font-style: normal;
-    }
+	font-family: Verdana;
+	font-weight: normal;
+	font-style: normal;
+}
 
-    .uk .header nav ul li a,
+.uk .header nav ul li a,
     .uk .short-header h1,
     .uk #HeaderId h1,
     .uk .button-map_content a,
@@ -1822,10 +1957,10 @@ input.errorPage-submit {
     .uk .collections-categories, /*collections*/
     .uk .errorPage-wrapper h1,
     .uk .errorPage-wrapper h2 {
-        font-family: Verdana;
-        font-weight: bold;
-        font-style: normal;
-    }
+	font-family: Verdana;
+	font-weight: bold;
+	font-style: normal;
+}
 
 .bg .cookies-content,
 .bg .search-form .search-term,
@@ -1892,12 +2027,12 @@ input.errorPage-submit {
 .bg .scfValidationSummary,
 .bg .html-component, /*content pages*/
 .bg .job-offers {
-    font-family: Verdana;
-    font-weight: normal;
-    font-style: normal;
+	font-family: Verdana;
+	font-weight: normal;
+	font-style: normal;
 }
 
-    body.ru,
+body.ru,
     .bg .button,
     .bg .big-slide .frame a,
     .bg .big-slide .frame p,
@@ -1913,12 +2048,12 @@ input.errorPage-submit {
     .bg .small-filters a,
     .bg .showroom-gallery a.button,
     .bg .copyrights p {
-        font-family: Verdana;
-        font-weight: normal;
-        font-style: normal;
-    }
+	font-family: Verdana;
+	font-weight: normal;
+	font-style: normal;
+}
 
-    .bg .header nav ul li a,
+.bg .header nav ul li a,
     .bg .short-header h1,
     .bg #HeaderId h1,
     .bg .button-map_content a,
@@ -1949,100 +2084,96 @@ input.errorPage-submit {
     .bg .collections-categories, /*collections*/
     .bg .errorPage-wrapper h1,
     .bg .errorPage-wrapper h2 {
-        font-family: Verdana;
-        font-weight: bold;
-        font-style: normal;
-    }
+	font-family: Verdana;
+	font-weight: bold;
+	font-style: normal;
+}
 
 /****************************************************************************
 New version of products categories box - per brand
 *****************************************************************************/
 .list-category.light .index-list {
-    border-left: 1px solid #fff;
+	border-left: 1px solid #fff;
 }
-
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 979px) {
-    body:not(.pageeditor) nav.tablet ul.main-menu.expanded li a { /*tablet navigation*/
-        font-family: 'futura_bookregular';
-    }
+	body:not(.pageeditor) nav.tablet ul.main-menu.expanded li a {
+		/*tablet navigation*/
+		font-family: 'futura_bookregular';
+	}
 
-    body:not(.pageeditor) nav.tablet span.menuTitle, /*tablet navigation*/
+	body:not(.pageeditor) nav.tablet span.menuTitle, /*tablet navigation*/
     body:not(.pageeditor) nav.tablet ul.main-menu.expanded {
-        background-color: #ececec;
-    }
+		background-color: #ececec;
+	}
 
-        body:not(.pageeditor) nav.tablet ul.main-menu.expanded li a, /*tablet navigation*/
+	body:not(.pageeditor) nav.tablet ul.main-menu.expanded li a, /*tablet navigation*/
         body:not(.pageeditor) nav.tablet span.menuTitle {
-            color: #686869;
-        }
+		color: #686869;
+	}
 
-        body:not(.pageeditor) nav.tablet ul.main-menu.expanded li:hover { /*tablet navigation*/
-            color: #000;
-            background: transparent;
-        }
+	body:not(.pageeditor) nav.tablet ul.main-menu.expanded li:hover {
+		/*tablet navigation*/
+		color: #000;
+		background: transparent;
+	}
 
+	body:not(.pageeditor) nav.tablet span.menuTitle {
+		background-image: url(/content/images/pozzi-ginori/listIconTabPG.png);
+		background-repeat: no-repeat;
+		background-position: 5px center;
+		-moz-background-size: 25px 18px;
+		-o-background-size: 25px 18px;
+		-webkit-background-size: 25px 18px;
+		background-size: 25px 18px;
+	}
 
-    body:not(.pageeditor) nav.tablet span.menuTitle {
-        background-image: url(/content/images/pozzi-ginori/listIconTabPG.png);
-        background-repeat: no-repeat;
-        background-position: 5px center;
-        -moz-background-size: 25px 18px;
-        -o-background-size: 25px 18px;
-        -webkit-background-size: 25px 18px;
-        background-size: 25px 18px;
-    }
+	body:not(.pageeditor) .search-form.shortSearch.blackBg {
+		border-color: #000;
+		border-style: solid;
+		border-top-width: 1px;
+		border-left-width: 1px;
+		border-bottom-width: 6px;
+		border: none;
+	}
 
-    body:not(.pageeditor) .search-form.shortSearch.blackBg {
-        border-color: #000;
-        border-style: solid;
-        border-top-width: 1px;
-        border-left-width: 1px;
-        border-bottom-width: 6px;
-        border: none;
-    }
+	body:not(.pageeditor) .search-form.shortSearch > .submit {
+		border-left: 4px solid #fff;
+	}
 
-    body:not(.pageeditor) .search-form.shortSearch > .submit {
-        border-left: 4px solid #fff;
-    }
+	body:not(.pageeditor) .item-header {
+		border-top: 0;
+		margin-top: 0px;
+	}
 
-    body:not(.pageeditor) .item-header {
-        border-top: 0;
-        margin-top: 0px;
-    }
-
-    body:not(.pageeditor) .errorPage-wrapper h1 {
-        padding: 120px 0 0;
-    }
+	body:not(.pageeditor) .errorPage-wrapper h1 {
+		padding: 120px 0 0;
+	}
 
 	body:not(.pageeditor) .ml-firstForm {
 		background-color: #686869;
 	}
 
-	body:not(.pageeditor) .header nav ul li {
-		padding: 0 20px 0 0px;
-	}
-
-	.header a, 
-	.header img, 
+	.header a,
+	.header img,
 	.header nav {
 		display: inline-block;
 		float: none;
 	}
 
-	.header nav  {
+	.header nav {
 		position: relative;
 		width: 100%;
 	}
 
-	.header nav ul  {
+	.header nav ul {
 		width: 77%;
 	}
 
 	.header nav {
-		margin : -10px 0 10px;
-		padding : 0;
+		margin: -10px 0 10px;
+		padding: 0;
 	}
 
 	.header img {
@@ -2056,7 +2187,7 @@ New version of products categories box - per brand
 		top: 0;
 	}
 
-	body:not(.pageeditor) .my-list-menu span.label, 
+	body:not(.pageeditor) .my-list-menu span.label,
 	body:not(.pageeditor) .my-list-menu span.my-list-counter {
 		background-image: inherit;
 		font-size: inherit;
@@ -2067,753 +2198,1611 @@ New version of products categories box - per brand
 
 /* Mobile */
 @media (max-width: 767px) {
-    body:not(.pageeditor) .main nav {
-        background: transparent;
-        border-right: 0;
-    }
+	body:not(.pageeditor) .main nav {
+		background: transparent;
+		border-right: 0;
+	}
 
-    .main-menu li,
-    .main-menu li.active,
-    .main-menu li:hover {
-        background-color: #686869;
-    }
+	.main-menu li,
+	.main-menu li.active,
+	.main-menu li:hover {
+		background-color: #686869;
+	}
 
-        .main-menu li.repositioned a {
-            text-transform: none;
-        }
+	.main-menu li.repositioned a {
+		text-transform: none;
+	}
 
-        .main-menu li a,
-        .main-menu li.firstRepositioned.repositioned a {
-            text-transform: uppercase;
-        }
+	.main-menu li a,
+	.main-menu li.firstRepositioned.repositioned a {
+		text-transform: uppercase;
+	}
 
-        body:not(.pageeditor) .main-menu li.firstRepositioned.repositioned {
-            border-top: 1px solid #828282;
-        }
+	body:not(.pageeditor) .main-menu li.firstRepositioned.repositioned {
+		border-top: 1px solid #828282;
+	}
 
-        body:not(.pageeditor) .main-menu li a {
-            color: #fff;
-            background: transparent;
-        }
+	body:not(.pageeditor) .main-menu li a {
+		color: #fff;
+		background: transparent;
+	}
 
-        .main-menu li:hover a {
-            color: #000;
-        }
+	.main-menu li:hover a {
+		color: #000;
+	}
 
-    .bigCarousel { /*boxes*/
-        border: 1px solid #aaa;
-    }
+	.bigCarousel {
+		/*boxes*/
+		border: 1px solid #aaa;
+	}
 
-    .index-list, /*products*/
+	.index-list, /*products*/
     .filters h2,
     .filters > ul > li {
-        border-bottom: 1px solid #fff;
-    }
+		border-bottom: 1px solid #fff;
+	}
 
-    .contener-site-index .index-list span.hdr a,
-    .contener-site-index .index-list h3 a {
-        color: #fff;
-    }
+	.contener-site-index .index-list span.hdr a,
+	.contener-site-index .index-list h3 a {
+		color: #fff;
+	}
 
-    .index-list span.hdr.clickEnable:hover a,
-    .index-list h3.clickEnable:hover a {
-        color: #fff;
-    }
+	.index-list span.hdr.clickEnable:hover a,
+	.index-list h3.clickEnable:hover a {
+		color: #fff;
+	}
 
+	.index-list span.hdr.clickEnable a:hover,
+	.index-list span.hdr.clickEnable .mobile-element:hover,
+	.index-list span.hdr.clickEnable li:hover a,
+	.contener-site-index .index-list span.hdr.clickEnable:hover a,
+	.contener-site-index .index-list span.hdr.clickEnable a:hover,
+	.contener-site-index .index-list span.hdr.clickEnable .mobile-element:hover,
+	.contener-site-index .index-list span.hdr.clickEnable li:hover a,
+	.index-list h3.clickEnable a:hover,
+	.index-list h3.clickEnable .mobile-element:hover,
+	.index-list h3.clickEnable li:hover a,
+	.contener-site-index .index-list h3.clickEnable:hover a,
+	.contener-site-index .index-list h3.clickEnable a:hover,
+	.contener-site-index .index-list h3.clickEnable .mobile-element:hover,
+	.contener-site-index .index-list h3.clickEnable li:hover a {
+		background-color: #000;
+	}
 
-    .index-list span.hdr.clickEnable a:hover,
-    .index-list span.hdr.clickEnable .mobile-element:hover,
-    .index-list span.hdr.clickEnable li:hover a,
-    .contener-site-index .index-list span.hdr.clickEnable:hover a,
-    .contener-site-index .index-list span.hdr.clickEnable a:hover,
-    .contener-site-index .index-list span.hdr.clickEnable .mobile-element:hover,
-    .contener-site-index .index-list span.hdr.clickEnable li:hover a,
-    .index-list h3.clickEnable a:hover,
-    .index-list h3.clickEnable .mobile-element:hover,
-    .index-list h3.clickEnable li:hover a,
-    .contener-site-index .index-list h3.clickEnable:hover a,
-    .contener-site-index .index-list h3.clickEnable a:hover,
-    .contener-site-index .index-list h3.clickEnable .mobile-element:hover,
-    .contener-site-index .index-list h3.clickEnable li:hover a {
-        background-color: #000;
-    }
+	body:not(.pageeditor) .site-index-lists {
+		/*products*/
+		border-top: 1px solid #fff;
+	}
 
-    body:not(.pageeditor) .site-index-lists { /*products*/
-        border-top: 1px solid #fff;
-    }
+	body:not(.pageeditor) nav.mobile.clone-main .search-form .submit {
+		/*mobile navigation*/
+		border-right: 1px solid #ccc;
+	}
 
-    body:not(.pageeditor) nav.mobile.clone-main .search-form .submit { /*mobile navigation*/
-        border-right: 1px solid #ccc;
-    }
+	.big-slide .frame {
+		/*boxes*/
+		background: #fff;
+	}
 
-    .big-slide .frame { /*boxes*/
-        background: #fff;
-    }
+	.index-list.activeList {
+		/*products*/
+		background-color: #5f5d5d;
+	}
 
+	.light .index-list.activeList {
+		/*products*/
+		background-color: #ececec;
+	}
 
-    .index-list.activeList { /*products*/
-        background-color: #5f5d5d;
-    }
+	body:not(.pageeditor) nav.mobile.clone-main span.menuTitle {
+		background: url(/content/images/pozzi-ginori/listIconTabPG.png) no-repeat 0
+			center;
+		-moz-background-size: 25px 18px;
+		-o-background-size: 25px 18px;
+		-webkit-background-size: 25px 18px;
+		background-size: 25px 18px;
+	}
 
-    .light .index-list.activeList { /*products*/
-        background-color: #ececec;
-    }
+	body:not(.pageeditor) nav.mobile.clone-main span.menuTitle.active {
+		background-image: url(/content/images/pozzi-ginori/listIconTabPGwhite.png);
+		background-repeat: no-repeat;
+		background-position: 0 center;
+	}
 
-    body:not(.pageeditor) nav.mobile.clone-main span.menuTitle {
-        background: url(/content/images/pozzi-ginori/listIconTabPG.png) no-repeat 0 center;
-        -moz-background-size: 25px 18px;
-        -o-background-size: 25px 18px;
-        -webkit-background-size: 25px 18px;
-        background-size: 25px 18px;
-    }
+	body:not(.pageeditor) .errorPage-backHome-button {
+		margin: 0;
+	}
 
-        body:not(.pageeditor) nav.mobile.clone-main span.menuTitle.active {
-            background-image: url(/content/images/pozzi-ginori/listIconTabPGwhite.png);
-            background-repeat: no-repeat;
-            background-position: 0 center;
-        }
+	body:not(.pageeditor) .errorPage-main > .errorPage-wrapper {
+		padding: 0;
+	}
 
-    body:not(.pageeditor) .errorPage-backHome-button {
-        margin: 0;
-    }
+	body:not(.pageeditor) span.menuTitle,
+	body:not(.pageeditor) span.menuTitle.active {
+		text-transform: uppercase;
+		line-height: 38px;
+		margin: 0 8px 0 0;
+		padding: 0px 0 0 34px;
+		background-position: 5px 8px;
+		background-repeat: no-repeat;
+		width: 50px;
+	}
 
-    body:not(.pageeditor) .errorPage-main > .errorPage-wrapper {
-        padding: 0;
-    }
+	body:not(.pageeditor) span.menuTitle {
+		background-image: url(/content/images/kolo/listIconTabPG.png);
+		color: #686869;
+	}
 
-    body:not(.pageeditor) span.menuTitle,
-    body:not(.pageeditor) span.menuTitle.active {
-        text-transform: uppercase;
-        line-height: 38px;
-        margin: 0 8px 0 0;
-        padding: 0px 0 0 34px;
-        background-position: 5px 8px;
-        background-repeat: no-repeat;
-        width: 50px;
-    }
+	body:not(.pageeditor) span.menuTitle.active {
+		background-image: url(/content/images/kolo/listIconTabPGwhite.png);
+		color: #fff;
+		background-color: #686869;
+	}
 
-    body:not(.pageeditor) span.menuTitle {
-        background-image: url(/content/images/kolo/listIconTabPG.png);
-        color: #686869;
-    }
+	body:not(.pageeditor) .main nav .search-form .submit {
+		background-image: url(/content/images/lensDark.png);
+		height: 33px;
+	}
 
-        body:not(.pageeditor) span.menuTitle.active {
-            background-image: url(/content/images/kolo/listIconTabPGwhite.png);
-            color: #fff;
-            background-color: #686869;
-        }
+	.scfForm label,
+	.scfCaptchaLabel {
+		width: 88% !important;
+	}
 
-    body:not(.pageeditor) .main nav .search-form .submit {
-        background-image: url(/content/images/lensDark.png);
-        height: 33px;
-    }
-
-    .scfForm label, .scfCaptchaLabel {
-        width: 88% !important;
-    }
-
-	body:not(.pageeditor) .googleMap.googleMapNew .panel .filterCity .selectStyle {
+	body:not(.pageeditor)
+		.googleMap.googleMapNew
+		.panel
+		.filterCity
+		.selectStyle {
 		width: 38.8%;
 	}
 
-	body:not(.pageeditor) .googleMap.googleMapNew .panel .filterCity .selectStyle:first-of-type {
+	body:not(.pageeditor)
+		.googleMap.googleMapNew
+		.panel
+		.filterCity
+		.selectStyle:first-of-type {
 		margin-right: 1%;
 	}
 }
 
 /*font-resize auto generate*/
 @media (max-width: 500px) {
-    .breadcrumb, .item-list ul li .text span.code, .simple-slider .simple-slider-list li .text span.code, .searchResults-element .searchResults-elementSmaller {
-        font-size: 10px;
-    }
+	.breadcrumb,
+	.item-list ul li .text span.code,
+	.simple-slider .simple-slider-list li .text span.code,
+	.searchResults-element .searchResults-elementSmaller {
+		font-size: 10px;
+	}
 
-    .index-list a {
-        font-size: 12px;
-    }
+	.index-list a {
+		font-size: 12px;
+	}
 
-    .cookies-content, .brands-desc p, .brands-desc a, .button-map_content a, .search-form .search-term, .top-site-index > p, .top-site-index span a, .content-footer ul li, .content-footer h3, .text-slide .text p, .small-slide .text p, .filters ul li h3, .item-header .sortby-select h3, .item-header > span, .simple-slider .simple-slider-list li .text p.product-description, .simple-slider .simple-slider-list li .text span.price, .item-list ul li .text p, .item-list.list-style ul li .text span.code, .main-product h2, .main-product ul li span, .description, .description p, .description ul li, .technical ul li span, .technical ul li span.technical-content, .ui-tabs .ui-tabs-panel, .ui-tabs .ui-tabs-nav li a, .selectDark .passiveSelect, .selectDark .activeSelect, .selectDark li, .selectLight li, .checkboxes ul li label, .checkbox-list .default-value, .button, .showroom-gallery a.button, .google-search-result ul li p, .collections-categories, .collection-filters h3, .small-filters a, .item-list .brochures-list li .text span, .item-list .brochures-list li .text a, .main-inspiration .text .collections-list h4, .main-inspiration .text .collections-list ul li, .item-list .brochures-list li .text .no-print .no-print-label, .press ul li .desc span.date, .styled-input-light .style-input, .copyrights p {
-        font-size: 10px;
-    }
+	.cookies-content,
+	.brands-desc p,
+	.brands-desc a,
+	.button-map_content a,
+	.search-form .search-term,
+	.top-site-index > p,
+	.top-site-index span a,
+	.content-footer ul li,
+	.content-footer h3,
+	.text-slide .text p,
+	.small-slide .text p,
+	.filters ul li h3,
+	.item-header .sortby-select h3,
+	.item-header > span,
+	.simple-slider .simple-slider-list li .text p.product-description,
+	.simple-slider .simple-slider-list li .text span.price,
+	.item-list ul li .text p,
+	.item-list.list-style ul li .text span.code,
+	.main-product h2,
+	.main-product ul li span,
+	.description,
+	.description p,
+	.description ul li,
+	.technical ul li span,
+	.technical ul li span.technical-content,
+	.ui-tabs .ui-tabs-panel,
+	.ui-tabs .ui-tabs-nav li a,
+	.selectDark .passiveSelect,
+	.selectDark .activeSelect,
+	.selectDark li,
+	.selectLight li,
+	.checkboxes ul li label,
+	.checkbox-list .default-value,
+	.button,
+	.showroom-gallery a.button,
+	.google-search-result ul li p,
+	.collections-categories,
+	.collection-filters h3,
+	.small-filters a,
+	.item-list .brochures-list li .text span,
+	.item-list .brochures-list li .text a,
+	.main-inspiration .text .collections-list h4,
+	.main-inspiration .text .collections-list ul li,
+	.item-list .brochures-list li .text .no-print .no-print-label,
+	.press ul li .desc span.date,
+	.styled-input-light .style-input,
+	.copyrights p {
+		font-size: 10px;
+	}
 
-    .brand-point a span {
-        font-size: 13px;
-    }
+	.brand-point a span {
+		font-size: 13px;
+	}
 
-    body, .item-list.list-style ul li .text ul li, .item-list.list-style ul li .text span.price, .item-list ul.collections-list li .text p, .single-designer .designer-description, .small-filters h3, .main-inspiration .text p, .projects-filters h3, .projectsColumn, .projectsDesc .project-desc ul > li span, .scfValidator, .scfValidationSummary {
-        font-size: 12px;
-    }
+	body,
+	.item-list.list-style ul li .text ul li,
+	.item-list.list-style ul li .text span.price,
+	.item-list ul.collections-list li .text p,
+	.single-designer .designer-description,
+	.small-filters h3,
+	.main-inspiration .text p,
+	.projects-filters h3,
+	.projectsColumn,
+	.projectsDesc .project-desc ul > li span,
+	.scfValidator,
+	.scfValidationSummary {
+		font-size: 12px;
+	}
 
-    .email-updates p {
-        font-size: 14px;
-    }
+	.email-updates p {
+		font-size: 14px;
+	}
 
-    .hyperBox .text p {
-        font-size: 14px;
-    }
+	.hyperBox .text p {
+		font-size: 14px;
+	}
 
-    .text-slide .text h2, .small-slide .text h2, .simple-slider h2, .item-list.list-style ul li .text p, .designer-description h3, .order-list h2, .showroom-gallery h2, .job-offers h2, .job-offers h3, .google-search-result h2, .faq-partials h3, .errorPage-wrapper h2 {
-        font-size: 14px;
-    }
+	.text-slide .text h2,
+	.small-slide .text h2,
+	.simple-slider h2,
+	.item-list.list-style ul li .text p,
+	.designer-description h3,
+	.order-list h2,
+	.showroom-gallery h2,
+	.job-offers h2,
+	.job-offers h3,
+	.google-search-result h2,
+	.faq-partials h3,
+	.errorPage-wrapper h2 {
+		font-size: 14px;
+	}
 
-    h1.products-filters-header, .price p, .main-inspiration .text h3, .press ul li .desc h2, .item-list .tips-list li .desc h2, .searchResults-search input[type=text] {
-        font-size: 15px;
-    }
+	h1.products-filters-header,
+	.price p,
+	.main-inspiration .text h3,
+	.press ul li .desc h2,
+	.item-list .tips-list li .desc h2,
+	.searchResults-search input[type='text'] {
+		font-size: 15px;
+	}
 
-    .hyperBox .text h2, .html-box h2, .email-updates h2, .projectsDesc h3 {
-        font-size: 14px;
-    }
+	.hyperBox .text h2,
+	.html-box h2,
+	.email-updates h2,
+	.projectsDesc h3 {
+		font-size: 14px;
+	}
 
-    .email-updates h2 {
-        font-size: 22px;
-    }
+	.email-updates h2 {
+		font-size: 22px;
+	}
 
-    .short-header h1, #HeaderId h1, .main-product .product-name h1, .errorPage-wrapper h1, .searchResults-search span {
-        font-size: 16px;
-    }
+	.short-header h1,
+	#HeaderId h1,
+	.main-product .product-name h1,
+	.errorPage-wrapper h1,
+	.searchResults-search span {
+		font-size: 16px;
+	}
 
-    .brands-desc span.hdr, .bigHyperBox .text h2 {
-        font-size: 15px;
-    }
+	.brands-desc span.hdr,
+	.bigHyperBox .text h2 {
+		font-size: 15px;
+	}
 
-    .big-slide .frame h2 {
-        font-size: 20px;
-    }
+	.big-slide .frame h2 {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 480px) {
-    .breadcrumb, .item-list ul li .text span.code, .simple-slider .simple-slider-list li .text span.code, .searchResults-element .searchResults-elementSmaller {
-        font-size: 10px;
-    }
+	.breadcrumb,
+	.item-list ul li .text span.code,
+	.simple-slider .simple-slider-list li .text span.code,
+	.searchResults-element .searchResults-elementSmaller {
+		font-size: 10px;
+	}
 
-    .index-list a {
-        font-size: 12px;
-    }
+	.index-list a {
+		font-size: 12px;
+	}
 
-    .cookies-content, .brands-desc p, .brands-desc a, .button-map_content a, .search-form .search-term, .top-site-index > p, .top-site-index span a, .content-footer ul li, .content-footer h3, .text-slide .text p, .small-slide .text p, .filters ul li h3, .item-header .sortby-select h3, .item-header > span, .simple-slider .simple-slider-list li .text p.product-description, .simple-slider .simple-slider-list li .text span.price, .item-list ul li .text p, .item-list.list-style ul li .text span.code, .main-product h2, .main-product ul li span, .description, .description p, .description ul li, .technical ul li span, .technical ul li span.technical-content, .ui-tabs .ui-tabs-panel, .ui-tabs .ui-tabs-nav li a, .selectDark .passiveSelect, .selectDark .activeSelect, .selectDark li, .selectLight li, .checkboxes ul li label, .checkbox-list .default-value, .button, .showroom-gallery a.button, .google-search-result ul li p, .collections-categories, .collection-filters h3, .small-filters a, .item-list .brochures-list li .text span, .item-list .brochures-list li .text a, .main-inspiration .text .collections-list h4, .main-inspiration .text .collections-list ul li, .item-list .brochures-list li .text .no-print .no-print-label, .press ul li .desc span.date, .styled-input-light .style-input, .copyrights p {
-        font-size: 10px;
-    }
+	.cookies-content,
+	.brands-desc p,
+	.brands-desc a,
+	.button-map_content a,
+	.search-form .search-term,
+	.top-site-index > p,
+	.top-site-index span a,
+	.content-footer ul li,
+	.content-footer h3,
+	.text-slide .text p,
+	.small-slide .text p,
+	.filters ul li h3,
+	.item-header .sortby-select h3,
+	.item-header > span,
+	.simple-slider .simple-slider-list li .text p.product-description,
+	.simple-slider .simple-slider-list li .text span.price,
+	.item-list ul li .text p,
+	.item-list.list-style ul li .text span.code,
+	.main-product h2,
+	.main-product ul li span,
+	.description,
+	.description p,
+	.description ul li,
+	.technical ul li span,
+	.technical ul li span.technical-content,
+	.ui-tabs .ui-tabs-panel,
+	.ui-tabs .ui-tabs-nav li a,
+	.selectDark .passiveSelect,
+	.selectDark .activeSelect,
+	.selectDark li,
+	.selectLight li,
+	.checkboxes ul li label,
+	.checkbox-list .default-value,
+	.button,
+	.showroom-gallery a.button,
+	.google-search-result ul li p,
+	.collections-categories,
+	.collection-filters h3,
+	.small-filters a,
+	.item-list .brochures-list li .text span,
+	.item-list .brochures-list li .text a,
+	.main-inspiration .text .collections-list h4,
+	.main-inspiration .text .collections-list ul li,
+	.item-list .brochures-list li .text .no-print .no-print-label,
+	.press ul li .desc span.date,
+	.styled-input-light .style-input,
+	.copyrights p {
+		font-size: 10px;
+	}
 
-    .brand-point a span {
-        font-size: 13px;
-    }
+	.brand-point a span {
+		font-size: 13px;
+	}
 
-    body, .item-list.list-style ul li .text ul li, .item-list.list-style ul li .text span.price, .item-list ul.collections-list li .text p, .single-designer .designer-description, .small-filters h3, .main-inspiration .text p, .projects-filters h3, .projectsColumn, .projectsDesc .project-desc ul > li span, .scfValidator, .scfValidationSummary {
-        font-size: 11.9px;
-    }
+	body,
+	.item-list.list-style ul li .text ul li,
+	.item-list.list-style ul li .text span.price,
+	.item-list ul.collections-list li .text p,
+	.single-designer .designer-description,
+	.small-filters h3,
+	.main-inspiration .text p,
+	.projects-filters h3,
+	.projectsColumn,
+	.projectsDesc .project-desc ul > li span,
+	.scfValidator,
+	.scfValidationSummary {
+		font-size: 11.9px;
+	}
 
-    .email-updates p {
-        font-size: 13.4px;
-    }
+	.email-updates p {
+		font-size: 13.4px;
+	}
 
-    .hyperBox .text p {
-        font-size: 13.3px;
-    }
+	.hyperBox .text p {
+		font-size: 13.3px;
+	}
 
-    .text-slide .text h2, .small-slide .text h2, .simple-slider h2, .item-list.list-style ul li .text p, .designer-description h3, .order-list h2, .showroom-gallery h2, .job-offers h2, .job-offers h3, .google-search-result h2, .faq-partials h3, .errorPage-wrapper h2 {
-        font-size: 13.6px;
-    }
+	.text-slide .text h2,
+	.small-slide .text h2,
+	.simple-slider h2,
+	.item-list.list-style ul li .text p,
+	.designer-description h3,
+	.order-list h2,
+	.showroom-gallery h2,
+	.job-offers h2,
+	.job-offers h3,
+	.google-search-result h2,
+	.faq-partials h3,
+	.errorPage-wrapper h2 {
+		font-size: 13.6px;
+	}
 
-    h1.products-filters-header, .price p, .main-inspiration .text h3, .press ul li .desc h2, .item-list .tips-list li .desc h2, .searchResults-search input[type=text] {
-        font-size: 14.7px;
-    }
+	h1.products-filters-header,
+	.price p,
+	.main-inspiration .text h3,
+	.press ul li .desc h2,
+	.item-list .tips-list li .desc h2,
+	.searchResults-search input[type='text'] {
+		font-size: 14.7px;
+	}
 
-    .hyperBox .text h2, .html-box h2, .email-updates h2, .projectsDesc h3 {
-        font-size: 13.7px;
-    }
+	.hyperBox .text h2,
+	.html-box h2,
+	.email-updates h2,
+	.projectsDesc h3 {
+		font-size: 13.7px;
+	}
 
-    .email-updates h2 {
-        font-size: 20.9px;
-    }
+	.email-updates h2 {
+		font-size: 20.9px;
+	}
 
-    .short-header h1, #HeaderId h1, .main-product .product-name h1, .errorPage-wrapper h1, .searchResults-search span {
-        font-size: 15.7px;
-    }
+	.short-header h1,
+	#HeaderId h1,
+	.main-product .product-name h1,
+	.errorPage-wrapper h1,
+	.searchResults-search span {
+		font-size: 15.7px;
+	}
 
-    .brands-desc span.hdr, .bigHyperBox .text h2 {
-        font-size: 15px;
-    }
+	.brands-desc span.hdr,
+	.bigHyperBox .text h2 {
+		font-size: 15px;
+	}
 
-    .big-slide .frame h2 {
-        font-size: 20px;
-    }
+	.big-slide .frame h2 {
+		font-size: 20px;
+	}
 
-	body:not(.pageeditor) .googleMap.googleMapNew .panel .filterCity .selectStyle {
+	body:not(.pageeditor)
+		.googleMap.googleMapNew
+		.panel
+		.filterCity
+		.selectStyle {
 		width: 100%;
 	}
 }
 
 @media (max-width: 460px) {
-    .breadcrumb, .item-list ul li .text span.code, .simple-slider .simple-slider-list li .text span.code, .searchResults-element .searchResults-elementSmaller {
-        font-size: 10px;
-    }
+	.breadcrumb,
+	.item-list ul li .text span.code,
+	.simple-slider .simple-slider-list li .text span.code,
+	.searchResults-element .searchResults-elementSmaller {
+		font-size: 10px;
+	}
 
-    .index-list a {
-        font-size: 12px;
-    }
+	.index-list a {
+		font-size: 12px;
+	}
 
-    .cookies-content, .brands-desc p, .brands-desc a, .button-map_content a, .search-form .search-term, .top-site-index > p, .top-site-index span a, .content-footer ul li, .content-footer h3, .text-slide .text p, .small-slide .text p, .filters ul li h3, .item-header .sortby-select h3, .item-header > span, .simple-slider .simple-slider-list li .text p.product-description, .simple-slider .simple-slider-list li .text span.price, .item-list ul li .text p, .item-list.list-style ul li .text span.code, .main-product h2, .main-product ul li span, .description, .description p, .description ul li, .technical ul li span, .technical ul li span.technical-content, .ui-tabs .ui-tabs-panel, .ui-tabs .ui-tabs-nav li a, .selectDark .passiveSelect, .selectDark .activeSelect, .selectDark li, .selectLight li, .checkboxes ul li label, .checkbox-list .default-value, .button, .showroom-gallery a.button, .google-search-result ul li p, .collections-categories, .collection-filters h3, .small-filters a, .item-list .brochures-list li .text span, .item-list .brochures-list li .text a, .main-inspiration .text .collections-list h4, .main-inspiration .text .collections-list ul li, .item-list .brochures-list li .text .no-print .no-print-label, .press ul li .desc span.date, .styled-input-light .style-input, .copyrights p {
-        font-size: 10px;
-    }
+	.cookies-content,
+	.brands-desc p,
+	.brands-desc a,
+	.button-map_content a,
+	.search-form .search-term,
+	.top-site-index > p,
+	.top-site-index span a,
+	.content-footer ul li,
+	.content-footer h3,
+	.text-slide .text p,
+	.small-slide .text p,
+	.filters ul li h3,
+	.item-header .sortby-select h3,
+	.item-header > span,
+	.simple-slider .simple-slider-list li .text p.product-description,
+	.simple-slider .simple-slider-list li .text span.price,
+	.item-list ul li .text p,
+	.item-list.list-style ul li .text span.code,
+	.main-product h2,
+	.main-product ul li span,
+	.description,
+	.description p,
+	.description ul li,
+	.technical ul li span,
+	.technical ul li span.technical-content,
+	.ui-tabs .ui-tabs-panel,
+	.ui-tabs .ui-tabs-nav li a,
+	.selectDark .passiveSelect,
+	.selectDark .activeSelect,
+	.selectDark li,
+	.selectLight li,
+	.checkboxes ul li label,
+	.checkbox-list .default-value,
+	.button,
+	.showroom-gallery a.button,
+	.google-search-result ul li p,
+	.collections-categories,
+	.collection-filters h3,
+	.small-filters a,
+	.item-list .brochures-list li .text span,
+	.item-list .brochures-list li .text a,
+	.main-inspiration .text .collections-list h4,
+	.main-inspiration .text .collections-list ul li,
+	.item-list .brochures-list li .text .no-print .no-print-label,
+	.press ul li .desc span.date,
+	.styled-input-light .style-input,
+	.copyrights p {
+		font-size: 10px;
+	}
 
-    .brand-point a span {
-        font-size: 13px;
-    }
+	.brand-point a span {
+		font-size: 13px;
+	}
 
-    body, .item-list.list-style ul li .text ul li, .item-list.list-style ul li .text span.price, .item-list ul.collections-list li .text p, .single-designer .designer-description, .small-filters h3, .main-inspiration .text p, .projects-filters h3, .projectsColumn, .projectsDesc .project-desc ul > li span, .scfValidator, .scfValidationSummary {
-        font-size: 11.8px;
-    }
+	body,
+	.item-list.list-style ul li .text ul li,
+	.item-list.list-style ul li .text span.price,
+	.item-list ul.collections-list li .text p,
+	.single-designer .designer-description,
+	.small-filters h3,
+	.main-inspiration .text p,
+	.projects-filters h3,
+	.projectsColumn,
+	.projectsDesc .project-desc ul > li span,
+	.scfValidator,
+	.scfValidationSummary {
+		font-size: 11.8px;
+	}
 
-    .email-updates p {
-        font-size: 12.8px;
-    }
+	.email-updates p {
+		font-size: 12.8px;
+	}
 
-    .hyperBox .text p {
-        font-size: 12.7px;
-    }
+	.hyperBox .text p {
+		font-size: 12.7px;
+	}
 
-    .text-slide .text h2, .small-slide .text h2, .simple-slider h2, .item-list.list-style ul li .text p, .designer-description h3, .order-list h2, .showroom-gallery h2, .job-offers h2, .job-offers h3, .google-search-result h2, .faq-partials h3, .errorPage-wrapper h2 {
-        font-size: 13.1px;
-    }
+	.text-slide .text h2,
+	.small-slide .text h2,
+	.simple-slider h2,
+	.item-list.list-style ul li .text p,
+	.designer-description h3,
+	.order-list h2,
+	.showroom-gallery h2,
+	.job-offers h2,
+	.job-offers h3,
+	.google-search-result h2,
+	.faq-partials h3,
+	.errorPage-wrapper h2 {
+		font-size: 13.1px;
+	}
 
-    h1.products-filters-header, .price p, .main-inspiration .text h3, .press ul li .desc h2, .item-list .tips-list li .desc h2, .searchResults-search input[type=text] {
-        font-size: 14.3px;
-    }
+	h1.products-filters-header,
+	.price p,
+	.main-inspiration .text h3,
+	.press ul li .desc h2,
+	.item-list .tips-list li .desc h2,
+	.searchResults-search input[type='text'] {
+		font-size: 14.3px;
+	}
 
-    .hyperBox .text h2, .html-box h2, .email-updates h2, .projectsDesc h3 {
-        font-size: 13.3px;
-    }
+	.hyperBox .text h2,
+	.html-box h2,
+	.email-updates h2,
+	.projectsDesc h3 {
+		font-size: 13.3px;
+	}
 
-    .email-updates h2 {
-        font-size: 19.8px;
-    }
+	.email-updates h2 {
+		font-size: 19.8px;
+	}
 
-    .short-header h1, #HeaderId h1, .main-product .product-name h1, .errorPage-wrapper h1, .searchResults-search span {
-        font-size: 15.3px;
-    }
+	.short-header h1,
+	#HeaderId h1,
+	.main-product .product-name h1,
+	.errorPage-wrapper h1,
+	.searchResults-search span {
+		font-size: 15.3px;
+	}
 
-    .brands-desc span.hdr, .bigHyperBox .text h2 {
-        font-size: 15px;
-    }
+	.brands-desc span.hdr,
+	.bigHyperBox .text h2 {
+		font-size: 15px;
+	}
 
-    .big-slide .frame h2 {
-        font-size: 20px;
-    }
+	.big-slide .frame h2 {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 440px) {
-    .breadcrumb, .item-list ul li .text span.code, .simple-slider .simple-slider-list li .text span.code, .searchResults-element .searchResults-elementSmaller {
-        font-size: 10px;
-    }
+	.breadcrumb,
+	.item-list ul li .text span.code,
+	.simple-slider .simple-slider-list li .text span.code,
+	.searchResults-element .searchResults-elementSmaller {
+		font-size: 10px;
+	}
 
-    .index-list a {
-        font-size: 12px;
-    }
+	.index-list a {
+		font-size: 12px;
+	}
 
-    .cookies-content, .brands-desc p, .brands-desc a, .button-map_content a, .search-form .search-term, .top-site-index > p, .top-site-index span a, .content-footer ul li, .content-footer h3, .text-slide .text p, .small-slide .text p, .filters ul li h3, .item-header .sortby-select h3, .item-header > span, .simple-slider .simple-slider-list li .text p.product-description, .simple-slider .simple-slider-list li .text span.price, .item-list ul li .text p, .item-list.list-style ul li .text span.code, .main-product h2, .main-product ul li span, .description, .description p, .description ul li, .technical ul li span, .technical ul li span.technical-content, .ui-tabs .ui-tabs-panel, .ui-tabs .ui-tabs-nav li a, .selectDark .passiveSelect, .selectDark .activeSelect, .selectDark li, .selectLight li, .checkboxes ul li label, .checkbox-list .default-value, .button, .showroom-gallery a.button, .google-search-result ul li p, .collections-categories, .collection-filters h3, .small-filters a, .item-list .brochures-list li .text span, .item-list .brochures-list li .text a, .main-inspiration .text .collections-list h4, .main-inspiration .text .collections-list ul li, .item-list .brochures-list li .text .no-print .no-print-label, .press ul li .desc span.date, .styled-input-light .style-input, .copyrights p {
-        font-size: 10px;
-    }
+	.cookies-content,
+	.brands-desc p,
+	.brands-desc a,
+	.button-map_content a,
+	.search-form .search-term,
+	.top-site-index > p,
+	.top-site-index span a,
+	.content-footer ul li,
+	.content-footer h3,
+	.text-slide .text p,
+	.small-slide .text p,
+	.filters ul li h3,
+	.item-header .sortby-select h3,
+	.item-header > span,
+	.simple-slider .simple-slider-list li .text p.product-description,
+	.simple-slider .simple-slider-list li .text span.price,
+	.item-list ul li .text p,
+	.item-list.list-style ul li .text span.code,
+	.main-product h2,
+	.main-product ul li span,
+	.description,
+	.description p,
+	.description ul li,
+	.technical ul li span,
+	.technical ul li span.technical-content,
+	.ui-tabs .ui-tabs-panel,
+	.ui-tabs .ui-tabs-nav li a,
+	.selectDark .passiveSelect,
+	.selectDark .activeSelect,
+	.selectDark li,
+	.selectLight li,
+	.checkboxes ul li label,
+	.checkbox-list .default-value,
+	.button,
+	.showroom-gallery a.button,
+	.google-search-result ul li p,
+	.collections-categories,
+	.collection-filters h3,
+	.small-filters a,
+	.item-list .brochures-list li .text span,
+	.item-list .brochures-list li .text a,
+	.main-inspiration .text .collections-list h4,
+	.main-inspiration .text .collections-list ul li,
+	.item-list .brochures-list li .text .no-print .no-print-label,
+	.press ul li .desc span.date,
+	.styled-input-light .style-input,
+	.copyrights p {
+		font-size: 10px;
+	}
 
-    .brand-point a span {
-        font-size: 13px;
-    }
+	.brand-point a span {
+		font-size: 13px;
+	}
 
-    body, .item-list.list-style ul li .text ul li, .item-list.list-style ul li .text span.price, .item-list ul.collections-list li .text p, .single-designer .designer-description, .small-filters h3, .main-inspiration .text p, .projects-filters h3, .projectsColumn, .projectsDesc .project-desc ul > li span, .scfValidator, .scfValidationSummary {
-        font-size: 11.7px;
-    }
+	body,
+	.item-list.list-style ul li .text ul li,
+	.item-list.list-style ul li .text span.price,
+	.item-list ul.collections-list li .text p,
+	.single-designer .designer-description,
+	.small-filters h3,
+	.main-inspiration .text p,
+	.projects-filters h3,
+	.projectsColumn,
+	.projectsDesc .project-desc ul > li span,
+	.scfValidator,
+	.scfValidationSummary {
+		font-size: 11.7px;
+	}
 
-    .email-updates p {
-        font-size: 12.2px;
-    }
+	.email-updates p {
+		font-size: 12.2px;
+	}
 
-    .hyperBox .text p {
-        font-size: 12px;
-    }
+	.hyperBox .text p {
+		font-size: 12px;
+	}
 
-    .text-slide .text h2, .small-slide .text h2, .simple-slider h2, .item-list.list-style ul li .text p, .designer-description h3, .order-list h2, .showroom-gallery h2, .job-offers h2, .job-offers h3, .google-search-result h2, .faq-partials h3, .errorPage-wrapper h2 {
-        font-size: 12.7px;
-    }
+	.text-slide .text h2,
+	.small-slide .text h2,
+	.simple-slider h2,
+	.item-list.list-style ul li .text p,
+	.designer-description h3,
+	.order-list h2,
+	.showroom-gallery h2,
+	.job-offers h2,
+	.job-offers h3,
+	.google-search-result h2,
+	.faq-partials h3,
+	.errorPage-wrapper h2 {
+		font-size: 12.7px;
+	}
 
-    h1.products-filters-header, .price p, .main-inspiration .text h3, .press ul li .desc h2, .item-list .tips-list li .desc h2, .searchResults-search input[type=text] {
-        font-size: 14px;
-    }
+	h1.products-filters-header,
+	.price p,
+	.main-inspiration .text h3,
+	.press ul li .desc h2,
+	.item-list .tips-list li .desc h2,
+	.searchResults-search input[type='text'] {
+		font-size: 14px;
+	}
 
-    .hyperBox .text h2, .html-box h2, .email-updates h2, .projectsDesc h3 {
-        font-size: 13px;
-    }
+	.hyperBox .text h2,
+	.html-box h2,
+	.email-updates h2,
+	.projectsDesc h3 {
+		font-size: 13px;
+	}
 
-    .email-updates h2 {
-        font-size: 18.7px;
-    }
+	.email-updates h2 {
+		font-size: 18.7px;
+	}
 
-    .short-header h1, #HeaderId h1, .main-product .product-name h1, .errorPage-wrapper h1, .searchResults-search span {
-        font-size: 15px;
-    }
+	.short-header h1,
+	#HeaderId h1,
+	.main-product .product-name h1,
+	.errorPage-wrapper h1,
+	.searchResults-search span {
+		font-size: 15px;
+	}
 
-    .brands-desc span.hdr, .bigHyperBox .text h2 {
-        font-size: 15px;
-    }
+	.brands-desc span.hdr,
+	.bigHyperBox .text h2 {
+		font-size: 15px;
+	}
 
-    .big-slide .frame h2 {
-        font-size: 20px;
-    }
+	.big-slide .frame h2 {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 420px) {
-    .breadcrumb, .item-list ul li .text span.code, .simple-slider .simple-slider-list li .text span.code, .searchResults-element .searchResults-elementSmaller {
-        font-size: 10px;
-    }
+	.breadcrumb,
+	.item-list ul li .text span.code,
+	.simple-slider .simple-slider-list li .text span.code,
+	.searchResults-element .searchResults-elementSmaller {
+		font-size: 10px;
+	}
 
-    .index-list a {
-        font-size: 12px;
-    }
+	.index-list a {
+		font-size: 12px;
+	}
 
-    .cookies-content, .brands-desc p, .brands-desc a, .button-map_content a, .search-form .search-term, .top-site-index > p, .top-site-index span a, .content-footer ul li, .content-footer h3, .text-slide .text p, .small-slide .text p, .filters ul li h3, .item-header .sortby-select h3, .item-header > span, .simple-slider .simple-slider-list li .text p.product-description, .simple-slider .simple-slider-list li .text span.price, .item-list ul li .text p, .item-list.list-style ul li .text span.code, .main-product h2, .main-product ul li span, .description, .description p, .description ul li, .technical ul li span, .technical ul li span.technical-content, .ui-tabs .ui-tabs-panel, .ui-tabs .ui-tabs-nav li a, .selectDark .passiveSelect, .selectDark .activeSelect, .selectDark li, .selectLight li, .checkboxes ul li label, .checkbox-list .default-value, .button, .showroom-gallery a.button, .google-search-result ul li p, .collections-categories, .collection-filters h3, .small-filters a, .item-list .brochures-list li .text span, .item-list .brochures-list li .text a, .main-inspiration .text .collections-list h4, .main-inspiration .text .collections-list ul li, .item-list .brochures-list li .text .no-print .no-print-label, .press ul li .desc span.date, .styled-input-light .style-input, .copyrights p {
-        font-size: 10px;
-    }
+	.cookies-content,
+	.brands-desc p,
+	.brands-desc a,
+	.button-map_content a,
+	.search-form .search-term,
+	.top-site-index > p,
+	.top-site-index span a,
+	.content-footer ul li,
+	.content-footer h3,
+	.text-slide .text p,
+	.small-slide .text p,
+	.filters ul li h3,
+	.item-header .sortby-select h3,
+	.item-header > span,
+	.simple-slider .simple-slider-list li .text p.product-description,
+	.simple-slider .simple-slider-list li .text span.price,
+	.item-list ul li .text p,
+	.item-list.list-style ul li .text span.code,
+	.main-product h2,
+	.main-product ul li span,
+	.description,
+	.description p,
+	.description ul li,
+	.technical ul li span,
+	.technical ul li span.technical-content,
+	.ui-tabs .ui-tabs-panel,
+	.ui-tabs .ui-tabs-nav li a,
+	.selectDark .passiveSelect,
+	.selectDark .activeSelect,
+	.selectDark li,
+	.selectLight li,
+	.checkboxes ul li label,
+	.checkbox-list .default-value,
+	.button,
+	.showroom-gallery a.button,
+	.google-search-result ul li p,
+	.collections-categories,
+	.collection-filters h3,
+	.small-filters a,
+	.item-list .brochures-list li .text span,
+	.item-list .brochures-list li .text a,
+	.main-inspiration .text .collections-list h4,
+	.main-inspiration .text .collections-list ul li,
+	.item-list .brochures-list li .text .no-print .no-print-label,
+	.press ul li .desc span.date,
+	.styled-input-light .style-input,
+	.copyrights p {
+		font-size: 10px;
+	}
 
-    .brand-point a span {
-        font-size: 13px;
-    }
+	.brand-point a span {
+		font-size: 13px;
+	}
 
-    body, .item-list.list-style ul li .text ul li, .item-list.list-style ul li .text span.price, .item-list ul.collections-list li .text p, .single-designer .designer-description, .small-filters h3, .main-inspiration .text p, .projects-filters h3, .projectsColumn, .projectsDesc .project-desc ul > li span, .scfValidator, .scfValidationSummary {
-        font-size: 11.6px;
-    }
+	body,
+	.item-list.list-style ul li .text ul li,
+	.item-list.list-style ul li .text span.price,
+	.item-list ul.collections-list li .text p,
+	.single-designer .designer-description,
+	.small-filters h3,
+	.main-inspiration .text p,
+	.projects-filters h3,
+	.projectsColumn,
+	.projectsDesc .project-desc ul > li span,
+	.scfValidator,
+	.scfValidationSummary {
+		font-size: 11.6px;
+	}
 
-    .email-updates p {
-        font-size: 11.6px;
-    }
+	.email-updates p {
+		font-size: 11.6px;
+	}
 
-    .hyperBox .text p {
-        font-size: 11.3px;
-    }
+	.hyperBox .text p {
+		font-size: 11.3px;
+	}
 
-    .text-slide .text h2, .small-slide .text h2, .simple-slider h2, .item-list.list-style ul li .text p, .designer-description h3, .order-list h2, .showroom-gallery h2, .job-offers h2, .job-offers h3, .google-search-result h2, .faq-partials h3, .errorPage-wrapper h2 {
-        font-size: 12.2px;
-    }
+	.text-slide .text h2,
+	.small-slide .text h2,
+	.simple-slider h2,
+	.item-list.list-style ul li .text p,
+	.designer-description h3,
+	.order-list h2,
+	.showroom-gallery h2,
+	.job-offers h2,
+	.job-offers h3,
+	.google-search-result h2,
+	.faq-partials h3,
+	.errorPage-wrapper h2 {
+		font-size: 12.2px;
+	}
 
-    h1.products-filters-header, .price p, .main-inspiration .text h3, .press ul li .desc h2, .item-list .tips-list li .desc h2, .searchResults-search input[type=text] {
-        font-size: 13.7px;
-    }
+	h1.products-filters-header,
+	.price p,
+	.main-inspiration .text h3,
+	.press ul li .desc h2,
+	.item-list .tips-list li .desc h2,
+	.searchResults-search input[type='text'] {
+		font-size: 13.7px;
+	}
 
-    .hyperBox .text h2, .html-box h2, .email-updates h2, .projectsDesc h3 {
-        font-size: 12.7px;
-    }
+	.hyperBox .text h2,
+	.html-box h2,
+	.email-updates h2,
+	.projectsDesc h3 {
+		font-size: 12.7px;
+	}
 
-    .email-updates h2 {
-        font-size: 17.6px;
-    }
+	.email-updates h2 {
+		font-size: 17.6px;
+	}
 
-    .short-header h1, #HeaderId h1, .main-product .product-name h1, .errorPage-wrapper h1, .searchResults-search span {
-        font-size: 14.7px;
-    }
+	.short-header h1,
+	#HeaderId h1,
+	.main-product .product-name h1,
+	.errorPage-wrapper h1,
+	.searchResults-search span {
+		font-size: 14.7px;
+	}
 
-    .brands-desc span.hdr, .bigHyperBox .text h2 {
-        font-size: 15px;
-    }
+	.brands-desc span.hdr,
+	.bigHyperBox .text h2 {
+		font-size: 15px;
+	}
 
-    .big-slide .frame h2 {
-        font-size: 20px;
-    }
+	.big-slide .frame h2 {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 400px) {
-    .breadcrumb, .item-list ul li .text span.code, .simple-slider .simple-slider-list li .text span.code, .searchResults-element .searchResults-elementSmaller {
-        font-size: 10px;
-    }
+	.breadcrumb,
+	.item-list ul li .text span.code,
+	.simple-slider .simple-slider-list li .text span.code,
+	.searchResults-element .searchResults-elementSmaller {
+		font-size: 10px;
+	}
 
-    .index-list a {
-        font-size: 12px;
-    }
+	.index-list a {
+		font-size: 12px;
+	}
 
-    .cookies-content, .brands-desc p, .brands-desc a, .button-map_content a, .search-form .search-term, .top-site-index > p, .top-site-index span a, .content-footer ul li, .content-footer h3, .text-slide .text p, .small-slide .text p, .filters ul li h3, .item-header .sortby-select h3, .item-header > span, .simple-slider .simple-slider-list li .text p.product-description, .simple-slider .simple-slider-list li .text span.price, .item-list ul li .text p, .item-list.list-style ul li .text span.code, .main-product h2, .main-product ul li span, .description, .description p, .description ul li, .technical ul li span, .technical ul li span.technical-content, .ui-tabs .ui-tabs-panel, .ui-tabs .ui-tabs-nav li a, .selectDark .passiveSelect, .selectDark .activeSelect, .selectDark li, .selectLight li, .checkboxes ul li label, .checkbox-list .default-value, .button, .showroom-gallery a.button, .google-search-result ul li p, .collections-categories, .collection-filters h3, .small-filters a, .item-list .brochures-list li .text span, .item-list .brochures-list li .text a, .main-inspiration .text .collections-list h4, .main-inspiration .text .collections-list ul li, .item-list .brochures-list li .text .no-print .no-print-label, .press ul li .desc span.date, .styled-input-light .style-input, .copyrights p {
-        font-size: 10px;
-    }
+	.cookies-content,
+	.brands-desc p,
+	.brands-desc a,
+	.button-map_content a,
+	.search-form .search-term,
+	.top-site-index > p,
+	.top-site-index span a,
+	.content-footer ul li,
+	.content-footer h3,
+	.text-slide .text p,
+	.small-slide .text p,
+	.filters ul li h3,
+	.item-header .sortby-select h3,
+	.item-header > span,
+	.simple-slider .simple-slider-list li .text p.product-description,
+	.simple-slider .simple-slider-list li .text span.price,
+	.item-list ul li .text p,
+	.item-list.list-style ul li .text span.code,
+	.main-product h2,
+	.main-product ul li span,
+	.description,
+	.description p,
+	.description ul li,
+	.technical ul li span,
+	.technical ul li span.technical-content,
+	.ui-tabs .ui-tabs-panel,
+	.ui-tabs .ui-tabs-nav li a,
+	.selectDark .passiveSelect,
+	.selectDark .activeSelect,
+	.selectDark li,
+	.selectLight li,
+	.checkboxes ul li label,
+	.checkbox-list .default-value,
+	.button,
+	.showroom-gallery a.button,
+	.google-search-result ul li p,
+	.collections-categories,
+	.collection-filters h3,
+	.small-filters a,
+	.item-list .brochures-list li .text span,
+	.item-list .brochures-list li .text a,
+	.main-inspiration .text .collections-list h4,
+	.main-inspiration .text .collections-list ul li,
+	.item-list .brochures-list li .text .no-print .no-print-label,
+	.press ul li .desc span.date,
+	.styled-input-light .style-input,
+	.copyrights p {
+		font-size: 10px;
+	}
 
-    .brand-point a span {
-        font-size: 13px;
-    }
+	.brand-point a span {
+		font-size: 13px;
+	}
 
-    body, .item-list.list-style ul li .text ul li, .item-list.list-style ul li .text span.price, .item-list ul.collections-list li .text p, .single-designer .designer-description, .small-filters h3, .main-inspiration .text p, .projects-filters h3, .projectsColumn, .projectsDesc .project-desc ul > li span, .scfValidator, .scfValidationSummary {
-        font-size: 11.4px;
-    }
+	body,
+	.item-list.list-style ul li .text ul li,
+	.item-list.list-style ul li .text span.price,
+	.item-list ul.collections-list li .text p,
+	.single-designer .designer-description,
+	.small-filters h3,
+	.main-inspiration .text p,
+	.projects-filters h3,
+	.projectsColumn,
+	.projectsDesc .project-desc ul > li span,
+	.scfValidator,
+	.scfValidationSummary {
+		font-size: 11.4px;
+	}
 
-    .email-updates p {
-        font-size: 10.9px;
-    }
+	.email-updates p {
+		font-size: 10.9px;
+	}
 
-    .hyperBox .text p {
-        font-size: 10.7px;
-    }
+	.hyperBox .text p {
+		font-size: 10.7px;
+	}
 
-    .text-slide .text h2, .small-slide .text h2, .simple-slider h2, .item-list.list-style ul li .text p, .designer-description h3, .order-list h2, .showroom-gallery h2, .job-offers h2, .job-offers h3, .google-search-result h2, .faq-partials h3, .errorPage-wrapper h2 {
-        font-size: 11.8px;
-    }
+	.text-slide .text h2,
+	.small-slide .text h2,
+	.simple-slider h2,
+	.item-list.list-style ul li .text p,
+	.designer-description h3,
+	.order-list h2,
+	.showroom-gallery h2,
+	.job-offers h2,
+	.job-offers h3,
+	.google-search-result h2,
+	.faq-partials h3,
+	.errorPage-wrapper h2 {
+		font-size: 11.8px;
+	}
 
-    h1.products-filters-header, .price p, .main-inspiration .text h3, .press ul li .desc h2, .item-list .tips-list li .desc h2, .searchResults-search input[type=text] {
-        font-size: 13.3px;
-    }
+	h1.products-filters-header,
+	.price p,
+	.main-inspiration .text h3,
+	.press ul li .desc h2,
+	.item-list .tips-list li .desc h2,
+	.searchResults-search input[type='text'] {
+		font-size: 13.3px;
+	}
 
-    .hyperBox .text h2, .html-box h2, .email-updates h2, .projectsDesc h3 {
-        font-size: 12.3px;
-    }
+	.hyperBox .text h2,
+	.html-box h2,
+	.email-updates h2,
+	.projectsDesc h3 {
+		font-size: 12.3px;
+	}
 
-    .email-updates h2 {
-        font-size: 16.4px;
-    }
+	.email-updates h2 {
+		font-size: 16.4px;
+	}
 
-    .short-header h1, #HeaderId h1, .main-product .product-name h1, .errorPage-wrapper h1, .searchResults-search span {
-        font-size: 14.3px;
-    }
+	.short-header h1,
+	#HeaderId h1,
+	.main-product .product-name h1,
+	.errorPage-wrapper h1,
+	.searchResults-search span {
+		font-size: 14.3px;
+	}
 
-    .brands-desc span.hdr, .bigHyperBox .text h2 {
-        font-size: 15px;
-    }
+	.brands-desc span.hdr,
+	.bigHyperBox .text h2 {
+		font-size: 15px;
+	}
 
-    .big-slide .frame h2 {
-        font-size: 20px;
-    }
+	.big-slide .frame h2 {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 380px) {
-    .breadcrumb, .item-list ul li .text span.code, .simple-slider .simple-slider-list li .text span.code, .searchResults-element .searchResults-elementSmaller {
-        font-size: 10px;
-    }
+	.breadcrumb,
+	.item-list ul li .text span.code,
+	.simple-slider .simple-slider-list li .text span.code,
+	.searchResults-element .searchResults-elementSmaller {
+		font-size: 10px;
+	}
 
-    .index-list a {
-        font-size: 12px;
-    }
+	.index-list a {
+		font-size: 12px;
+	}
 
-    .cookies-content, .brands-desc p, .brands-desc a, .button-map_content a, .search-form .search-term, .top-site-index > p, .top-site-index span a, .content-footer ul li, .content-footer h3, .text-slide .text p, .small-slide .text p, .filters ul li h3, .item-header .sortby-select h3, .item-header > span, .simple-slider .simple-slider-list li .text p.product-description, .simple-slider .simple-slider-list li .text span.price, .item-list ul li .text p, .item-list.list-style ul li .text span.code, .main-product h2, .main-product ul li span, .description, .description p, .description ul li, .technical ul li span, .technical ul li span.technical-content, .ui-tabs .ui-tabs-panel, .ui-tabs .ui-tabs-nav li a, .selectDark .passiveSelect, .selectDark .activeSelect, .selectDark li, .selectLight li, .checkboxes ul li label, .checkbox-list .default-value, .button, .showroom-gallery a.button, .google-search-result ul li p, .collections-categories, .collection-filters h3, .small-filters a, .item-list .brochures-list li .text span, .item-list .brochures-list li .text a, .main-inspiration .text .collections-list h4, .main-inspiration .text .collections-list ul li, .item-list .brochures-list li .text .no-print .no-print-label, .press ul li .desc span.date, .styled-input-light .style-input, .copyrights p {
-        font-size: 10px;
-    }
+	.cookies-content,
+	.brands-desc p,
+	.brands-desc a,
+	.button-map_content a,
+	.search-form .search-term,
+	.top-site-index > p,
+	.top-site-index span a,
+	.content-footer ul li,
+	.content-footer h3,
+	.text-slide .text p,
+	.small-slide .text p,
+	.filters ul li h3,
+	.item-header .sortby-select h3,
+	.item-header > span,
+	.simple-slider .simple-slider-list li .text p.product-description,
+	.simple-slider .simple-slider-list li .text span.price,
+	.item-list ul li .text p,
+	.item-list.list-style ul li .text span.code,
+	.main-product h2,
+	.main-product ul li span,
+	.description,
+	.description p,
+	.description ul li,
+	.technical ul li span,
+	.technical ul li span.technical-content,
+	.ui-tabs .ui-tabs-panel,
+	.ui-tabs .ui-tabs-nav li a,
+	.selectDark .passiveSelect,
+	.selectDark .activeSelect,
+	.selectDark li,
+	.selectLight li,
+	.checkboxes ul li label,
+	.checkbox-list .default-value,
+	.button,
+	.showroom-gallery a.button,
+	.google-search-result ul li p,
+	.collections-categories,
+	.collection-filters h3,
+	.small-filters a,
+	.item-list .brochures-list li .text span,
+	.item-list .brochures-list li .text a,
+	.main-inspiration .text .collections-list h4,
+	.main-inspiration .text .collections-list ul li,
+	.item-list .brochures-list li .text .no-print .no-print-label,
+	.press ul li .desc span.date,
+	.styled-input-light .style-input,
+	.copyrights p {
+		font-size: 10px;
+	}
 
-    .brand-point a span {
-        font-size: 13px;
-    }
+	.brand-point a span {
+		font-size: 13px;
+	}
 
-    body, .item-list.list-style ul li .text ul li, .item-list.list-style ul li .text span.price, .item-list ul.collections-list li .text p, .single-designer .designer-description, .small-filters h3, .main-inspiration .text p, .projects-filters h3, .projectsColumn, .projectsDesc .project-desc ul > li span, .scfValidator, .scfValidationSummary {
-        font-size: 11.3px;
-    }
+	body,
+	.item-list.list-style ul li .text ul li,
+	.item-list.list-style ul li .text span.price,
+	.item-list ul.collections-list li .text p,
+	.single-designer .designer-description,
+	.small-filters h3,
+	.main-inspiration .text p,
+	.projects-filters h3,
+	.projectsColumn,
+	.projectsDesc .project-desc ul > li span,
+	.scfValidator,
+	.scfValidationSummary {
+		font-size: 11.3px;
+	}
 
-    .email-updates p {
-        font-size: 10.3px;
-    }
+	.email-updates p {
+		font-size: 10.3px;
+	}
 
-    .hyperBox .text p {
-        font-size: 10px;
-    }
+	.hyperBox .text p {
+		font-size: 10px;
+	}
 
-    .text-slide .text h2, .small-slide .text h2, .simple-slider h2, .item-list.list-style ul li .text p, .designer-description h3, .order-list h2, .showroom-gallery h2, .job-offers h2, .job-offers h3, .google-search-result h2, .faq-partials h3, .errorPage-wrapper h2 {
-        font-size: 11.3px;
-    }
+	.text-slide .text h2,
+	.small-slide .text h2,
+	.simple-slider h2,
+	.item-list.list-style ul li .text p,
+	.designer-description h3,
+	.order-list h2,
+	.showroom-gallery h2,
+	.job-offers h2,
+	.job-offers h3,
+	.google-search-result h2,
+	.faq-partials h3,
+	.errorPage-wrapper h2 {
+		font-size: 11.3px;
+	}
 
-    h1.products-filters-header, .price p, .main-inspiration .text h3, .press ul li .desc h2, .item-list .tips-list li .desc h2, .searchResults-search input[type=text] {
-        font-size: 13px;
-    }
+	h1.products-filters-header,
+	.price p,
+	.main-inspiration .text h3,
+	.press ul li .desc h2,
+	.item-list .tips-list li .desc h2,
+	.searchResults-search input[type='text'] {
+		font-size: 13px;
+	}
 
-    .hyperBox .text h2, .html-box h2, .email-updates h2, .projectsDesc h3 {
-        font-size: 12px;
-    }
+	.hyperBox .text h2,
+	.html-box h2,
+	.email-updates h2,
+	.projectsDesc h3 {
+		font-size: 12px;
+	}
 
-    .email-updates h2 {
-        font-size: 15.3px;
-    }
+	.email-updates h2 {
+		font-size: 15.3px;
+	}
 
-    .short-header h1, #HeaderId h1, .main-product .product-name h1, .errorPage-wrapper h1, .searchResults-search span {
-        font-size: 14px;
-    }
+	.short-header h1,
+	#HeaderId h1,
+	.main-product .product-name h1,
+	.errorPage-wrapper h1,
+	.searchResults-search span {
+		font-size: 14px;
+	}
 
-    .brands-desc span.hdr, .bigHyperBox .text h2 {
-        font-size: 15px;
-    }
+	.brands-desc span.hdr,
+	.bigHyperBox .text h2 {
+		font-size: 15px;
+	}
 
-    .big-slide .frame h2 {
-        font-size: 20px;
-    }
+	.big-slide .frame h2 {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 360px) {
-    .breadcrumb, .item-list ul li .text span.code, .simple-slider .simple-slider-list li .text span.code, .searchResults-element .searchResults-elementSmaller {
-        font-size: 10px;
-    }
+	.breadcrumb,
+	.item-list ul li .text span.code,
+	.simple-slider .simple-slider-list li .text span.code,
+	.searchResults-element .searchResults-elementSmaller {
+		font-size: 10px;
+	}
 
-    .index-list a {
-        font-size: 12px;
-    }
+	.index-list a {
+		font-size: 12px;
+	}
 
-    .cookies-content, .brands-desc p, .brands-desc a, .button-map_content a, .search-form .search-term, .top-site-index > p, .top-site-index span a, .content-footer ul li, .content-footer h3, .text-slide .text p, .small-slide .text p, .filters ul li h3, .item-header .sortby-select h3, .item-header > span, .simple-slider .simple-slider-list li .text p.product-description, .simple-slider .simple-slider-list li .text span.price, .item-list ul li .text p, .item-list.list-style ul li .text span.code, .main-product h2, .main-product ul li span, .description, .description p, .description ul li, .technical ul li span, .technical ul li span.technical-content, .ui-tabs .ui-tabs-panel, .ui-tabs .ui-tabs-nav li a, .selectDark .passiveSelect, .selectDark .activeSelect, .selectDark li, .selectLight li, .checkboxes ul li label, .checkbox-list .default-value, .button, .showroom-gallery a.button, .google-search-result ul li p, .collections-categories, .collection-filters h3, .small-filters a, .item-list .brochures-list li .text span, .item-list .brochures-list li .text a, .main-inspiration .text .collections-list h4, .main-inspiration .text .collections-list ul li, .item-list .brochures-list li .text .no-print .no-print-label, .press ul li .desc span.date, .styled-input-light .style-input, .copyrights p {
-        font-size: 10px;
-    }
+	.cookies-content,
+	.brands-desc p,
+	.brands-desc a,
+	.button-map_content a,
+	.search-form .search-term,
+	.top-site-index > p,
+	.top-site-index span a,
+	.content-footer ul li,
+	.content-footer h3,
+	.text-slide .text p,
+	.small-slide .text p,
+	.filters ul li h3,
+	.item-header .sortby-select h3,
+	.item-header > span,
+	.simple-slider .simple-slider-list li .text p.product-description,
+	.simple-slider .simple-slider-list li .text span.price,
+	.item-list ul li .text p,
+	.item-list.list-style ul li .text span.code,
+	.main-product h2,
+	.main-product ul li span,
+	.description,
+	.description p,
+	.description ul li,
+	.technical ul li span,
+	.technical ul li span.technical-content,
+	.ui-tabs .ui-tabs-panel,
+	.ui-tabs .ui-tabs-nav li a,
+	.selectDark .passiveSelect,
+	.selectDark .activeSelect,
+	.selectDark li,
+	.selectLight li,
+	.checkboxes ul li label,
+	.checkbox-list .default-value,
+	.button,
+	.showroom-gallery a.button,
+	.google-search-result ul li p,
+	.collections-categories,
+	.collection-filters h3,
+	.small-filters a,
+	.item-list .brochures-list li .text span,
+	.item-list .brochures-list li .text a,
+	.main-inspiration .text .collections-list h4,
+	.main-inspiration .text .collections-list ul li,
+	.item-list .brochures-list li .text .no-print .no-print-label,
+	.press ul li .desc span.date,
+	.styled-input-light .style-input,
+	.copyrights p {
+		font-size: 10px;
+	}
 
-    .brand-point a span {
-        font-size: 13px;
-    }
+	.brand-point a span {
+		font-size: 13px;
+	}
 
-    body, .item-list.list-style ul li .text ul li, .item-list.list-style ul li .text span.price, .item-list ul.collections-list li .text p, .single-designer .designer-description, .small-filters h3, .main-inspiration .text p, .projects-filters h3, .projectsColumn, .projectsDesc .project-desc ul > li span, .scfValidator, .scfValidationSummary {
-        font-size: 11.2px;
-    }
+	body,
+	.item-list.list-style ul li .text ul li,
+	.item-list.list-style ul li .text span.price,
+	.item-list ul.collections-list li .text p,
+	.single-designer .designer-description,
+	.small-filters h3,
+	.main-inspiration .text p,
+	.projects-filters h3,
+	.projectsColumn,
+	.projectsDesc .project-desc ul > li span,
+	.scfValidator,
+	.scfValidationSummary {
+		font-size: 11.2px;
+	}
 
-    .email-updates p {
-        font-size: 9.7px;
-    }
+	.email-updates p {
+		font-size: 9.7px;
+	}
 
-    .hyperBox .text p {
-        font-size: 9.3px;
-    }
+	.hyperBox .text p {
+		font-size: 9.3px;
+	}
 
-    .text-slide .text h2, .small-slide .text h2, .simple-slider h2, .item-list.list-style ul li .text p, .designer-description h3, .order-list h2, .showroom-gallery h2, .job-offers h2, .job-offers h3, .google-search-result h2, .faq-partials h3, .errorPage-wrapper h2 {
-        font-size: 10.9px;
-    }
+	.text-slide .text h2,
+	.small-slide .text h2,
+	.simple-slider h2,
+	.item-list.list-style ul li .text p,
+	.designer-description h3,
+	.order-list h2,
+	.showroom-gallery h2,
+	.job-offers h2,
+	.job-offers h3,
+	.google-search-result h2,
+	.faq-partials h3,
+	.errorPage-wrapper h2 {
+		font-size: 10.9px;
+	}
 
-    h1.products-filters-header, .price p, .main-inspiration .text h3, .press ul li .desc h2, .item-list .tips-list li .desc h2, .searchResults-search input[type=text] {
-        font-size: 12.7px;
-    }
+	h1.products-filters-header,
+	.price p,
+	.main-inspiration .text h3,
+	.press ul li .desc h2,
+	.item-list .tips-list li .desc h2,
+	.searchResults-search input[type='text'] {
+		font-size: 12.7px;
+	}
 
-    .hyperBox .text h2, .html-box h2, .email-updates h2, .projectsDesc h3 {
-        font-size: 11.7px;
-    }
+	.hyperBox .text h2,
+	.html-box h2,
+	.email-updates h2,
+	.projectsDesc h3 {
+		font-size: 11.7px;
+	}
 
-    .email-updates h2 {
-        font-size: 14.2px;
-    }
+	.email-updates h2 {
+		font-size: 14.2px;
+	}
 
-    .short-header h1, #HeaderId h1, .main-product .product-name h1, .errorPage-wrapper h1, .searchResults-search span {
-        font-size: 13.7px;
-    }
+	.short-header h1,
+	#HeaderId h1,
+	.main-product .product-name h1,
+	.errorPage-wrapper h1,
+	.searchResults-search span {
+		font-size: 13.7px;
+	}
 
-    .brands-desc span.hdr, .bigHyperBox .text h2 {
-        font-size: 15px;
-    }
+	.brands-desc span.hdr,
+	.bigHyperBox .text h2 {
+		font-size: 15px;
+	}
 
-    .big-slide .frame h2 {
-        font-size: 20px;
-    }
+	.big-slide .frame h2 {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 340px) {
-    .breadcrumb, .item-list ul li .text span.code, .simple-slider .simple-slider-list li .text span.code, .searchResults-element .searchResults-elementSmaller {
-        font-size: 10px;
-    }
+	.breadcrumb,
+	.item-list ul li .text span.code,
+	.simple-slider .simple-slider-list li .text span.code,
+	.searchResults-element .searchResults-elementSmaller {
+		font-size: 10px;
+	}
 
-    .index-list a {
-        font-size: 12px;
-    }
+	.index-list a {
+		font-size: 12px;
+	}
 
-    .cookies-content, .brands-desc p, .brands-desc a, .button-map_content a, .search-form .search-term, .top-site-index > p, .top-site-index span a, .content-footer ul li, .content-footer h3, .text-slide .text p, .small-slide .text p, .filters ul li h3, .item-header .sortby-select h3, .item-header > span, .simple-slider .simple-slider-list li .text p.product-description, .simple-slider .simple-slider-list li .text span.price, .item-list ul li .text p, .item-list.list-style ul li .text span.code, .main-product h2, .main-product ul li span, .description, .description p, .description ul li, .technical ul li span, .technical ul li span.technical-content, .ui-tabs .ui-tabs-panel, .ui-tabs .ui-tabs-nav li a, .selectDark .passiveSelect, .selectDark .activeSelect, .selectDark li, .selectLight li, .checkboxes ul li label, .checkbox-list .default-value, .button, .showroom-gallery a.button, .google-search-result ul li p, .collections-categories, .collection-filters h3, .small-filters a, .item-list .brochures-list li .text span, .item-list .brochures-list li .text a, .main-inspiration .text .collections-list h4, .main-inspiration .text .collections-list ul li, .item-list .brochures-list li .text .no-print .no-print-label, .press ul li .desc span.date, .styled-input-light .style-input, .copyrights p {
-        font-size: 10px;
-    }
+	.cookies-content,
+	.brands-desc p,
+	.brands-desc a,
+	.button-map_content a,
+	.search-form .search-term,
+	.top-site-index > p,
+	.top-site-index span a,
+	.content-footer ul li,
+	.content-footer h3,
+	.text-slide .text p,
+	.small-slide .text p,
+	.filters ul li h3,
+	.item-header .sortby-select h3,
+	.item-header > span,
+	.simple-slider .simple-slider-list li .text p.product-description,
+	.simple-slider .simple-slider-list li .text span.price,
+	.item-list ul li .text p,
+	.item-list.list-style ul li .text span.code,
+	.main-product h2,
+	.main-product ul li span,
+	.description,
+	.description p,
+	.description ul li,
+	.technical ul li span,
+	.technical ul li span.technical-content,
+	.ui-tabs .ui-tabs-panel,
+	.ui-tabs .ui-tabs-nav li a,
+	.selectDark .passiveSelect,
+	.selectDark .activeSelect,
+	.selectDark li,
+	.selectLight li,
+	.checkboxes ul li label,
+	.checkbox-list .default-value,
+	.button,
+	.showroom-gallery a.button,
+	.google-search-result ul li p,
+	.collections-categories,
+	.collection-filters h3,
+	.small-filters a,
+	.item-list .brochures-list li .text span,
+	.item-list .brochures-list li .text a,
+	.main-inspiration .text .collections-list h4,
+	.main-inspiration .text .collections-list ul li,
+	.item-list .brochures-list li .text .no-print .no-print-label,
+	.press ul li .desc span.date,
+	.styled-input-light .style-input,
+	.copyrights p {
+		font-size: 10px;
+	}
 
-    .brand-point a span {
-        font-size: 13px;
-    }
+	.brand-point a span {
+		font-size: 13px;
+	}
 
-    body, .item-list.list-style ul li .text ul li, .item-list.list-style ul li .text span.price, .item-list ul.collections-list li .text p, .single-designer .designer-description, .small-filters h3, .main-inspiration .text p, .projects-filters h3, .projectsColumn, .projectsDesc .project-desc ul > li span, .scfValidator, .scfValidationSummary {
-        font-size: 11.1px;
-    }
+	body,
+	.item-list.list-style ul li .text ul li,
+	.item-list.list-style ul li .text span.price,
+	.item-list ul.collections-list li .text p,
+	.single-designer .designer-description,
+	.small-filters h3,
+	.main-inspiration .text p,
+	.projects-filters h3,
+	.projectsColumn,
+	.projectsDesc .project-desc ul > li span,
+	.scfValidator,
+	.scfValidationSummary {
+		font-size: 11.1px;
+	}
 
-    .email-updates p {
-        font-size: 9.1px;
-    }
+	.email-updates p {
+		font-size: 9.1px;
+	}
 
-    .hyperBox .text p {
-        font-size: 8.7px;
-    }
+	.hyperBox .text p {
+		font-size: 8.7px;
+	}
 
-    .text-slide .text h2, .small-slide .text h2, .simple-slider h2, .item-list.list-style ul li .text p, .designer-description h3, .order-list h2, .showroom-gallery h2, .job-offers h2, .job-offers h3, .google-search-result h2, .faq-partials h3, .errorPage-wrapper h2 {
-        font-size: 10.4px;
-    }
+	.text-slide .text h2,
+	.small-slide .text h2,
+	.simple-slider h2,
+	.item-list.list-style ul li .text p,
+	.designer-description h3,
+	.order-list h2,
+	.showroom-gallery h2,
+	.job-offers h2,
+	.job-offers h3,
+	.google-search-result h2,
+	.faq-partials h3,
+	.errorPage-wrapper h2 {
+		font-size: 10.4px;
+	}
 
-    h1.products-filters-header, .price p, .main-inspiration .text h3, .press ul li .desc h2, .item-list .tips-list li .desc h2, .searchResults-search input[type=text] {
-        font-size: 12.3px;
-    }
+	h1.products-filters-header,
+	.price p,
+	.main-inspiration .text h3,
+	.press ul li .desc h2,
+	.item-list .tips-list li .desc h2,
+	.searchResults-search input[type='text'] {
+		font-size: 12.3px;
+	}
 
-    .hyperBox .text h2, .html-box h2, .email-updates h2, .projectsDesc h3 {
-        font-size: 11.3px;
-    }
+	.hyperBox .text h2,
+	.html-box h2,
+	.email-updates h2,
+	.projectsDesc h3 {
+		font-size: 11.3px;
+	}
 
-    .email-updates h2 {
-        font-size: 13.1px;
-    }
+	.email-updates h2 {
+		font-size: 13.1px;
+	}
 
-    .short-header h1, #HeaderId h1, .main-product .product-name h1, .errorPage-wrapper h1, .searchResults-search span {
-        font-size: 13.3px;
-    }
+	.short-header h1,
+	#HeaderId h1,
+	.main-product .product-name h1,
+	.errorPage-wrapper h1,
+	.searchResults-search span {
+		font-size: 13.3px;
+	}
 
-    .brands-desc span.hdr, .bigHyperBox .text h2 {
-        font-size: 15px;
-    }
+	.brands-desc span.hdr,
+	.bigHyperBox .text h2 {
+		font-size: 15px;
+	}
 
-    .big-slide .frame h2 {
-        font-size: 20px;
-    }
+	.big-slide .frame h2 {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 320px) {
-    .breadcrumb, .item-list ul li .text span.code, .simple-slider .simple-slider-list li .text span.code, .searchResults-element .searchResults-elementSmaller {
-        font-size: 10px;
-    }
+	.breadcrumb,
+	.item-list ul li .text span.code,
+	.simple-slider .simple-slider-list li .text span.code,
+	.searchResults-element .searchResults-elementSmaller {
+		font-size: 10px;
+	}
 
-    .index-list a {
-        font-size: 12px;
-    }
+	.index-list a {
+		font-size: 12px;
+	}
 
-    .cookies-content, .brands-desc p, .brands-desc a, .button-map_content a, .search-form .search-term, .top-site-index > p, .top-site-index span a, .content-footer ul li, .content-footer h3, .text-slide .text p, .small-slide .text p, .filters ul li h3, .item-header .sortby-select h3, .item-header > span, .simple-slider .simple-slider-list li .text p.product-description, .simple-slider .simple-slider-list li .text span.price, .item-list ul li .text p, .item-list.list-style ul li .text span.code, .main-product h2, .main-product ul li span, .description, .description p, .description ul li, .technical ul li span, .technical ul li span.technical-content, .ui-tabs .ui-tabs-panel, .ui-tabs .ui-tabs-nav li a, .selectDark .passiveSelect, .selectDark .activeSelect, .selectDark li, .selectLight li, .checkboxes ul li label, .checkbox-list .default-value, .button, .showroom-gallery a.button, .google-search-result ul li p, .collections-categories, .collection-filters h3, .small-filters a, .item-list .brochures-list li .text span, .item-list .brochures-list li .text a, .main-inspiration .text .collections-list h4, .main-inspiration .text .collections-list ul li, .item-list .brochures-list li .text .no-print .no-print-label, .press ul li .desc span.date, .styled-input-light .style-input, .copyrights p {
-        font-size: 10px;
-    }
+	.cookies-content,
+	.brands-desc p,
+	.brands-desc a,
+	.button-map_content a,
+	.search-form .search-term,
+	.top-site-index > p,
+	.top-site-index span a,
+	.content-footer ul li,
+	.content-footer h3,
+	.text-slide .text p,
+	.small-slide .text p,
+	.filters ul li h3,
+	.item-header .sortby-select h3,
+	.item-header > span,
+	.simple-slider .simple-slider-list li .text p.product-description,
+	.simple-slider .simple-slider-list li .text span.price,
+	.item-list ul li .text p,
+	.item-list.list-style ul li .text span.code,
+	.main-product h2,
+	.main-product ul li span,
+	.description,
+	.description p,
+	.description ul li,
+	.technical ul li span,
+	.technical ul li span.technical-content,
+	.ui-tabs .ui-tabs-panel,
+	.ui-tabs .ui-tabs-nav li a,
+	.selectDark .passiveSelect,
+	.selectDark .activeSelect,
+	.selectDark li,
+	.selectLight li,
+	.checkboxes ul li label,
+	.checkbox-list .default-value,
+	.button,
+	.showroom-gallery a.button,
+	.google-search-result ul li p,
+	.collections-categories,
+	.collection-filters h3,
+	.small-filters a,
+	.item-list .brochures-list li .text span,
+	.item-list .brochures-list li .text a,
+	.main-inspiration .text .collections-list h4,
+	.main-inspiration .text .collections-list ul li,
+	.item-list .brochures-list li .text .no-print .no-print-label,
+	.press ul li .desc span.date,
+	.styled-input-light .style-input,
+	.copyrights p {
+		font-size: 10px;
+	}
 
-    .brand-point a span {
-        font-size: 13px;
-    }
+	.brand-point a span {
+		font-size: 13px;
+	}
 
-    body, .item-list.list-style ul li .text ul li, .item-list.list-style ul li .text span.price, .item-list ul.collections-list li .text p, .single-designer .designer-description, .small-filters h3, .main-inspiration .text p, .projects-filters h3, .projectsColumn, .projectsDesc .project-desc ul > li span, .scfValidator, .scfValidationSummary {
-        font-size: 11px;
-    }
+	body,
+	.item-list.list-style ul li .text ul li,
+	.item-list.list-style ul li .text span.price,
+	.item-list ul.collections-list li .text p,
+	.single-designer .designer-description,
+	.small-filters h3,
+	.main-inspiration .text p,
+	.projects-filters h3,
+	.projectsColumn,
+	.projectsDesc .project-desc ul > li span,
+	.scfValidator,
+	.scfValidationSummary {
+		font-size: 11px;
+	}
 
-    .email-updates p {
-        font-size: 8.5px;
-    }
+	.email-updates p {
+		font-size: 8.5px;
+	}
 
-    .hyperBox .text p {
-        font-size: 8px;
-    }
+	.hyperBox .text p {
+		font-size: 8px;
+	}
 
-    .text-slide .text h2, .small-slide .text h2, .simple-slider h2, .item-list.list-style ul li .text p, .designer-description h3, .order-list h2, .showroom-gallery h2, .job-offers h2, .job-offers h3, .google-search-result h2, .faq-partials h3, .errorPage-wrapper h2 {
-        font-size: 10px;
-    }
+	.text-slide .text h2,
+	.small-slide .text h2,
+	.simple-slider h2,
+	.item-list.list-style ul li .text p,
+	.designer-description h3,
+	.order-list h2,
+	.showroom-gallery h2,
+	.job-offers h2,
+	.job-offers h3,
+	.google-search-result h2,
+	.faq-partials h3,
+	.errorPage-wrapper h2 {
+		font-size: 10px;
+	}
 
-    h1.products-filters-header, .price p, .main-inspiration .text h3, .press ul li .desc h2, .item-list .tips-list li .desc h2, .searchResults-search input[type=text] {
-        font-size: 12px;
-    }
+	h1.products-filters-header,
+	.price p,
+	.main-inspiration .text h3,
+	.press ul li .desc h2,
+	.item-list .tips-list li .desc h2,
+	.searchResults-search input[type='text'] {
+		font-size: 12px;
+	}
 
-    .hyperBox .text h2, .html-box h2, .email-updates h2, .projectsDesc h3 {
-        font-size: 11px;
-    }
+	.hyperBox .text h2,
+	.html-box h2,
+	.email-updates h2,
+	.projectsDesc h3 {
+		font-size: 11px;
+	}
 
-    .email-updates h2 {
-        font-size: 12px;
-    }
+	.email-updates h2 {
+		font-size: 12px;
+	}
 
-    .short-header h1, #HeaderId h1, .main-product .product-name h1, .errorPage-wrapper h1, .searchResults-search span {
-        font-size: 13px;
-    }
+	.short-header h1,
+	#HeaderId h1,
+	.main-product .product-name h1,
+	.errorPage-wrapper h1,
+	.searchResults-search span {
+		font-size: 13px;
+	}
 
-    .brands-desc span.hdr, .bigHyperBox .text h2 {
-        font-size: 15px;
-    }
+	.brands-desc span.hdr,
+	.bigHyperBox .text h2 {
+		font-size: 15px;
+	}
 
-    .big-slide .frame h2 {
-        font-size: 20px;
-    }
+	.big-slide .frame h2 {
+		font-size: 20px;
+	}
 }
 .Zadaj.pytanie2 #iframe-form-online {
-    width: 100%;
-    @media only screen and (min-width:929px) {
-        height: 800px;
-    }
-    @media only screen and (max-width:929px) {
-        height: 1450px;
-    }
-    @media only screen and (max-width:575.99px) {
-        height: 1500px;
-    }
+	width: 100%;
+	@media only screen and (min-width: 929px) {
+		height: 800px;
+	}
+	@media only screen and (max-width: 929px) {
+		height: 1450px;
+	}
+	@media only screen and (max-width: 575.99px) {
+		height: 1500px;
+	}
 }
