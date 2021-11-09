@@ -1,0 +1,20 @@
+.navigation {
+	&-secondary {
+		@include ss('tablet') {
+			display: flex;
+			align-items: center;
+			&__item {
+				font-size: 12px;
+				line-height: 1.4em;
+				a {
+					color: $colorGrey60;
+					font-size: inherit;
+					line-height: inherit;
+				}
+				& + & {
+					margin-left: 25px;
+				}
+			}
+		}
+	}
+}
