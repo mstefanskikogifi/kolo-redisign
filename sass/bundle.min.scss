@@ -7,9 +7,14 @@
 @import 'boxes';
 @import 'header';
 @import 'navigation';
+@import 'footer';
+@import 'breadcrumb';
+@import 'navigation';
 @import 'searchMain';
-@import 'gridOld';
+@import 'grid';
+// @import 'gridOld';
 @import 'main';
+// @import 'mainOld';
 @import 'boxes';
 //@import 'inputStyle';
 @import 'sliders';
@@ -31,4 +36,4 @@
 @import 'swiper.min.scss';
 //@import 'kolonew';
 @import 'buttons';
-@import "checkboxRadio";
+@import 'checkboxRadio';
