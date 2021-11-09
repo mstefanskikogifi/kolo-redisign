@@ -1,0 +1,21 @@
+.w {
+	&-100 {
+		width: 100%;
+	}
+}
+
+// text alignment
+.t {
+	&-left {
+		text-align: left;
+	}
+	&-right {
+		text-align: right;
+	}
+	&-center {
+		text-align: center;
+	}
+	&-uppercase {
+		text-transform: uppercase;
+	}
+}
