@@ -1,4 +1,6 @@
 .header {
+	background-color: $colorGrey0;
+	box-shadow: 0 0 20px -2px rgba(0, 0, 0, 0.2);
 	&-top {
 		border-top: 4px solid $colorGrey100;
 		background-color: $colorGrey10;
@@ -23,6 +25,13 @@
 				background-color: transparent;
 				color: $colorGrey100;
 			}
+		}
+	}
+	&-bottom {
+		padding-top: 4px;
+		&__inner {
+			display: flex;
+			width: 100%;
 		}
 	}
 }
