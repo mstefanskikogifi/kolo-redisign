@@ -9,7 +9,7 @@ input {
 	&[type='number'] {
 		background: $colorGrey0;
 		border: 1px solid $colorGrey30;
-		padding: 18px;
+		padding: $inputPadding;
 		border-radius: $radius;
 		font-size: 16px;
 		color: $colorGrey100;

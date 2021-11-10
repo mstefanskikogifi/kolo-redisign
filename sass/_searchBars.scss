@@ -1,9 +1,6 @@
 .search-form {
 	margin-left: auto;
 	position: relative;
-	&:hover {
-		box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.05);
-	}
 	.search-term {
 		padding: 15px 30px 15px 10px;
 	}
@@ -17,17 +14,44 @@
 		display: none;
 		&-label {
 			height: 100%;
-			width: 40px;
+			width: 50px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			position: absolute;
 			right: 0;
 			top: 0;
-			border-radius: $radius;
+			border-bottom-right-radius: $radius;
+      border-top-right-radius: $radius;
+      transition: all .3s ease;
+      svg {
+        path {
+          transition: all .3s ease;
+        }
+      }
+      &:hover {
+        background: $colorGrey100;
+        svg {
+          path {
+            fill: $colorGrey0;
+          }
+        }
+      }
 		}
 	}
 	.autoComplete {
 		display: none;
 	}
+  &.rounded-input {
+    .submit-label {
+      border-bottom-right-radius: calc(1em + #{$inputPadding} * 2);
+      border-top-right-radius: calc(1em + #{$inputPadding} * 2);
+      border-bottom-left-radius: calc(1em + #{$inputPadding} * 2);
+      border-top-left-radius: calc(1em + #{$inputPadding} * 2);
+    }
+    .search-term {
+      border-radius: calc(1em + #{$inputPadding} * 2);
+    }
+  }
 }
+
