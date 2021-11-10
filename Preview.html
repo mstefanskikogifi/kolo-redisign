@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Title</title>
 	<link rel="stylesheet" href="css/bundle.min.css">
-	<style type="text/css">
+	<style>
         .checkboxes, .radios {
             /*height: 50px;*/
             display: flex;
@@ -13,11 +13,6 @@
             flex-wrap: nowrap;
             margin-bottom: 20px;
         }
-
-        .onColor {
-            display: inline-block;
-        }
-
         .onGray {
             display: inline-block;
             background: #E1E1E1;
@@ -49,10 +44,8 @@
 </div>
 
 <div style="border-bottom: 1px solid #000000; margin-top: 50px; margin-bottom: 20px">Navigation</div>
-<div class="back-navigation">
-	<div class="back-button"></div>
-	<span class="back-text">wróć do porad</span>
-</div>
+
+<div class="back-navigation">wroc</div>
 
 <div style="background: #1a1a1a; display: flex; margin-top: 20px;">
 	<div class="carousel-navigation carousel-back"></div>
@@ -60,9 +53,9 @@
 </div>
 
 <div style="background: #1a1a1a; margin-top: 20px; padding: 10px">
-	<div class="zoom-pin">
-		<div class="zoom-icon"></div>
-	</div>
+
+	<div class="zoom-pin"></div>
+
 </div>
 
 <div style="border-bottom: 1px solid #000000; margin-top: 50px; margin-bottom: 20px">Form elements</div>
@@ -88,7 +81,23 @@
 
 	<input type="radio" name="yesno" value="No" id="radio_3" tabindex="4" disabled>
 	<label for="radio_3">I don't know</label>
+</div>
 
+<div class="switches">
+	<label class="switch">
+		<input type="checkbox">
+		<span class="slider"></span>
+	</label>
+
+	<label class="switch">
+		<input type="checkbox" checked>
+		<span class="slider"></span>
+	</label>
+
+	<label class="switch">
+		<input type="checkbox" disabled>
+		<span class="slider"></span>
+	</label>
 </div>
 
 </body>

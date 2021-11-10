@@ -1,180 +1,180 @@
 .button {
-	padding: 14px 22px 12px;
-	border: none;
-	border-radius: 40px;
+  padding: 14px 22px 12px;
+  border: none;
+  border-radius: 40px;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
 
-	font-family: 'kolo_book';
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 14px;
-	text-transform: uppercase;
+  @include ss('tablet') {
+    border-radius: 55px;
+    padding: 21px 30px 17px;
+    font-size: 13px;
+    line-height: 16px;
+  }
 
-	cursor: pointer;
+  &.black {
+    color: $colorGrey0;
+    background: $colorGrey100;
 
-	@include ss('tablet') {
-		border-radius: 55px;
-		padding: 21px 30px 17px;
-		font-size: 13px;
-		line-height: 16px;
-	}
+    &:hover {
+      background: $colorGrey80;
+    }
+  }
 
-	&.black {
-		color: $colorGrey0;
-		background: $colorGrey100;
+  &.white {
+    color: $colorGrey100;
+    background: $colorGrey0;
+    border: 1px solid $colorGrey30;
 
-		&:hover {
-			background: $colorGrey80;
-		}
-	}
+    &:hover {
+      border: 1px solid $colorGrey100;
+      box-shadow: inset 0 0 0 1px $colorGrey100, 0 5px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 60px;
+    }
+  }
 
-	&.white {
-		color: $colorGrey100;
-		background: $colorGrey0;
-		border: 1px solid $colorGrey30;
+  &.accent1 {
+    color: $colorGrey0;
+    background: $colorAccent1;
 
-		&:hover {
-			border: 1px solid $colorGrey100;
-			box-shadow: inset 0px 0px 0px 1px $colorGrey100;
-			box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.05),
-				0px 10px 20px rgba(0, 0, 0, 0.1);
-			border-radius: 60px;
-		}
-	}
+    &:hover {
+      background: $colorAccentHover1;
+    }
+  }
 
-	&.accent1 {
-		color: $colorGrey0;
-		background: $colorAccent1;
+  &.accent2 {
+    color: $colorGrey0;
+    background: $colorAccent2;
 
-		&:hover {
-			background: $colorAccentHover1;
-		}
-	}
+    &:hover {
+      background: $colorAccentHover2;
+    }
+  }
 
-	&.accent2 {
-		color: $colorGrey0;
-		background: $colorAccent2;
+  &.accent3 {
+    color: $colorGrey0;
+    background: $colorAccent3;
 
-		&:hover {
-			background: $colorAccentHover2;
-		}
-	}
+    &:hover {
+      background: $colorAccentHover3;
+    }
+  }
 
-	&.accent3 {
-		color: $colorGrey0;
-		background: $colorAccent3;
+  &.on-gray {
+    border: 1px solid $colorGrey100;
+    background: $colorGrey20;
 
-		&:hover {
-			background: $colorAccentHover3;
-		}
-	}
+    &:hover {
+      color: $colorGrey0;
+      background: $colorGrey100;
+    }
+  }
 
-	&.on-gray {
-		border: 1px solid $colorGrey100;
-		background: $colorGrey20;
+  &.on-black {
+    color: $colorGrey0;
+    border: 1px solid $colorGrey0;
+    background: $colorGrey100;
 
-		&:hover {
-			color: $colorGrey0;
-			background: $colorGrey100;
-		}
-	}
-
-	&.on-black {
-		color: $colorGrey0;
-		border: 1px solid $colorGrey0;
-		background: $colorGrey100;
-
-		&:hover {
-			color: $colorGrey100;
-			background: $colorGrey0;
-		}
-	}
+    &:hover {
+      color: $colorGrey100;
+      background: $colorGrey0;
+    }
+  }
 }
 
 .back-navigation {
-	display: flex;
-	align-items: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
 
-	.back-button {
-		width: 36px;
-		height: 36px;
-		color: $colorGrey100;
-		background-color: $colorGrey0;
-		border: 1px solid $colorGrey30;
-		border-radius: 50%;
-		margin-right: 12px;
-	}
+  &:before {
+    content: '';
+    width: 36px;
+    height: 36px;
+    color: $colorGrey100;
+    background: url("../icons/small-back-arrow.svg") $colorGrey0 no-repeat center;
+    border: 1px solid $colorGrey30;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
 
-	.back-text {
-		font-family: Kolo;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 12px;
-		line-height: 14px;
-		text-transform: uppercase;
-	}
+  &:hover {
+    text-decoration: underline;
 
-	&:hover {
-		cursor: pointer;
-
-		.back-button {
-			border: 1px solid $colorGrey100;
-			box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.05),
-				0px 10px 20px rgba(0, 0, 0, 0.1);
-		}
-
-		.back-text {
-			text-decoration: underline;
-		}
-	}
+    &:before {
+      border: 1px solid $colorGrey100;
+      box-shadow: 0 5px 6px rgba(0, 0, 0, 0.05),
+      0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 .carousel-navigation {
-	width: 54px;
-	height: 54px;
-	background: rgba(255, 255, 255, 0.38);
-	border-radius: 50%;
-	cursor: pointer;
-	margin: 10px;
+  width: 54px;
+  height: 54px;
+  background: rgba(255, 255, 255, 0.38) no-repeat center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 10px;
 
-	&:hover {
-		background: rgba(255, 255, 255, 0.5);
-	}
+  &:hover {
+    background: rgba(255, 255, 255, 0.5) no-repeat center;
+  }
 
-	.carousel-back {}
+  &.carousel-back {
+    background-image: url("../icons/back-arrow.svg");
+  }
 
-	.carousel-next {
-	}
+  &.carousel-next {
+    background-image: url("../icons/back-arrow.svg");
+    transform: rotate(180deg);
+  }
 }
 
 .zoom-pin {
-	width: 80px;
-	height: 80px;
-	background: rgba(255, 255, 255, 0.3);
-	border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
-	cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 32px;
+    height: 32px;
+    background-color: $colorGrey0;
+    border-radius: 50%;
+    border: 1px solid $colorGrey0;
+  }
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 34px;
+    left: 34px;
+    width: 12px;
+    height: 12px;
+    background: url("../icons/plus.svg") no-repeat center;
+  }
 
-	.zoom-icon {
-		width: 32px;
-		height: 32px;
-		background-color: $colorGrey0;
-		border-radius: 50%;
-		border: 1px solid $colorGrey0;
-	}
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
 
-	&:hover {
-		background: rgba(255, 255, 255, 0.5);
-
-		.zoom-icon {
-			border: 1px solid $colorGrey80;
-			//box-shadow: inset 0px 0px 0px 1px $colorGrey100;
-			box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.05),
-				0px 10px 20px rgba(0, 0, 0, 0.1);
-		}
-	}
+    &:before {
+      border: 1px solid $colorGrey80;
+      box-shadow: 0 5px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
 }

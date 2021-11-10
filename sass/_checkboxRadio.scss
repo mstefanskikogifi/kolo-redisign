@@ -34,9 +34,7 @@ input[type="radio"] {
       height: 24px;
       border: 1px solid $colorGrey30;
       border-radius: 4px;
-      background: $colorGrey0;
-      background-repeat: no-repeat, repeat;
-      background-position: center;
+      background: $colorGrey0 no-repeat center;
       text-align: center;
       transition: background 200ms ease-out;
     }
@@ -62,10 +60,7 @@ input[type="checkbox"] {
   &:disabled {
     + label {
       &:before {
-        background: $colorGrey30;
-        background-image: url("../icons/checked-disabled.svg");
-        background-repeat: no-repeat, repeat;
-        background-position: center;
+        background: url("../icons/checked-disabled.svg") $colorGrey30 no-repeat center;
       }
 
       &:hover {
@@ -81,18 +76,13 @@ input[type="checkbox"] {
     + label {
       &:before {
         content: "";
-        //change checked background color
-        background: $colorGrey100;
-        background-image: url("../icons/checked.svg");
-        background-repeat: no-repeat, repeat;
-        background-position: center;
+        background: url("../icons/checked.svg") $colorGrey100 no-repeat center;
       }
 
       &:after {
         content: "";
         opacity: 1;
       }
-
     }
   }
 }
