@@ -1,0 +1,54 @@
+i {
+  &.icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: '';
+      width: 36px;
+      height: 36px;
+      color: $colorGrey100;
+      border: 1px solid $colorGrey30;
+      border-radius: 5px;
+    }
+
+    &:hover {
+      &:before {
+        border: 1px solid $colorGrey100;
+        box-shadow: 0 5px 6px rgba(0, 0, 0, 0.05),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &.social {
+      &:before {
+        border-radius: 50%;
+      }
+    }
+
+    &.facebook {
+      &:before {
+        background: url("../icons/facebook.svg") $colorGrey0 no-repeat center;
+      }
+    }
+
+    &.youtube {
+      &:before {
+        background: url("../icons/youtube.svg") $colorGrey0 no-repeat center;
+      }
+    }
+
+    &.download {
+      &:before {
+        background: url("../icons/download.svg") $colorGrey0 no-repeat center;
+      }
+    }
+
+    &.watch {
+      &:before {
+        background: url("../icons/watch.svg") $colorGrey0 no-repeat center;
+      }
+    }
+  }
+}
