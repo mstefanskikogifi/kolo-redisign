@@ -19,3 +19,84 @@
 		text-transform: uppercase;
 	}
 }
+
+// background colors
+$colorGrey100: #000000;
+$colorGrey90: #333333;
+$colorGrey80: #4c4c4c;
+$colorGrey70: #666666;
+$colorGrey60: #7f7f7f;
+$colorGrey50: #999999;
+$colorGrey40: #b2b2b2;
+$colorGrey30: #cccccc;
+$colorGrey20: #e5e5e5;
+$colorGrey10: #f2f2f2;
+$colorGrey0: #ffffff;
+.bg {
+  &-grey {
+    &--0 {
+      background-color: $colorGrey0;
+    }
+    &--10 {
+      background-color: $colorGrey10;
+    }
+    &--20 {
+      background-color: $colorGrey20;
+    }
+    &--30 {
+      background-color: $colorGrey30;
+    }
+    &--40 {
+      background-color: $colorGrey40;
+    }
+    &--50 {
+      background-color: $colorGrey50;
+    }
+    &--60 {
+      background-color: $colorGrey60;
+    }
+    &--70 {
+      background-color: $colorGrey70;
+    }
+    &--80 {
+      background-color: $colorGrey80;
+    }
+    &--90 {
+      background-color: $colorGrey90;
+    }
+    &--100 {
+      background-color: $colorGrey100;
+    }
+  }
+  &-accent {
+    &--1 {
+      background-color: $colorAccent1;
+    }
+    &--2 {
+      background-color: $colorAccent2;
+    }
+    &--3 {
+      background-color: $colorAccent3;
+    }
+    &--4 {
+      background-color: $colorAccent4;
+    }
+  }
+  &-add {
+    &--brown {
+      background-color: $colorBrown;
+    }
+    &--red {
+      background-color: $colorRed;
+    }
+    &--green {
+      background-color: $colorGreen;
+    }
+    &--purple {
+      background-color: $colorPurple;
+    }
+    &--blue {
+      background-color: $colorBlue;
+    }
+  }
+}
