@@ -17,6 +17,46 @@
 			align-items: center;
 			justify-content: space-between;
 		}
+    &__expandables {
+      display: flex;
+      align-items: center;
+      &-item {
+        border: none;
+        background: transparent;
+        outline: none;
+        color: $colorGrey0;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: 'kolo_book';
+        line-height: 1em;
+        padding-right: 12px;
+        padding-left: 0;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 4px;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background: url('../icons/select-arrow-white.svg');
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      &-separator {
+        color: rgba(255,255,255,.16);
+        margin: 0 20px;
+        &:hover {
+          cursor: default;
+        }
+      }
+    }
 		&__languages {
 			@include expand;
 		}
@@ -30,5 +70,13 @@
 		justify-content: space-between;
 		padding-top: 18px;
 		padding-bottom: 18px;
+    &__socialmedia {
+      &-label {
+        font-size: 12px;
+        line-height: 1.5em;
+        color: $colorGrey70;
+
+      }
+    }
 	}
 }
