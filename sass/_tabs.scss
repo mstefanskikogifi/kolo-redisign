@@ -1,58 +1,54 @@
-.tab-buttons {
-  display: flex;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: relative;
-  top: 1px;
+.tabs {
+  .tab-buttons {
+    display: flex;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    top: 1px;
 
-  .tab-button {
-    cursor: pointer;
-    background: $colorGrey10;
-    border: 1px solid $colorGrey10;
-    padding: 20px 40px 20px 40px;
-    margin-right: 1px;
+    .tab-button {
+      cursor: pointer;
+      background: $colorGrey10;
+      border: 1px solid $colorGrey10;
+      padding: 20px 40px 20px 40px;
+      margin-right: 1px;
 
-    &.active {
-      cursor: default;
-      background: $colorGrey0;
-      border-left: 1px solid $colorGrey20;
-      border-top: 1px solid $colorGrey20;
-      border-right: 1px solid $colorGrey20;
-      border-bottom: 1px solid $colorGrey0;
+      &.active {
+        cursor: default;
+        background: $colorGrey0;
+        border-left: 1px solid $colorGrey20;
+        border-top: 1px solid $colorGrey20;
+        border-right: 1px solid $colorGrey20;
+        border-bottom: 1px solid $colorGrey0;
+      }
+
+      &:first-child {
+        border-radius: 4px 0 0 0;
+      }
     }
 
-    &:first-child {
-      border-radius: 4px 0 0 0;
+    :hover:not(.active) {
+      &.tab-button {
+        background: $colorGrey20;
+        border-bottom: 1px solid $colorGrey20;
+      }
     }
   }
 
-  :hover:not(.active) {
-    &.tab-button {
-      background: $colorGrey20;
-      border-bottom: 1px solid $colorGrey20;
+  .tab-content {
+    border: 1px solid $colorGrey20;
+    border-radius: 0 4px 4px 4px;
+
+    .tab-container {
+      display: none;
+
+      &.active {
+        display: block;
+      }
     }
   }
 }
-
-.tab-content {
-  border: 1px solid $colorGrey20;
-  border-radius: 0 4px 4px 4px;
-
-  .tab-container {
-    display: none;
-
-    &.active {
-      display: block;
-    }
-  }
-}
-
-
-
-
-
-

@@ -7,26 +7,38 @@
 	<link rel="stylesheet" href="css/bundle.min.css">
 	<style>
         .checkboxes, .radios {
-            /*height: 50px;*/
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             margin-bottom: 20px;
         }
+
         .onGray {
             display: inline-block;
             background: #E1E1E1;
-	        padding: 20px;
+            padding: 20px;
         }
+
         .onBlack {
             display: inline-block;
             background: #000000;
             padding: 20px;
         }
+
 	</style>
 	<script src="js/jquery.min.js"></script>
 </head>
 <body style="padding: 30px">
+
+<div style="border-bottom: 1px solid #000000; margin-top: 50px; margin-bottom: 20px">Accordion</div>
+<div class="accordion">
+	<div class="accordion-element">
+		<div class="accordion-label">Label</div>
+		<div class="accordion-content">
+			I'm baby lo-fi aesthetic you probably haven't heard of them edison bulb humblebrag gluten-free street art polaroid pour-over letterpress biodiesel. Plaid lo-fi disrupt wolf skateboard waistcoat messenger bag. Beard cardigan small batch asymmetrical organic literally skateboard. 90's next level thundercats skateboard literally snackwave sriracha, art party banjo viral selfies schlitz.
+		</div>
+	</div>
+</div>
 
 <div style="border-bottom: 1px solid #000000; margin-bottom: 20px">Buttons</div>
 <div>
@@ -44,20 +56,16 @@
 </div>
 
 <div style="border-bottom: 1px solid #000000; margin-top: 50px; margin-bottom: 20px">Navigation</div>
-
 <div class="back-navigation">wroc</div>
-
 <div style="background: #1a1a1a; display: flex; margin-top: 20px;">
 	<div class="carousel-navigation carousel-back"></div>
 	<div class="carousel-navigation carousel-next"></div>
 </div>
-
 <div style="background: #1a1a1a; margin-top: 20px; padding: 10px">
 	<div class="zoom-pin"></div>
 </div>
 
 <div style="border-bottom: 1px solid #000000; margin-top: 50px; margin-bottom: 20px">Form elements</div>
-
 <div class="checkboxes">
 	<input id="xa1" type="checkbox" tabindex="1"/>
 	<label for="xa1">1</label>
@@ -65,7 +73,6 @@
 	<input id="xb1" type="checkbox" tabindex="2" disabled/>
 	<label for="xb1">2</label>
 </div>
-
 <div class="radios">
 	<input type="radio" name="yesno" value="Yes" id="radio_0" tabindex="1" checked="checked">
 	<label for="radio_0">Yes</label>
@@ -79,7 +86,6 @@
 	<input type="radio" name="yesno" value="No" id="radio_3" tabindex="4" disabled>
 	<label for="radio_3">I don't know</label>
 </div>
-
 <div class="switches">
 	<label class="switch">
 		<input type="checkbox">
@@ -98,50 +104,60 @@
 </div>
 
 <div style="border-bottom: 1px solid #000000; margin-top: 50px; margin-bottom: 20px">Tabs</div>
-
-<div class="tabs">
-	<div class="tab-buttons">
-		<div class="tab-button" data-tab="a">London</div>
-		<div class="tab-button" data-tab="b">Paris</div>
-		<div class="tab-button" data-tab="c">Tokyo</div>
+<div style="display: flex; width: 100%">
+	<div class="tabs" style=" flex: 1; margin-right: 10px">
+		<div class="tab-buttons">
+			<div class="tab-button" data-tab="a">London</div>
+			<div class="tab-button" data-tab="b">Paris</div>
+			<div class="tab-button" data-tab="c">Tokyo</div>
+		</div>
+		<div class="tab-content">
+			<div id="a" class="tab-container">
+				<h2>London</h2>
+				<p>London is the capital city of England.</p>
+			</div>
+			<div id="b" class="tab-container">
+				<h2>Paris</h2>
+				<p>Paris is the capital of France.</p>
+			</div>
+			<div id="c" class="tab-container">
+				<h2>Tokyo</h2>
+				<p>Tokyo is the capital of Japan.</p>
+			</div>
+		</div>
 	</div>
-	<div class="tab-content">
-		<div id="a" class="tab-container">
-			<h2>London</h2>
-			<p>London is the capital city of England.</p>
+
+	<div class="tabs" style=" flex: 1;">
+		<div class="tab-buttons">
+			<div class="tab-button" data-tab="a1">London</div>
+			<div class="tab-button" data-tab="b1">Paris</div>
+			<div class="tab-button" data-tab="c1">Tokyo</div>
 		</div>
-		<div id="b" class="tab-container">
-			<h2>Paris</h2>
-			<p>Paris is the capital of France.</p>
-		</div>
-		<div id="c" class="tab-container">
-			<h2>Tokyo</h2>
-			<p>Tokyo is the capital of Japan.</p>
+		<div class="tab-content">
+			<div id="a1" class="tab-container">
+				<h2>London</h2>
+				<p>London is the capital city of England.</p>
+			</div>
+			<div id="b1" class="tab-container">
+				<h2>Paris</h2>
+				<p>Paris is the capital of France.</p>
+			</div>
+			<div id="c1" class="tab-container">
+				<h2>Tokyo</h2>
+				<p>Tokyo is the capital of Japan.</p>
+			</div>
 		</div>
 	</div>
 </div>
 
-<div class="tabs">
-	<div class="tab-buttons">
-		<div class="tab-button" data-tab="a1">London</div>
-		<div class="tab-button" data-tab="b1">Paris</div>
-		<div class="tab-button" data-tab="c1">Tokyo</div>
-	</div>
-	<div class="tab-content">
-		<div id="a1" class="tab-container">
-			<h2>London</h2>
-			<p>London is the capital city of England.</p>
-		</div>
-		<div id="b1" class="tab-container">
-			<h2>Paris</h2>
-			<p>Paris is the capital of France.</p>
-		</div>
-		<div id="c1" class="tab-container">
-			<h2>Tokyo</h2>
-			<p>Tokyo is the capital of Japan.</p>
-		</div>
-	</div>
+<div style="border-bottom: 1px solid #000000; margin-top: 50px; margin-bottom: 20px">Icons</div>
+<div style="display: flex">
+	<i class="icon social facebook"></i>
+	<i class="icon social youtube"></i>
+	<i class="icon download"></i>
+	<i class="icon watch"></i>
 </div>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/tabs.js"></script>
 
