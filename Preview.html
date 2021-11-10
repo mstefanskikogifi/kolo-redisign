@@ -18,13 +18,13 @@
             background: #E1E1E1;
 	        padding: 20px;
         }
-
         .onBlack {
             display: inline-block;
             background: #000000;
             padding: 20px;
         }
 	</style>
+	<script src="js/jquery.min.js"></script>
 </head>
 <body style="padding: 30px">
 
@@ -53,20 +53,17 @@
 </div>
 
 <div style="background: #1a1a1a; margin-top: 20px; padding: 10px">
-
 	<div class="zoom-pin"></div>
-
 </div>
 
 <div style="border-bottom: 1px solid #000000; margin-top: 50px; margin-bottom: 20px">Form elements</div>
 
-
 <div class="checkboxes">
-	<input id="a" type="checkbox" tabindex="1"/>
-	<label for="a">1</label>
+	<input id="xa1" type="checkbox" tabindex="1"/>
+	<label for="xa1">1</label>
 
-	<input id="b" type="checkbox" tabindex="2" disabled/>
-	<label for="b">2</label>
+	<input id="xb1" type="checkbox" tabindex="2" disabled/>
+	<label for="xb1">2</label>
 </div>
 
 <div class="radios">
@@ -99,6 +96,54 @@
 		<span class="slider"></span>
 	</label>
 </div>
+
+<div style="border-bottom: 1px solid #000000; margin-top: 50px; margin-bottom: 20px">Tabs</div>
+
+<div class="tabs">
+	<div class="tab-buttons">
+		<div class="tab-button" data-tab="a">London</div>
+		<div class="tab-button" data-tab="b">Paris</div>
+		<div class="tab-button" data-tab="c">Tokyo</div>
+	</div>
+	<div class="tab-content">
+		<div id="a" class="tab-container">
+			<h2>London</h2>
+			<p>London is the capital city of England.</p>
+		</div>
+		<div id="b" class="tab-container">
+			<h2>Paris</h2>
+			<p>Paris is the capital of France.</p>
+		</div>
+		<div id="c" class="tab-container">
+			<h2>Tokyo</h2>
+			<p>Tokyo is the capital of Japan.</p>
+		</div>
+	</div>
+</div>
+
+<div class="tabs">
+	<div class="tab-buttons">
+		<div class="tab-button" data-tab="a1">London</div>
+		<div class="tab-button" data-tab="b1">Paris</div>
+		<div class="tab-button" data-tab="c1">Tokyo</div>
+	</div>
+	<div class="tab-content">
+		<div id="a1" class="tab-container">
+			<h2>London</h2>
+			<p>London is the capital city of England.</p>
+		</div>
+		<div id="b1" class="tab-container">
+			<h2>Paris</h2>
+			<p>Paris is the capital of France.</p>
+		</div>
+		<div id="c1" class="tab-container">
+			<h2>Tokyo</h2>
+			<p>Tokyo is the capital of Japan.</p>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/tabs.js"></script>
 
 </body>
 </html>
