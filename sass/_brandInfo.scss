@@ -1,0 +1,59 @@
+.brands-map {
+	background-color: #3a75c4;
+	overflow: hidden;
+	font-family: 'aktiv_grotesk_geberitregular';
+	display: none;
+	z-index: 0;
+	position: relative;
+
+	.GeberittText {
+		background-color: #fff;
+		box-sizing: border-box;
+		float: left;
+		font-size: 0.9em;
+		line-height: 1.6;
+		padding: 1em;
+		width: 32%;
+
+		h2 {
+			font-family: 'aktiv_grotesk_geberitbold';
+			padding: 0 0 1em;
+		}
+
+		p {
+			padding: 0 0 1em 0;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	.GeberittHeader {
+		color: #fff;
+		float: right;
+		font-size: 3.429em;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 50%;
+		transform: translate(0px, -50%);
+		-ms-transform: translate(0px, -50%);
+		-webkit-transform: translate(0px, -50%);
+		width: 65%;
+
+		p {
+			padding: 0.5em 0 0;
+
+			&:first-child {
+				padding: 0;
+			}
+		}
+	}
+
+	&.GeberittMap {
+		.brands-desc-container {
+			padding: 2em 0;
+		}
+	}
+}

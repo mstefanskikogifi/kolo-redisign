@@ -1,0 +1,46 @@
+.cookies {
+	display: none;
+	overflow: hidden;
+}
+
+.cookies-content {
+	margin: 0 auto;
+	padding-bottom: 15px;
+
+	span.hdr,
+	h2 {
+		display: block;
+		font-weight: bold;
+		padding: 15px 0;
+		text-transform: uppercase;
+	}
+
+	a {
+		display: block;
+		margin-top: 20px;
+		float: left;
+		margin-bottom: 10px;
+	}
+
+	span.more {
+		cursor: pointer;
+		margin-bottom: 15px;
+	}
+
+	.cookies-more {
+		height: 0px;
+		overflow: hidden;
+	}
+
+	.close {
+		background: url('/content/images/closePopup.png');
+		cursor: pointer;
+		display: block;
+		float: right;
+		height: 15px;
+		position: relative;
+		right: 10px;
+		top: 10px;
+		width: 15px;
+	}
+}
