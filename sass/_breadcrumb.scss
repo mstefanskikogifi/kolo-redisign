@@ -28,4 +28,10 @@
 	&__separator {
 		margin: 0 10px;
 	}
+  &__wrapper {
+    margin-bottom: 30px;
+    @include ss('desk') {
+      margin-bottom: 40px;
+    }
+  } 
 }
