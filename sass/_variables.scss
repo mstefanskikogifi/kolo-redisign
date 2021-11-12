@@ -48,8 +48,20 @@ $breakpoints: (
 	'tablet': (
 		min-width: 768px,
 	),
+  'laptop-small': (
+		min-width: 992px,
+	),
+  'laptop': (
+		min-width: 1366px,
+	),
 	'desk': (
 		min-width: 1440px,
+	),
+  'desk-big': (
+		min-width: 1640px,
+	),
+  'full-hd': (
+		min-width: 1920px,
 	),
 ) !default;
 
