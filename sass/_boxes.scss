@@ -7,16 +7,31 @@ $tagPaddingX: 14px;
   padding-top: 20px;
   margin-bottom: 30px;
   padding-bottom: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   column-gap: 10px;
   row-gap: 10px;
   align-items: stretch;
   justify-items: stretch;
+
+  @include ss('tablet') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include ss('desk') {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  // warianty: .kolo-grid__item-image, .kolo-grid__item-picture, .kolo-grid__item-dark
   &__item {
     border-radius: $radiusBig;
     position: relative;
-    min-height: 275px;
+    min-height: 220px; 
+    @include ss('tablet') {
+      min-height: 250px; 
+    }
+    @include ss('desk') {
+      min-height: 275px; 
+    }
     &-image {
       background-color: $colorGrey100;
       .image-wrapper {
@@ -60,9 +75,43 @@ $tagPaddingX: 14px;
         font-size: 22px;
         color: $colorGrey0;
         letter-spacing: -0.01em;
+        .dark & {
+          color: $colorGrey0;
+        }
       }
       p {
         margin: 0;
+      }
+    }
+    &.col-span {
+      &-1 {
+        grid-column-start: span 1;
+      }
+      &-2 {
+        grid-column-start: span 1;
+        @include ss('desk') {
+          grid-column-start: span 2;
+        }
+      }
+      &-3 {
+        grid-column-start: span 1;
+        @include ss('tablet') {
+          grid-column-start: span 2;
+        }
+        @include ss('desk') {
+          grid-column-start: span 3;
+        }
+      }
+    }
+    &.col-row {
+      &-1 {
+        grid-row-start: span 1;
+      }
+      &-2 {
+        grid-row-start: span 1;
+        @include ss('desk') {
+          grid-row-start: span 2;
+        }
       }
     }
   }
