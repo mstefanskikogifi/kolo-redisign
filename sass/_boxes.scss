@@ -26,11 +26,22 @@ $tagPaddingX: 14px;
     border-radius: $radiusBig;
     position: relative;
     min-height: 220px; 
+
+    &:hover {
+      .kolo-grid__item--arrow {
+        opacity: 1;
+      }
+    }
+
     @include ss('tablet') {
       min-height: 250px; 
     }
     @include ss('desk') {
       min-height: 275px; 
+    }
+    &--arrow {
+      opacity: 0;
+      transition: all .3s ease;
     }
     &-image {
       background-color: $colorGrey100;
