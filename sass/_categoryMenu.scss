@@ -1,0 +1,76 @@
+.list-category {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@include ss('desk') {
+			flex-direction: row;
+			background-color: $colorGrey10;
+			border-radius: $radiusBig;
+			padding: 30px;
+		}
+	}
+
+  &__accordion {
+    background-color: $colorGrey10;
+    border-radius: $radiusBig;
+
+    @include ss('desk') {
+      background-color: transparent;
+      border-radius: 0;
+    }
+
+    &-header {
+      padding: 15px 21px;
+      border-bottom: 1px solid $colorGrey20;
+      display: flex;
+      justify-content: space-between;
+
+      @include ss('desk') {
+        padding: 0 0 10px 0;
+      }
+      &--heading {
+        font-size: 16px;
+      }
+      &--toggle {
+        border: none;
+        background: transparent;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &--icon {
+        width: 10px;
+        height: 4px;
+        background: url('../icons/back-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+
+        @include ss('desk') {
+          display: none;
+        }
+      }
+    }
+  }
+
+	.index-list {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: none;
+			@include ss('desk') {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}
