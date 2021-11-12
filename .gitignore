@@ -1,6 +1,6 @@
 node_modules
 package-lock.json
-fonts
+content/fonts
 images
 gulpfile.js
 themes

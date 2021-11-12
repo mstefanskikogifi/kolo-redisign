@@ -1,8 +1,5 @@
 $(document).ready(function () {
-
-
     $('.tabs').each((index, tab) => {
-
         $(tab).find('.tab-button').each((index, button) => {
             const content = $(button).data('tab');
 
@@ -21,8 +18,6 @@ $(document).ready(function () {
                     $(`#${content}`).addClass("active")
                 })
             }
-
-
         })
     })
 
@@ -37,18 +32,3 @@ $(document).ready(function () {
         })
     }
 });
-
-// $(button).find('.tab-button').each((index,item) => {
-//     const tab = $(item).data('tab');
-//
-//     if (tab && tab!==undefined) {
-//         $(button).addClass('active')
-//         if (!index) {
-//             console.log($(tab))
-//             $(tab).addClass("active")
-//         }
-//         $(item).on('click', () => {
-//             console.log($(tab))
-//         })
-//     }
-// })
