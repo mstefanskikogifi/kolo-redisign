@@ -2,8 +2,21 @@
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	padding: 0;
+	padding: 0 20px;
 	margin: 0;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+
+  .list-category__accordion.active & {
+    padding: 0 20px 5px;
+  }
+
+  @include ss('desk') {
+    padding: 0;
+    margin-top: 18px;
+    max-height: 100%;
+  }
 
 	&__wrapper {
 		display: flex;
@@ -20,20 +33,31 @@
   &__accordion {
     background-color: $colorGrey10;
     border-radius: $radiusBig;
+    margin-bottom: 10px;
 
     @include ss('desk') {
       background-color: transparent;
       border-radius: 0;
+      margin-bottom: 0;
+      & + & {
+        margin-left: 10px;
+      }
     }
 
     &-header {
       padding: 15px 21px;
-      border-bottom: 1px solid $colorGrey20;
+      border-bottom: 1px solid transparent;
       display: flex;
       justify-content: space-between;
+      transition: border-color .3s ease-out;
+
+      .list-category__accordion.active & {
+        border-color: $colorGrey20;
+      }
 
       @include ss('desk') {
         padding: 0 0 10px 0;
+        border-color: $colorGrey20;
       }
       &--heading {
         font-size: 16px;
@@ -45,32 +69,49 @@
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-      &--icon {
-        width: 10px;
-        height: 4px;
-        background: url('../icons/back-arrow.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% auto;
 
         @include ss('desk') {
           display: none;
         }
       }
+      &--icon {
+        width: 11px;
+        height: 5px;
+        background: url('../icons/select-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: all .3s ease;
+
+        .list-category__accordion.active & {
+          transform: rotate(180deg);
+          transform-origin: center;
+        }
+      }
     }
   }
 
-	.index-list {
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: none;
-			@include ss('desk') {
-				display: flex;
-				flex-direction: column;
-			}
-		}
-	}
+  &__item {
+    @include ss('desk') {
+      & + & {
+        margin-top: 10px;
+      }
+    }
+    a {
+      font-size: 13px;
+      color: $colorGrey70;
+      padding: 15px 0;
+      display: block;
+
+      @include ss('desk') {
+        padding: 0;
+      }
+    }
+    &:not(:last-child) a {
+      border-bottom: 1px solid $colorGrey20;
+      @include ss('desk') {
+        border-bottom: 0;
+      }
+    }
+  }
 }
