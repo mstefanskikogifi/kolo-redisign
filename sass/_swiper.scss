@@ -1,0 +1,92 @@
+.swiper-container {
+  //max-width: 375px;
+
+  @include ss('tablet') {
+   max-width: 769px;
+  }
+  @include ss('desk') {
+    max-width: 1200px;
+  }
+
+  margin: auto;
+  position: relative;
+
+  .swiper {
+    width: 100%;
+    height: 315px;
+
+    @include ss('tablet') {
+      height: 380px;
+    }
+    @include ss('desk') {
+      height: 430px;
+    }
+
+    .swiper-wrapper {
+      .swiper-slide {
+        //border: 1px solid $colorGrey20;
+      }
+    }
+
+    .swiper-pagination {
+      bottom:0px;
+
+      @include ss('tablet') {
+        display: none;
+      }
+
+      &.swiper-pagination-bullets {
+
+        .swiper-pagination-bullet {
+          transform: scale(0.7);
+          &.swiper-pagination-bullet-active {
+            transform: scale(1);
+            background: $colorGrey100 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-navigation {
+    padding: 0 10px 0 10px;
+
+    @include ss('tablet') {
+      width: 100%;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+
+      .next, .prev {
+        cursor: pointer;
+        position: absolute;
+        top: 150px;
+        width: 54px;
+        height: 54px;
+        color: $colorGrey100;
+
+        border: 1px solid $colorGrey30;
+        border-radius: 50%;
+        margin-right: 12px;
+
+        &:hover {
+          box-shadow: 0 5px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .next {
+        left: -15px;
+        background: url("../icons/prev-icon.svg") $colorGrey0 no-repeat center;
+      }
+      .prev {
+        right: -27px;
+        background: url("../icons/next-icon.svg") $colorGrey0 no-repeat center;
+
+      }
+    }
+
+  }
+}
+
+
