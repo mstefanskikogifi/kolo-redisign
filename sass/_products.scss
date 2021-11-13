@@ -8,11 +8,14 @@
   @include centerItem;
 
   .box-content {
-    @include centerItem;
-
     width: 172px;
     height: 274px;
     padding: 10px 10px 10px 10px;
+    background: $colorGrey0;
+    border: 1px solid $colorGrey20;
+    border-radius: 10px;
+
+    @include centerItem;
 
     @include ss('tablet') {
       width: 235px;
@@ -25,15 +28,13 @@
       height: 395px;
     }
 
-    background: $colorGrey0;
-    border: 1px solid $colorGrey20;
-    border-radius: 10px;
-
     .product-picture {
-      @include centerItem;
-
       width: 150px;
       height: 132px;
+      overflow: hidden;
+      border-radius: 10px;
+
+      @include centerItem;
 
       @include ss('tablet') {
         width: 208px;
@@ -44,16 +45,13 @@
         width: 244px;
         height: 244px;
       }
-
-      overflow: hidden;
-      border-radius: 10px;
     }
 
     .product-info {
       margin-top: 10px;
       font-size: 12px;
       line-height: 130%;
-
+      overflow: hidden;
 
       @include ss('tablet') {
         font-size: 13px;
@@ -61,7 +59,6 @@
       @include ss('desk') {
         font-size: 14px;
       }
-      overflow: hidden;
     }
 
     .product-box-footer {
@@ -96,6 +93,4 @@
       box-shadow: 0 5px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.1);
     }
   }
-
-
 }
