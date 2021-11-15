@@ -68,14 +68,12 @@
 
       ul {
         list-style: none;
-        margin: 0;
+        margin: 0 -5px;
         padding: 14px 0;
         display: flex;
         flex-wrap: wrap;
         & > li {
-          & + li {
-            margin-left: 20px;
-          }
+          margin: 0 5px;
           a {
             padding: .7em .8em;
             border-radius: $radius;

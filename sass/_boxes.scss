@@ -25,19 +25,11 @@ $tagPaddingX: 14px;
   &__item {
     border-radius: $radiusBig;
     position: relative;
-    min-height: 220px; 
 
     &:hover {
       .kolo-grid__item--arrow {
         opacity: 1;
       }
-    }
-
-    @include ss('tablet') {
-      min-height: 250px; 
-    }
-    @include ss('desk') {
-      min-height: 275px; 
     }
     &--arrow {
       opacity: 0;
@@ -100,17 +92,25 @@ $tagPaddingX: 14px;
       }
       &-2 {
         grid-column-start: span 1;
+        min-height: 220px; 
+        @include ss('tablet') {
+          min-height: 250px; 
+        }
         @include ss('desk') {
           grid-column-start: span 2;
+          min-height: 370px; 
         }
       }
       &-3 {
         grid-column-start: span 1;
+        min-height: 220px; 
         @include ss('tablet') {
           grid-column-start: span 2;
+          min-height: 320px; 
         }
         @include ss('desk') {
           grid-column-start: span 3;
+          min-height: 370px; 
         }
       }
     }
