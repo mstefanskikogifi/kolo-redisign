@@ -22,7 +22,6 @@
       height: 355px;
       padding: 10px 20px 10px 20px;
     }
-
     @include ss('desk') {
       width: 275px;
       height: 395px;
@@ -40,7 +39,6 @@
         width: 208px;
         height: 208px;
       }
-
       @include ss('desk') {
         width: 244px;
         height: 244px;

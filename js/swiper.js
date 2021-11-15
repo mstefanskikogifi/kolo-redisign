@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiperList = new Swiper('.swiper-list', {
     slidesPerView: 1,
     spaceBetween: 0,
     breakpoints: {
@@ -21,5 +21,4 @@ const swiper = new Swiper('.swiper', {
     pagination: {
         el: '.swiper-pagination',
     },
-
 });
