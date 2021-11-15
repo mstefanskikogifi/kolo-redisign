@@ -89,6 +89,13 @@ $tagPaddingX: 14px;
     &.col-span {
       &-1 {
         grid-column-start: span 1;
+        min-height: 220px; 
+        @include ss('tablet') {
+          min-height: 250px; 
+        }
+        @include ss('desk') {
+          min-height: 275px; 
+        }
       }
       &-2 {
         grid-column-start: span 1;
