@@ -1,53 +1,265 @@
-.tabs {
-  .tab-buttons {
-    display: flex;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    position: relative;
-    top: 1px;
+$color__tab: #444;
+$color__tab-active: #3bacff;
+$background__main: #dce2e2;
+$color__light: #fff;
+$width__max: 680px;
+$padding: 1rem;
+$border__radius: 3px;
+$lighten__level: 6;
+$darken__level: 6;
+$font__family: "Roboto", sans-serif;
+$font__weight: 300;
+$font__size: 16px;
 
-    .tab-button {
-      cursor: pointer;
-      background: $colorGrey10;
-      border: 1px solid $colorGrey10;
-      padding: 20px 40px 20px 40px;
-      margin-right: 1px;
+@mixin tab-active() {
+  background: $colorGrey0;
+}
 
-      &.active {
-        cursor: default;
-        background: $colorGrey0;
-        border-left: 1px solid $colorGrey20;
-        border-top: 1px solid $colorGrey20;
-        border-right: 1px solid $colorGrey20;
-        border-bottom: 1px solid $colorGrey0;
+* {
+  box-sizing: border-box;
+}
+
+.ootb-tabcordion {
+  &.has-tabs {
+    .ootb-tabcordion--tabs {
+      opacity: 1;
+      height: auto;
+      visibility: visible;
+    }
+
+    .ootb-tabcordion--entry {
+      min-height: 0;
+
+      &::before {
+        display: none;
       }
 
-      &:first-child {
-        border-radius: 4px 0 0 0;
+      &.is-active {
+        .ootb-tabcordion--entry-content {
+          opacity: 1;
+          transition: opacity 400ms ease-in-out;
+        }
+      }
+      .ootb-tabcordion--entry-content {
+        opacity: 0;
+        transition: opacity 400ms ease-in-out;
+      }
+    }
+  }
+}
+
+.ootb-tabcordion--tabs {
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  display: flex;
+  flex-flow: wrap;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  top: 1px;
+
+  .tab {
+    display: block;
+    cursor: pointer;
+    background: $colorGrey10;
+    border: 1px solid $colorGrey10;
+    padding: 20px 40px 20px 40px;
+    margin-right: 1px;
+
+    &:first-child {
+      border-radius: 4px 0 0 0;
+    }
+
+    &:hover {
+      //background: lighten($color__tab, $lighten__level);
+      outline: none;
+    }
+
+    &.is-active {
+      cursor: default;
+      background: $colorGrey0;
+      border-left: 1px solid $colorGrey20;
+      border-top: 1px solid $colorGrey20;
+      border-right: 1px solid $colorGrey20;
+      border-bottom: 1px solid $colorGrey0;
+    }
+  }
+}
+
+.tab-content {
+  padding: 0;
+  border: 1px solid $colorGrey20;
+  border-radius: 0 4px 4px 4px;
+
+  .ootb-tabcordion--entry {
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      position: relative;
+      content: attr(data-title);
+      cursor: pointer;
+      z-index: 1;
+      background: $colorGrey20;
+      padding: $padding;
+      display: block;
+      border-bottom: 1px solid $colorGrey20;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      width: 24px;
+      height: 24px;
+      background: url("../icons/back-arrow.svg") no-repeat center;
+      transform: rotate(90deg);
+      z-index: 100;
+
+      @include ss("tablet") {
+        display: none;
       }
     }
 
-    :hover:not(.active) {
-      &.tab-button {
-        background: $colorGrey20;
-        border-bottom: 1px solid $colorGrey20;
+    &:hover {
+      outline: none;
+
+      &::before {
+        //background: lighten($color__tab, $lighten__level);
+      }
+    }
+
+    &.is-active {
+      .ootb-tabcordion--entry-content {
+        margin-top: 0;
+        height: auto;
+        opacity: 1;
+        transition: margin 400ms ease-out -100ms;
+      }
+
+      &::before {
+        background: $colorGrey0;
+      }
+
+      &:hover,
+      &:focus {
+        &::before {
+          //background: darken($color__tab-active, $darken__level);
+        }
       }
     }
   }
 
-  .tab-content {
-    border: 1px solid $colorGrey20;
-    border-radius: 0 4px 4px 4px;
+  .ootb-tabcordion--entry-container {
+    overflow: hidden;
+    //margin-bottom: 1px;
+  }
 
-    .tab-container {
-      display: none;
+  .ootb-tabcordion--entry-content {
+    position: relative;
+    margin-top: -100%;
+    height: 0;
+    opacity: 0;
+    transition: margin 500ms ease-in;
+    padding: $padding;
 
-      &.active {
-        display: block;
+    .tab-accordion {
+      .tab-accordion-element {
+        position: relative;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $colorGrey20;
+        }
+
+        .tab-accordion-label {
+          height: 70px;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.01em;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 20px;
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: 22px;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            background: url("../icons/back-arrow.svg") no-repeat center;
+            transform: rotate(270deg);
+          }
+
+          &:hover {
+            cursor: pointer;
+
+            &:after {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .tab-accordion-content {
+          max-height: 0;
+          overflow: hidden;
+          transition: 0.5s;
+
+          .content-row {
+            display: flex;
+            border: 1px solid $colorGrey20;
+            margin: 15px 0 15px 0;
+            border-radius: 5px;
+
+            &:hover {
+              cursor: pointer;
+              //box-shadow: $shadow;
+
+              &:after {
+                cursor: pointer;
+              }
+            }
+            .row-icon {
+              padding: 15px;
+            }
+
+            .row-label {
+              padding: 15px 0 15px 0;
+              font-size: 13px;
+              line-height: 150%;
+              color: $colorGrey60;
+            }
+          }
+
+          .footer-row {
+            display: flex;
+            justify-content: end;
+            margin-bottom: 30px;
+          }
+        }
+
+        &.active {
+          .tab-accordion-content {
+            max-height: 600px;
+          }
+
+          .tab-accordion-label {
+            &:after {
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+
+    a.more {
+      //color: $color__tab;
+
+      &:hover {
+        //color: $color__tab-active;
       }
     }
   }
