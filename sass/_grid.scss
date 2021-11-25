@@ -1,158 +1,158 @@
 .container {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 20px;
-	@include ss('tablet') {
-		max-width: 768px;
-	}
-	// @include ss('tablet-wide') {
-	// 	max-width: 940px;
-	// }
-	@include ss('desk') {
-		max-width: 1170px;
-	}
-	// @include ss('desk-wide') {
-	// 	max-width: 1440px;
-	// }
-	// @include ss('hd') {
-	// 	max-width: 1640px;
-	// }
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include ss("tablet") {
+    max-width: 768px;
+  }
+  // @include ss('tablet-wide') {
+  // 	max-width: 940px;
+  // }
+  @include ss("desk") {
+    max-width: 1170px;
+  }
+  // @include ss('desk-wide') {
+  // 	max-width: 1440px;
+  // }
+  // @include ss('hd') {
+  // 	max-width: 1640px;
+  // }
 }
 
 .row {
-	margin: 0 -20px;
-	& > * {
-		padding-right: 20px;
-		padding-left: 20px;
-	}
+  margin: 0 -20px;
+  & > * {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .col {
-	&-4 {
-		width: 33.3333%;
-	}
-	&-10 {
-		flex: 0 0 10%;
-	}
-	&-20 {
-		flex: 0 0 20%;
-	}
-	&-30 {
-		flex: 0 0 30%;
-	}
-	&-40 {
-		flex: 0 0 40%;
-	}
-	&-50 {
-		flex: 0 0 50%;
-	}
-	&-60 {
-		flex: 0 0 60%;
-	}
-	&-70 {
-		flex: 0 0 70%;
-	}
-	&-80 {
-		flex: 0 0 80%;
-	}
-	&-90 {
-		flex: 0 0 90%;
-	}
-	&-md {
-		@include ss('tablet') {
-			&-10 {
-				flex: 0 0 10%;
-			}
-			&-20 {
-				flex: 0 0 20%;
-			}
-			&-30 {
-				flex: 0 0 30%;
-			}
-			&-40 {
-				flex: 0 0 40%;
-			}
-			&-50 {
-				flex: 0 0 50%;
-			}
-			&-60 {
-				flex: 0 0 60%;
-			}
-			&-70 {
-				flex: 0 0 70%;
-			}
-			&-80 {
-				flex: 0 0 80%;
-			}
-			&-90 {
-				flex: 0 0 90%;
-			}
-		}
-	}
-	&-desk {
-		@include ss('desk') {
-			&-10 {
-				flex: 0 0 10%;
-			}
-			&-20 {
-				flex: 0 0 20%;
-			}
-			&-30 {
-				flex: 0 0 30%;
-			}
-			&-40 {
-				flex: 0 0 40%;
-			}
-			&-50 {
-				flex: 0 0 50%;
-			}
-			&-60 {
-				flex: 0 0 60%;
-			}
-			&-70 {
-				flex: 0 0 70%;
-			}
-			&-80 {
-				flex: 0 0 80%;
-			}
-			&-90 {
-				flex: 0 0 90%;
-			}
-		}
-	}
+  &-4 {
+    width: 33.3333%;
+  }
+  &-10 {
+    flex: 0 0 10%;
+  }
+  &-20 {
+    flex: 0 0 20%;
+  }
+  &-30 {
+    flex: 0 0 30%;
+  }
+  &-40 {
+    flex: 0 0 40%;
+  }
+  &-50 {
+    flex: 0 0 50%;
+  }
+  &-60 {
+    flex: 0 0 60%;
+  }
+  &-70 {
+    flex: 0 0 70%;
+  }
+  &-80 {
+    flex: 0 0 80%;
+  }
+  &-90 {
+    flex: 0 0 90%;
+  }
+  &-md {
+    @include ss("tablet") {
+      &-10 {
+        flex: 0 0 10%;
+      }
+      &-20 {
+        flex: 0 0 20%;
+      }
+      &-30 {
+        flex: 0 0 30%;
+      }
+      &-40 {
+        flex: 0 0 40%;
+      }
+      &-50 {
+        flex: 0 0 50%;
+      }
+      &-60 {
+        flex: 0 0 60%;
+      }
+      &-70 {
+        flex: 0 0 70%;
+      }
+      &-80 {
+        flex: 0 0 80%;
+      }
+      &-90 {
+        flex: 0 0 90%;
+      }
+    }
+  }
+  &-desk {
+    @include ss("desk") {
+      &-10 {
+        flex: 0 0 10%;
+      }
+      &-20 {
+        flex: 0 0 20%;
+      }
+      &-30 {
+        flex: 0 0 30%;
+      }
+      &-40 {
+        flex: 0 0 40%;
+      }
+      &-50 {
+        flex: 0 0 50%;
+      }
+      &-60 {
+        flex: 0 0 60%;
+      }
+      &-70 {
+        flex: 0 0 70%;
+      }
+      &-80 {
+        flex: 0 0 80%;
+      }
+      &-90 {
+        flex: 0 0 90%;
+      }
+    }
+  }
 }
 
 .flex {
-	display: flex;
-	&-justify {
-		&-between {
-			justify-content: space-between;
-		}
-		&-end {
-			justify-content: flex-end;
-		}
-		&-center {
-			justify-content: center;
-		}
-		&-start {
-			justify-content: flex-start;
-		}
-	}
-	&-align {
-		&-start {
-			align-items: flex-start;
-		}
-		&-center {
-			align-items: center;
-		}
-		&-end {
-			align-items: flex-end;
-		}
-	}
-	&-column {
-		flex-direction: column;
-	}
-	&-wrap {
-		flex-wrap: wrap !important;
-	}
+  display: flex;
+  &-justify {
+    &-between {
+      justify-content: space-between;
+    }
+    &-end {
+      justify-content: flex-end;
+    }
+    &-center {
+      justify-content: center;
+    }
+    &-start {
+      justify-content: flex-start;
+    }
+  }
+  &-align {
+    &-start {
+      align-items: flex-start;
+    }
+    &-center {
+      align-items: center;
+    }
+    &-end {
+      align-items: flex-end;
+    }
+  }
+  &-column {
+    flex-direction: column;
+  }
+  &-wrap {
+    flex-wrap: wrap !important;
+  }
 }
