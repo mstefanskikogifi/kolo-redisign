@@ -1,385 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
-    <title>Title</title>
-    <link rel="stylesheet" href="css/bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .mySwiper2 {
+        height: 80%;
+        width: 100%;
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .container {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
   </head>
+
   <body>
-    <h2>Bigger tabs</h2>
-    <article class="ootb-tabcordion">
-      <div class="ootb-tabcordion--tabs" role="tablist" aria-label="TabCordion">
-        <button
-          class="tab is-active"
-          role="tab"
-          aria-selected="true"
-          aria-controls="tab1-tab"
-          id="tab1"
-        >
-          Tab 1 with big text
-        </button>
-        <button
-          class="tab"
-          role="tab"
-          aria-selected="false"
-          aria-controls="tab2-tab"
-          id="tab2"
-          tabindex="-1"
-        >
-          Tab 2 with big text
-        </button>
-      </div>
-      <div class="tab-content">
-        <section
-          id="tab1-tab"
-          class="ootb-tabcordion--entry is-active"
-          data-title="Tab 1 with big text"
-          tabindex="0"
-          role="tabpanel"
-          aria-labelledby="tab1"
-        >
-          <div class="ootb-tabcordion--entry-container">
-            <div class="ootb-tabcordion--entry-content">
-              <p>
-                A simple solution for having tabbed content on a large screen
-                but turn it into accordion on a smaller one when the time is
-                right. Just resize your screen to see the tabbed interface
-                transforming into an accordion.
-              </p>
-              <p>
-                In order to keep the HTML as clean as possible, without
-                duplicating elements, we use element attributes as CSS content
-                to display the accordion tabs.
-                <a
-                  class="more"
-                  href="https://www.gsarigiannidis.gr/tabs-on-desktop-accordion-on-mobile/"
-                  target="_blank"
-                  >Read more</a
-                >
-              </p>
-            </div>
+    <!-- Swiper -->
+    <div class="container">
+      <div
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+        class="swiper mySwiper2"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
           </div>
-        </section>
-        <section
-          id="tab2-tab"
-          class="ootb-tabcordion--entry"
-          data-title="Tab 2 with big text"
-          tabindex="-1"
-          role="tabpanel"
-          aria-labelledby="tab2"
-        >
-          <div class="ootb-tabcordion--entry-container">
-            <div class="ootb-tabcordion--entry-content">
-              <p>
-                Tab 2 content. Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-                Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra
-                non, semper suscipit, posuere a, pede. Nullam malesuada erat ut
-                turpis. Suspendisse urna nibh, viverra non, semper suscipit,
-                posuere a, pede.
-              </p>
-            </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
           </div>
-        </section>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-    </article>
+      <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
-      (function () {
-        "use strict";
-
-        const keyboardSupport = function (container, hasTabs) {
-          const tablist = container.querySelectorAll('[role="tablist"]')[0];
-          let tabs;
-          let panels;
-
-          const generateArrays = function () {
-            panels = container.querySelectorAll('[role="tabpanel"]');
-            tabs = container.querySelectorAll('[role="tab"]');
-          };
-
-          generateArrays();
-
-          // For easy reference
-          const keys = {
-            end: 35,
-            home: 36,
-            left: 37,
-            up: 38,
-            right: 39,
-            down: 40,
-            delete: 46,
-            enter: 13,
-            space: 32,
-          };
-
-          // Add or subtract depending on key pressed
-          const direction = {
-            37: -1,
-            38: -1,
-            39: 1,
-            40: 1,
-          };
-
-          // Deactivate all tabs and tab panels
-          const deactivateTabs = function () {
-            for (let t = 0; t < tabs.length; t++) {
-              tabs[t].setAttribute("tabindex", "-1");
-              tabs[t].setAttribute("aria-selected", "false");
-            }
-          };
-
-          // Activates any given tab panel
-          const activateTab = function (tab, setFocus) {
-            setFocus = setFocus || true;
-            // Deactivate all other tabs
-            deactivateTabs();
-
-            // Remove tabindex attribute
-            tab.removeAttribute("tabindex");
-
-            // Set the tab as selected
-            tab.setAttribute("aria-selected", "true");
-
-            // Set focus when required
-            if (setFocus) {
-              tab.focus();
-            }
-          };
-
-          const triggerTabClick = function (e) {
-            const clickedId = e.target.getAttribute("id");
-            if (clickedId) {
-              const clickedTab = container.querySelector(
-                '[aria-controls="' + clickedId + '"]'
-              );
-              clickedTab.click();
-              document.getElementById(clickedId).scrollIntoView({
-                behavior: "smooth",
-              });
-            }
-          };
-
-          const accordionClickEventListener = function (event) {
-            triggerTabClick(event);
-          };
-
-          // When a tab is clicked, activateTab is fired to activate it
-          const clickEventListener = function (event) {
-            const tab = event.target;
-            activateTab(tab, false);
-          };
-
-          // Make a guess
-          const focusFirstTab = function () {
-            const target = hasTabs ? tabs : panels;
-            target[0].focus();
-          };
-
-          // Make a guess
-          const focusLastTab = function () {
-            const target = hasTabs ? tabs : panels;
-            target[target.length - 1].focus();
-          };
-
-          // Either focus the next, previous, first, or last tab
-          // depending on key pressed
-          const switchTabOnArrowPress = function (event) {
-            const pressed = event.keyCode;
-
-            if (direction[pressed]) {
-              const target = event.target;
-              const targetElems = hasTabs ? tabs : panels;
-              if (target.index !== undefined) {
-                if (targetElems[target.index + direction[pressed]]) {
-                  targetElems[target.index + direction[pressed]].focus();
-                } else if (pressed === keys.left || pressed === keys.up) {
-                  focusLastTab();
-                } else if (pressed === keys.right || pressed == keys.down) {
-                  focusFirstTab();
-                }
-              }
-            }
-          };
-
-          // When a tablist's aria-orientation is set to vertical,
-          // only up and down arrow should function.
-          // In all other cases only left and right arrow function.
-          const determineOrientation = function (event) {
-            const key = event.keyCode;
-            const vertical = tablist
-              ? tablist.getAttribute("aria-orientation") === "vertical"
-              : null;
-            let proceed = false;
-
-            if (vertical || !hasTabs) {
-              if (key === keys.up || key === keys.down) {
-                event.preventDefault();
-                proceed = true;
-              }
-            } else {
-              if (key === keys.left || key === keys.right) {
-                proceed = true;
-              }
-            }
-
-            if (proceed) {
-              switchTabOnArrowPress(event);
-            }
-          };
-
-          // Handle keydown on tabs
-          const keydownEventListener = function (event) {
-            const key = event.keyCode;
-            switch (key) {
-              case keys.end:
-                event.preventDefault();
-                // Activate last tab
-                focusLastTab();
-                break;
-              case keys.home:
-                event.preventDefault();
-                // Activate first tab
-                focusFirstTab();
-                break;
-
-              // Up and down are in keydown
-              // because we need to prevent page scroll >:)
-              case keys.up:
-              case keys.down:
-                determineOrientation(event);
-                break;
-            }
-          };
-
-          // Handle keyup on tabs
-          const keyupEventListener = function (event) {
-            const key = event.keyCode;
-            switch (key) {
-              case keys.left:
-              case keys.right:
-                determineOrientation(event);
-                break;
-              case keys.enter:
-              case keys.space:
-                if (hasTabs) {
-                  activateTab(event.target);
-                } else {
-                  triggerTabClick(event);
-                }
-                break;
-            }
-          };
-
-          const addListeners = function (index) {
-            const target = hasTabs ? tabs[index] : panels[index];
-            tabs[index].addEventListener("click", clickEventListener);
-            if (target) {
-              if (!hasTabs) {
-                target.addEventListener("click", accordionClickEventListener);
-              }
-              target.addEventListener("keydown", keydownEventListener);
-              target.addEventListener("keyup", keyupEventListener);
-              // Build an array with all tabs (<button>s) in it
-              target.index = index;
-            }
-          };
-
-          // Bind listeners
-          for (let i = 0; i < tabs.length; ++i) {
-            addListeners(i);
-          }
-
-          // Accordion mode
-          if (!hasTabs) {
-            for (const panel of panels) {
-              panel.onclick = function (e) {
-                triggerTabClick(e);
-              };
-            }
-          }
-        };
-
-        const toggleClass = function (
-          otherElems,
-          thisELem,
-          className = "is-active"
-        ) {
-          for (const otherElem of otherElems) {
-            otherElem.classList.remove(className);
-          }
-          thisELem.classList.add(className);
-        };
-
-        const toggleVerticalTabs = function (tabContainer, tabs, items, item) {
-          item.onclick = function (e) {
-            const currId = item.getAttribute("id");
-            const tab = tabContainer.querySelector(
-              '.ootb-tabcordion--tabs [aria-controls="' + currId + '"]'
-            );
-            toggleClass(tabs, tab);
-            toggleClass(items, item);
-          };
-        };
-
-        const toggleTabs = function (tabContainer) {
-          const tabs = tabContainer.querySelectorAll(
-            ".ootb-tabcordion--tabs .tab"
-          );
-          const items = tabContainer.querySelectorAll(
-            ".ootb-tabcordion--entry"
-          );
-          for (const tab of tabs) {
-            tab.onclick = function () {
-              const target = tab.getAttribute("aria-controls");
-              const content = document.getElementById(target);
-              toggleClass(tabs, tab);
-              toggleClass(items, content);
-            };
-          }
-          for (const item of items) {
-            toggleVerticalTabs(tabContainer, tabs, items, item);
-          }
-        };
-
-        const hasTabs = function (container) {
-          return container.classList.contains("has-tabs");
-        };
-
-        const modeSwitcher = function (tabContainer, containerWidth) {
-          const tabs = tabContainer.querySelectorAll(".tab");
-          const container = tabs[0].closest(".ootb-tabcordion");
-          const mobile = 785;
-          let totalW = 0;
-          for (const tab of tabs) {
-            totalW += tab.offsetWidth;
-          }
-          console.log(`${mobile} ${containerWidth}`);
-          if (mobile >= containerWidth) {
-            container.classList.remove("has-tabs");
-          } else {
-            container.classList.add("has-tabs");
-          }
-          keyboardSupport(tabContainer, hasTabs(container));
-        };
-
-        const resizeObserver = new ResizeObserver((entries) => {
-          for (let entry of entries) {
-            modeSwitcher(entry.target, entry.contentRect.width);
-          }
-        });
-
-        const tabContainers = document.querySelectorAll(".ootb-tabcordion");
-        for (const tabContainer of tabContainers) {
-          const tabList = tabContainer.querySelector(".ootb-tabcordion--tabs");
-          resizeObserver.observe(tabList);
-          toggleTabs(tabContainer);
-          keyboardSupport(tabContainer, hasTabs(tabContainer));
-        }
-      })();
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
     </script>
   </body>
 </html>
