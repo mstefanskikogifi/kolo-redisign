@@ -1,37 +1,25 @@
 .w {
-	&-100 {
-		width: 100%;
-	}
+  &-100 {
+    width: 100%;
+  }
 }
 
 // text alignment
 .t {
-	&-left {
-		text-align: left;
-	}
-	&-right {
-		text-align: right;
-	}
-	&-center {
-		text-align: center;
-	}
-	&-uppercase {
-		text-transform: uppercase;
-	}
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-uppercase {
+    text-transform: uppercase;
+  }
 }
 
-// background colors
-$colorGrey100: #000000;
-$colorGrey90: #333333;
-$colorGrey80: #4c4c4c;
-$colorGrey70: #666666;
-$colorGrey60: #7f7f7f;
-$colorGrey50: #999999;
-$colorGrey40: #b2b2b2;
-$colorGrey30: #cccccc;
-$colorGrey20: #e5e5e5;
-$colorGrey10: #f2f2f2;
-$colorGrey0: #ffffff;
 .bg {
   &-grey {
     &--0 {
