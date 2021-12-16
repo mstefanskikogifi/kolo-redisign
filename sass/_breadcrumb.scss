@@ -1,37 +1,45 @@
 .breadcrumb {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
-	padding: 20px 0;
-	border-bottom: 1px solid $colorGrey10;
-	& > li {
-		line-height: 1em;
-		font-size: 12px;
-		& > a {
-			line-height: inherit;
-			font-size: inherit;
-			display: block;
-		}
-	}
-	&-history_page {
-		font-family: 'kolo_book';
-		color: $colorGrey50;
-		&:hover {
-			color: $colorGrey100;
-		}
-	}
-	&-current_page {
-		font-family: 'kolo_bold';
-	}
-	&__separator {
-		margin: 0 10px;
-	}
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid $colorGrey10;
+
+  .home-page {
+    width: 17px;
+    height: 17px;
+    background: url("../icons/home.svg") $colorGrey10 no-repeat center;
+    border-radius: 50%;
+  }
+
+  & > li {
+    line-height: 1em;
+    font-size: 12px;
+    & > a {
+      line-height: inherit;
+      font-size: inherit;
+      display: block;
+    }
+  }
+  &-history_page {
+    font-family: "kolo_book";
+    color: $colorGrey50;
+    &:hover {
+      color: $colorGrey100;
+    }
+  }
+  &-current_page {
+    font-family: "kolo_bold";
+  }
+  &__separator {
+    margin: 0 10px;
+  }
   &__wrapper {
     margin-bottom: 30px;
-    @include ss('desk') {
+    @include ss("desk") {
       margin-bottom: 40px;
     }
-  } 
+  }
 }

@@ -1,136 +1,98 @@
-.swiper-list-container {
-  margin: auto;
-  position: relative;
-
-  @include ss('tablet') {
-   max-width: 769px;
-  }
-  @include ss('desk') {
-    max-width: 1200px;
-  }
-
-  .swiper-list {
-    width: 100%;
-    height: 315px;
-
-    @include ss('tablet') {
-      height: 380px;
-    }
-    @include ss('desk') {
-      height: 430px;
-    }
-
-    .swiper-pagination {
-      bottom:0px;
-
-      @include ss('tablet') {
-        display: none;
-      }
-
-      &.swiper-pagination-bullets {
-        .swiper-pagination-bullet {
-          transform: scale(0.7);
-
-          &.swiper-pagination-bullet-active {
-            transform: scale(1);
-            background: $colorGrey100 !important;
-          }
-        }
-      }
-    }
-  }
-
-  .swiper-list-navigation {
-    padding: 0 10px 0 10px;
-
-    @include ss('tablet') {
-      width: 100%;
-      margin: auto;
-      position: absolute;
-      top: 0;
-      z-index: 1;
-
-      .next, .prev {
-        cursor: pointer;
-        position: absolute;
-        top: 150px;
-        width: 54px;
-        height: 54px;
-        color: $colorGrey100;
-        border: 1px solid $colorGrey30;
-        border-radius: 50%;
-        margin-right: 12px;
-
-        &:hover {
-          box-shadow: 0 5px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-      }
-
-      .next {
-        left: -15px;
-        background: url("../icons/prev-icon.svg") $colorGrey0 no-repeat center;
-      }
-
-      .prev {
-        right: -27px;
-        background: url("../icons/next-icon.svg") $colorGrey0 no-repeat center;
-      }
-    }
-
-  }
-}
-
-
-.swiper-info-container {
-  width: 500px;
-  height: 500px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  width: 200px;
-  height: 200px;
-  display: block;
-
-  //object-fit: cover;
-}
-
 .swiper {
+  width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .next,
+  .prev {
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 26px);
+    width: 54px;
+    height: 54px;
+    color: $colorGrey100;
+    border: 1px solid $colorGrey30;
+    border-radius: 50%;
+    margin-right: 12px;
+    z-index: 10;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+      box-shadow: 0 5px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .next {
+    left: 15px;
+    background: url("../icons/prev-icon.svg") $colorGrey0 no-repeat center;
+  }
+
+  .prev {
+    right: 0;
+    background: url("../icons/next-icon.svg") $colorGrey0 no-repeat center;
+  }
 }
 
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
+.big-gallery {
+  width: 750px;
+  height: 440px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.mySwiper2 {
+.thumb-gallery-container {
+  width: 400px;
+  height: 90px;
 
+  .thumb-gallery {
+    height: 90px;
 
-}
+    .swiper-slide {
+      cursor: pointer;
+      width: 120px;
+      max-height: 100%;
+      opacity: 0.4;
 
-.mySwiper {
+      .gallery-image {
+        border-radius: 5px;
+        overflow: hidden;
 
-  box-sizing: border-box;
-  padding: 10px 0;
-}
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
 
-.mySwiper .swiper-slide {
-
-
-  opacity: 0.4;
-}
-
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
+      &.swiper-slide-thumb-active {
+        opacity: 1;
+      }
+    }
+  }
 }

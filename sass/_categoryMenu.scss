@@ -26,7 +26,7 @@
 			flex-direction: row;
 			background-color: $colorGrey10;
 			border-radius: $radiusBig;
-			padding: 30px;
+			padding: 30px 25px;
 		}
 	}
 
@@ -39,9 +39,8 @@
       background-color: transparent;
       border-radius: 0;
       margin-bottom: 0;
-      & + & {
-        margin-left: 10px;
-      }
+      flex: 0 0 16.6666%;
+      padding: 0 5px;
     }
 
     &-header {
@@ -61,6 +60,8 @@
       }
       &--heading {
         font-size: 16px;
+        display: flex;
+        align-items: flex-end;
       }
       &--toggle {
         border: none;
@@ -103,6 +104,10 @@
       padding: 15px 0;
       display: block;
 
+      &.active {
+        text-decoration: underline;
+      }
+
       @include ss('desk') {
         padding: 0;
       }
@@ -114,4 +119,70 @@
       }
     }
   }
+}
+
+.footer .list-category {
+  padding: 0;
+  &__wrapper {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    @include ss('desk') {
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+  }
+  &__accordion {
+    background-color: transparent;
+    &.active {
+      .list-category__accordion-header {
+        border-color: rgba(255,255,255,.16);
+      }
+    }
+    &-header {
+      border-color: rgba(255,255,255,.16);
+      padding: 10px 0;
+      @include ss('desk') {
+        padding: 25px 0 10px;
+      }
+      &--heading {
+        color: $colorGrey0;
+        a {
+          font-size: 14px;
+          &:hover {
+            color: $colorGrey0;
+          }
+          @include ss('desk') {
+            font-size: 16px;
+          }
+        }
+      }
+      &--icon {
+        background: url('../icons/select-arrow-white.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .footer .list-category__accordion.active & {
+        border-color: $colorGrey20;
+      }
+    }
+  }
+  &__item {
+    a {
+      &:hover, &.active {
+        color: $colorGrey0;
+      }
+    }
+    &:not(:last-child) a {
+      border-bottom: 1px solid rgba(255,255,255,.16);;
+      @include ss('desk') {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.footer .list-category__accordion.active .list-category {
+  padding: 0;
 }

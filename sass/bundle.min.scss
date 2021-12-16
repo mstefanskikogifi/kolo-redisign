@@ -1,6 +1,5 @@
 @import "variables";
 @import "typography";
-@import "tabs";
 @import "grid";
 @import "utils";
 @import "input";
@@ -12,21 +11,30 @@
 @import "footer";
 @import "breadcrumb";
 @import "searchBars";
-@import "grid";
+@import "simplebar"; // scrollbars
+@import "list";
+@import "news";
+@import "map";
+@import "filters";
 @import "categoryMenu";
 @import "main";
 @import "boxes";
-@import "jquery.ui.tabs";
-@import "jquery.ui.slider";
-@import "forms";
-@import "jquery.ui.dialog";
-@import "brands";
 @import "buttons";
-@import "checkboxRadio";
+@import "katalogi";
 @import "switch";
 @import "tabs";
 @import "icons";
 @import "accordion";
 @import "products";
-
+@import "owlCarousel";
+@import "owlThemeDefault";
+@import "slider";
+@import "sliderBanner";
+@import "tab-accordion";
 @import "swiper";
+@import "articles";
+@import "searchResult";
+@import "searchFilters";
+@import "fq-partials";
+@import "fq-header";
+@import "contact-page";

@@ -20,16 +20,19 @@
 }
 
 .row {
-  margin: 0 -20px;
+  margin: 0 -15px;
   & > * {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
 .col {
+  &-3 {
+    flex: 0 0 33.3333%;
+  }
   &-4 {
-    width: 33.3333%;
+    flex: 0 0 25%;
   }
   &-10 {
     flex: 0 0 10%;
@@ -58,8 +61,17 @@
   &-90 {
     flex: 0 0 90%;
   }
+  &-100 {
+    flex: 0 0 100%;
+  }
   &-md {
     @include ss("tablet") {
+      &-3 {
+        flex: 0 0 33.3333%;
+      }
+      &-4 {
+        flex: 0 0 25%;
+      }
       &-10 {
         flex: 0 0 10%;
       }
@@ -86,11 +98,20 @@
       }
       &-90 {
         flex: 0 0 90%;
+      }
+      &-100 {
+        flex: 0 0 100%;
       }
     }
   }
   &-desk {
     @include ss("desk") {
+      &-3 {
+        flex: 0 0 33.3333%;
+      }
+      &-4 {
+        flex: 0 0 25%;
+      }
       &-10 {
         flex: 0 0 10%;
       }
@@ -117,6 +138,9 @@
       }
       &-90 {
         flex: 0 0 90%;
+      }
+      &-100 {
+        flex: 0 0 100%;
       }
     }
   }
@@ -155,5 +179,11 @@
   &-wrap {
     flex-wrap: wrap !important;
   }
+  &-grow {
+    flex-grow: 1;
+  }
+}
 
+.relative {
+  position: relative;
 }

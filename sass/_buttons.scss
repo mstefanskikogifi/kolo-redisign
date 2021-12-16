@@ -1,17 +1,41 @@
 .button {
-  padding: 14px 22px 12px;
+  padding: 14px 22px;
   border: none;
   border-radius: 40px;
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
   cursor: pointer;
+  background-color: transparent;
+  font-family: 'kolo_bold';
+  border: 1px solid $colorGrey50;
+  transition: all .3s ease;
+  display: inline-block;
 
-  @include ss('tablet') {
+  &.outlined {
+    background: transparent;
+    border: 1px solid $colorGrey50;
+    transition: all .3s ease;
+
+    &:hover {
+      background: $colorGrey80;
+      border-color: $colorGrey50;
+      box-shadow: inset 0 0 0 1px $colorGrey100, 0 5px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @include ss("tablet") {
     border-radius: 55px;
-    padding: 21px 30px 17px;
+    padding: 20px 30px;
     font-size: 13px;
     line-height: 16px;
+  }
+
+  &.small {
+    padding: 14px 22px;
+    border-radius: 40px;
+    font-size: 12px;
+    line-height: 14px;
   }
 
   &.black {
@@ -30,7 +54,8 @@
 
     &:hover {
       border: 1px solid $colorGrey100;
-      box-shadow: inset 0 0 0 1px $colorGrey100, 0 5px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: inset 0 0 0 1px $colorGrey100, 0 5px 6px rgba(0, 0, 0, 0.05),
+        0 10px 20px rgba(0, 0, 0, 0.1);
       border-radius: 60px;
     }
   }
@@ -82,6 +107,10 @@
       background: $colorGrey0;
     }
   }
+
+  &.full-width {
+    width: 100%;
+  }
 }
 
 .back-navigation {
@@ -93,11 +122,12 @@
   text-transform: uppercase;
 
   &:before {
-    content: '';
+    content: "";
     width: 36px;
     height: 36px;
     color: $colorGrey100;
-    background: url("../icons/small-back-arrow.svg") $colorGrey0 no-repeat center;
+    background: url("../icons/small-back-arrow.svg") $colorGrey0 no-repeat
+      center;
     border: 1px solid $colorGrey30;
     border-radius: 50%;
     margin-right: 12px;
@@ -108,8 +138,7 @@
 
     &:before {
       border: 1px solid $colorGrey100;
-      box-shadow: 0 5px 6px rgba(0, 0, 0, 0.05),
-      0 10px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -148,7 +177,7 @@
   position: relative;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 24px;
     left: 24px;
@@ -160,7 +189,7 @@
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 34px;
     left: 34px;

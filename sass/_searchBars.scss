@@ -1,57 +1,125 @@
 .search-form {
-	margin-left: auto;
-	position: relative;
-	.search-term {
-		padding: 15px 30px 15px 10px;
-	}
-	.submit {
-		height: 0;
-		width: 0;
-		border: none;
-		outline: none;
-		background-color: transparent;
-		visibility: hidden;
-		display: none;
-		&-label {
-			height: 100%;
-			width: 50px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			position: absolute;
-			right: 0;
-			top: 0;
-			border-bottom-right-radius: $radius;
+  margin-left: auto;
+  position: relative;
+
+  .search-term {
+    display: none !important;
+    padding: 15px 30px 15px 10px;
+
+    @include ss("desk") {
+      display: block !important;
+    }
+  }
+
+  .submit {
+    height: 0;
+    width: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    visibility: hidden;
+    display: none;
+
+    &-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-bottom-right-radius: $radius;
       border-top-right-radius: $radius;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
+      padding: 14px 0 14px 0;
+
+      @include ss("tablet") {
+        width: 50px;
+      }
+
       svg {
         path {
-          transition: all .3s ease;
+          transition: all 0.3s ease;
         }
       }
+
       &:hover {
         background: $colorGrey100;
+
         svg {
           path {
             fill: $colorGrey0;
           }
         }
       }
-		}
-	}
-	.autoComplete {
-		display: none;
-	}
-  &.rounded-input {
-    .submit-label {
-      border-bottom-right-radius: calc(1em + #{$inputPadding} * 2);
-      border-top-right-radius: calc(1em + #{$inputPadding} * 2);
-      border-bottom-left-radius: calc(1em + #{$inputPadding} * 2);
-      border-top-left-radius: calc(1em + #{$inputPadding} * 2);
     }
+  }
+
+  .autoComplete {
+    display: none;
+    position: relative;
+    z-index: 10;
+  }
+
+  &.rounded-input {
+    border: 1px solid $colorGrey30;
+    border-radius: calc(1em + #{$inputPadding} * 2);
+    padding: 0;
+    padding-left: 15px;
+    margin-right: 10px;
+
+    transition: all .3s ease;
+
+    display: flex;
+    align-items: center;
+
+    &:focus {
+      box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    }
+
+    @include ss("mobile") {
+      height: 54px;
+    }
+
+    .submit-label {
+      position: relative;
+      overflow: hidden;
+      border-top-right-radius: calc(1em + #{$inputPadding} * 2);
+      border-bottom-right-radius: calc(1em + #{$inputPadding} * 2);
+
+      @include ss("mobile") {
+        position: absolute;
+
+        height: 54px;
+        width: 54px;
+        background-color: $colorGrey100;
+        border-radius: 50%;
+
+        svg {
+          path {
+            fill: $colorGrey0;
+          }
+        }
+      }
+      
+    }
+
     .search-term {
-      border-radius: calc(1em + #{$inputPadding} * 2);
+      border-radius: 0;
+      border: none;
+      width: calc(100% - 30px);
+      border-right: 1px solid $colorGrey30;
+      padding: 0;
+      padding-right: 15px;
+      margin: 15px 0;
+      display: block !important;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      @include ss("mobile") {
+        padding-right: 100px;
+      }
     }
   }
 }
-

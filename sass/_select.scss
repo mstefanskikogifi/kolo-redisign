@@ -1,118 +1,129 @@
 .select {
-	& > select {
-		display: none;
-		visibility: hidden;
-	}
-	&-wrapper {
-		width: 100%;
-		position: relative;
-	}
-	&-element {
-		width: 100%;
-		position: relative;
-		z-index: 2;
-		font-size: 16px;
-		padding: 18px 60px 18px 18px;
-		border: 1px solid $colorGrey30;
-		border-radius: $radius;
-		transition: all 0.3s ease;
-		background-color: $colorGrey0;
-		color: $colorGrey30;
-		line-height: 1em;
-		&:hover {
-			border-color: $colorGrey80;
-			cursor: pointer;
-		}
-		.select-wrapper:not(.select-disabled):not(.select-error) & {
-			&:focus,
-			&.selected {
-				border-color: $colorGrey100;
-				box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-				color: $colorGrey100;
-				&:before {
-					transform: translatey(-50%) rotate(-180deg);
-				}
-			}
-		}
-		.select-error & {
-			&:focus,
-			&.selected {
-				border-color: $colorError;
-				box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-				color: $colorError;
-				&:before {
-					transform: translatey(-50%) rotate(-180deg);
-				}
-			}
-		}
-		// arrow
-		&:before {
-			width: 10px;
-			height: 5px;
-			content: '';
-			background: url('../icons/select-arrow.svg');
-			background-size: contain;
-			background-repeat: no-repeat;
-			position: absolute;
-			right: 25px;
-			top: 50%;
-			transform: translatey(-50%);
-			transition: all 0.3s ease;
-		}
-	}
-	&-content {
-		position: absolute;
-		z-index: 1;
-		width: 100%;
-		top: 100%;
-		left: 0;
-		margin-top: -5px;
-		padding: 0 8px;
-		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-		border-bottom-left-radius: $radius;
-		border-bottom-right-radius: $radius;
-		li {
-			font-size: 15px;
-			border-radius: $radius;
-			background-color: $colorGrey0;
-			position: relative;
-			padding: 22px 10px;
-			transition: all 0.3s ease;
-			line-height: 1em;
-			&:not(:last-child) {
-				&:before {
-					position: absolute;
-					left: 5px;
-					bottom: 0;
-					height: 1px;
-					content: '';
-					width: calc(100% - 10px);
-					background-color: $colorGrey10;
-				}
-			}
-			&:hover,
-			&.hover {
-				background-color: $colorGrey10;
-				cursor: pointer;
-			}
-		}
-	}
-	&-disabled {
-		.select-element {
-			background-color: $colorGrey10;
-			border-color: $colorGrey10;
-			&:hover {
-				cursor: default;
-				border-color: $colorGrey10;
-			}
-		}
-	}
-	&-error {
-		.select-element {
-			border-color: $colorError;
-			border-width: 2px;
-			background-color: $colorErrorLight;
-			color: $colorError;
-		}
-	}
+  &-wrapper {
+    width: 240px;
+    position: relative;
+
+    & > select {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  &-element {
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    padding: 10px 60px 10px 10px;
+    border: 1px solid $colorGrey30;
+    border-radius: $radius;
+    transition: all 0.3s ease;
+    background-color: $colorGrey0;
+    color: $colorGrey30;
+    line-height: 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    &:hover {
+      border-color: $colorGrey80;
+      cursor: pointer;
+    }
+    .select-wrapper:not(.select-disabled):not(.select-error) & {
+      &:focus,
+      &.selected {
+        border-color: $colorGrey100;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        color: $colorGrey100;
+        z-index: 2;
+        &:before {
+          transform: translatey(-50%) rotate(-180deg);
+        }
+      }
+    }
+    .select-error & {
+      &:focus,
+      &.selected {
+        border-color: $colorError;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        color: $colorError;
+        &:before {
+          transform: translatey(-50%) rotate(-180deg);
+        }
+      }
+    }
+    // arrow
+    &:before {
+      width: 10px;
+      height: 5px;
+      content: "";
+      background: url("../icons/select-arrow.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translatey(-50%);
+      transition: all 0.3s ease;
+    }
+  }
+  &-content {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    margin-top: -5px;
+    padding: 0 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+    background-color: $colorGrey0;
+    max-height: 240px;
+    transition: max-height 0.3s ease;
+    .simplebar-content > div {
+      font-size: 15px;
+      border-radius: $radius;
+      position: relative;
+      padding: 20px 10px;
+      transition: all 0.3s ease;
+      line-height: 1.2em;
+      &:not(:last-child) {
+        &:before {
+          position: absolute;
+          left: 5px;
+          bottom: 0;
+          height: 1px;
+          content: "";
+          width: calc(100% - 10px);
+          background-color: $colorGrey10;
+        }
+      }
+      &:hover,
+      &.hover,
+      &.same-as-selected {
+        background-color: $colorGrey10;
+        cursor: pointer;
+      }
+    }
+  }
+  &-disabled {
+    .select-element {
+      background-color: $colorGrey10;
+      border-color: $colorGrey10;
+      &:hover {
+        cursor: default;
+        border-color: $colorGrey10;
+      }
+    }
+  }
+  &-error {
+    .select-element {
+      border-color: $colorError;
+      border-width: 2px;
+      background-color: $colorErrorLight;
+      color: $colorError;
+    }
+  }
+}
+
+.select-hide {
+  max-height: 0;
 }

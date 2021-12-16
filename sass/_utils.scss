@@ -23,68 +23,68 @@
 .bg {
   &-grey {
     &--0 {
-      background-color: $colorGrey0;
+      background-color: $colorGrey0 !important;
     }
     &--10 {
-      background-color: $colorGrey10;
+      background-color: $colorGrey10 !important;
     }
     &--20 {
-      background-color: $colorGrey20;
+      background-color: $colorGrey20 !important;
     }
     &--30 {
-      background-color: $colorGrey30;
+      background-color: $colorGrey30 !important;
     }
     &--40 {
-      background-color: $colorGrey40;
+      background-color: $colorGrey40 !important;
     }
     &--50 {
-      background-color: $colorGrey50;
+      background-color: $colorGrey50 !important;
     }
     &--60 {
-      background-color: $colorGrey60;
+      background-color: $colorGrey60 !important;
     }
     &--70 {
-      background-color: $colorGrey70;
+      background-color: $colorGrey70 !important;
     }
     &--80 {
-      background-color: $colorGrey80;
+      background-color: $colorGrey80 !important;
     }
     &--90 {
-      background-color: $colorGrey90;
+      background-color: $colorGrey90 !important;
     }
     &--100 {
-      background-color: $colorGrey100;
+      background-color: $colorGrey100 !important;
     }
   }
   &-accent {
     &--1 {
-      background-color: $colorAccent1;
+      background-color: $colorAccent1 !important;
     }
     &--2 {
-      background-color: $colorAccent2;
+      background-color: $colorAccent2 !important;
     }
     &--3 {
-      background-color: $colorAccent3;
+      background-color: $colorAccent3 !important;
     }
     &--4 {
-      background-color: $colorAccent4;
+      background-color: $colorAccent4 !important;
     }
   }
   &-add {
     &--brown {
-      background-color: $colorBrown;
+      background-color: $colorBrown !important;
     }
     &--red {
-      background-color: $colorRed;
+      background-color: $colorRed !important;
     }
     &--green {
-      background-color: $colorGreen;
+      background-color: $colorGreen !important;
     }
     &--purple {
-      background-color: $colorPurple;
+      background-color: $colorPurple !important;
     }
     &--blue {
-      background-color: $colorBlue;
+      background-color: $colorBlue !important;
     }
   }
 }
@@ -93,8 +93,34 @@
   position: relative;
   backface-visibility: hidden;
   overflow: hidden;
+  border-radius: $radiusBig;
   & > img {
     width: 100%;
     height: auto;
   }
+}
+
+.mobile-only {
+  @include ss("tablet") {
+    display: none !important;
+  }
+}
+
+.rad {
+  &-s {
+    border-radius: $radius;
+  }
+  &-l {
+    border-radius: $radiusBig;
+  }
+}
+
+.grey-wrapper {
+  border-radius: $radiusBig;
+  background-color: $colorGrey20;
+  padding: 30px 25px;
+}
+
+.hidden {
+  display: none;
 }

@@ -12,6 +12,9 @@
 		"@babel/core": "^7.6.4",
 		"@babel/preset-env": "^7.6.3",
 		"browser-sync": "^2.26.7",
+		"eslint": "^8.4.1",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.25.3",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^6.1.0",
 		"gulp-babel": "^8.0.0",
@@ -21,6 +24,7 @@
 		"gulp-imagemin": "^5.0.3",
 		"gulp-sass": "^5.0.0",
 		"gulp-uglify": "^3.0.2",
+		"prettier": "2.5.1",
 		"readable-stream": "^3.3.0",
 		"sass": "^1.43.4"
 	},

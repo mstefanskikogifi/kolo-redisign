@@ -5,110 +5,262 @@
 
 .footer {
 	margin-bottom: 26px;
+  margin-top: 60px;
+
+  @include ss('tablet') {
+    margin-top: 80px;
+  }
 	&-top {
 		background-color: $colorGrey100;
 		border-radius: $radius;
-		padding: 0 30px;
+		padding: 0 15px;
+
+    @include ss('tablet') {
+      padding: 0 30px;
+    }
 		&__upper {
-			padding: 30px 0;
+      padding: 20px 0;
+      @include ss('tablet') {
+        padding: 26px 0;
+      }
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-      border-bottom: 1px solid rgba(255,255,255,.16);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 		}
-    &__expandables {
-      display: flex;
-      align-items: center;
-      &-item {
-        border: none;
-        background: transparent;
-        outline: none;
-        color: $colorGrey0;
-        text-transform: uppercase;
-        font-size: 12px;
-        font-family: 'kolo_book';
-        line-height: 1em;
-        padding-right: 12px;
-        padding-left: 0;
-        position: relative;
-        &:before {
-          content: "";
-          position: absolute;
-          width: 8px;
-          height: 4px;
-          right: 0;
-          top: 50%;
-          transition: all .3s ease;
-          transform: translateY(-50%);
-          transform-origin: top;
-          background: url('../icons/select-arrow-white.svg');
-          background-size: 100% auto;
-          background-repeat: no-repeat;
-          background-position: center;
+		&__expandables {
+			display: flex;
+			align-items: center;
+			&-item {
+				border: none;
+				background: transparent;
+				outline: none;
+				color: $colorGrey0;
+				text-transform: uppercase;
+				font-size: 12px;
+				font-family: 'kolo_book';
+				line-height: 1em;
+				padding-right: 16px;
+				padding-left: 0;
+				position: relative;
+        text-align: left;
+
+				&:before {
+					content: '';
+					position: absolute;
+					width: 8px;
+					height: 4px;
+					right: 0;
+					top: 50%;
+					transition: all 0.3s ease;
+					transform: translateY(-50%);
+					transform-origin: top;
+					background: url('../icons/select-arrow-white.svg');
+					background-size: 100% auto;
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+				&:hover {
+					cursor: pointer;
+				}
+				&.open {
+					&:before {
+						transform: rotate(-180deg) translateY(-50%);
+					}
+				}
+			}
+			&-separator {
+				color: rgba(255, 255, 255, 0.16);
+        margin: 0px 10px;
+
+        @include ss('tablet') {
+				  margin: 0 20px;
         }
-        &:hover {
-          cursor: pointer;
-        }
-        &.open {
-          &:before {
-            transform: rotate(-180deg) translateY(-50%);
-          }
-        }
-      }
-      &-separator {
-        color: rgba(255,255,255,.16);
-        margin: 0 20px;
-        &:hover {
-          cursor: default;
-        }
-      }
-    }
+				&:hover {
+					cursor: default;
+				}
+			}
+		}
 		&__languages {
 			@include expand;
+			margin: 0 -12px;
 
-      ul {
-        list-style: none;
-        margin: 0 -5px;
-        padding: 14px 0;
-        display: flex;
-        flex-wrap: wrap;
-        & > li {
-          margin: 0 5px;
-          a {
-            padding: .7em .8em;
-            border-radius: $radius;
-            background-color: transparent;
-            color: $colorGrey0;
-            font-size: 12px;
-            font-family: 'kolo_book';
-            display: block;
-            line-height: 1em;
-            text-transform: uppercase;
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 14px 0;
+				display: flex;
+				flex-wrap: wrap;
+				& > li {
+					margin: 0 5px;
+					a {
+						padding: 7px;
+						border-radius: $radius;
+						background-color: transparent;
+						color: $colorGrey0;
+						font-size: 12px;
+						font-family: 'kolo_book';
+						display: block;
+						line-height: 1em;
+						text-transform: uppercase;
 
-            &:hover {
-              background-color: $colorGrey90;
+						&:hover {
+							background-color: $colorGrey90;
+						}
+					}
+				}
+			}
+		}
+		&__sitemap {
+			@include expand;
+
+			.contener-site-index:last-child {
+        @include ss('desk') {
+				  padding-bottom: 30px;
+        }
+        
+        @media (max-width: 1440) {
+          .list-category__wrapper .list-category__accordion:last-child {
+            .list-category__accordion-header {
+              border: none;
+            }
+          }
+        }
+			}
+
+      .contener-site-index:last-child {
+        .list-category__wrapper {
+          .list-category__accordion:last-child {
+            .list-category__accordion-header {
+              border-color: transparent;
+
+              @include ss('desk') {
+                border-color: rgba(255,255,255,.16);
+              }
             }
           }
         }
       }
 		}
-		&__sitemap {
-			@include expand;
+		&__contact {
+			display: flex;
+			align-items: center;
+
+			&-link {
+				display: flex;
+				line-height: 1px;
+				align-items: center;
+
+				&--text {
+					@include ss('mobile') {
+						display: none;
+					}
+					@include ss('tablet') {
+						text-transform: uppercase;
+						font-size: 12px;
+						color: $colorGrey0;
+						line-height: 1em;
+						margin-left: 10px;
+					}
+				}
+
+        & + & {
+          padding-left: 8px;
+          margin-left: 8px;
+          border-left: 1px solid rgba(255,255,255,.16);
+
+          @include ss('tablet') {
+            padding-left: 18px;
+            margin-left: 18px;
+          }
+          @include ss('desk') {
+            padding-left: 24px;
+            margin-left: 24px;
+          }
+        }
+			}
 		}
 	}
 	&-bottom {
 		display: flex;
+		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: space-between;
 		padding-top: 18px;
 		padding-bottom: 18px;
-    &__socialmedia {
-      &-label {
-        font-size: 12px;
-        line-height: 1.5em;
-        color: $colorGrey70;
 
+		@include ss('tablet') {
+			flex-direction: row;
+		}
+		&__socialmedia {
+			display: flex;
+			align-items: center;
+
+			&-label {
+				font-size: 12px;
+				line-height: 1.5em;
+				color: $colorGrey70;
+				margin-right: 15px;
+			}
+
+      &-link {
+        line-height: 1px;
+        display: block;
+
+        & + & {
+          margin-left: 5px;
+        }
       }
-    }
+		}
+		&__info {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			width: 100%;
+      margin-top: 15px;
+
+			@include ss('tablet') {
+				flex-direction: row;
+				width: auto;
+        margin-top: 0;
+			}
+			&-separator {
+				margin: 20px 0 10px;
+				width: 100%;
+				height: 1px;
+				background-color: $colorGrey30;
+
+				@include ss('tablet') {
+					margin: 0 20px;
+					width: 1px;
+					height: 1em;
+				}
+			}
+		}
+		&__navigation {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+
+			&-item {
+				font-size: 12px;
+				line-height: 1em;
+				a {
+					font-size: inherit;
+					line-height: inherit;
+					color: $colorGrey70;
+				}
+				& + & {
+					margin-left: 10px;
+				}
+			}
+		}
+		&__copyright {
+			font-size: 12px;
+			line-height: 1em;
+			color: $colorGrey70;
+		}
 	}
 }

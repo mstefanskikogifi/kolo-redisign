@@ -79,6 +79,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'kolo_bold';
 	font-size: 22px;
 	line-height: 1.3em;
   margin-bottom: 1em;
@@ -136,6 +137,15 @@ h6 {
 	@include ss('desk') {
 		font-size: 16px;
 	}
+}
+
+strong, b {
+  font-family: 'kolo_bold';
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 .paragraph {

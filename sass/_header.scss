@@ -1,15 +1,41 @@
 .header {
 	background-color: $colorGrey0;
 	box-shadow: 0 0 20px -2px rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+
+  @include ss('tablet') {
+    padding: 0;
+  }
+
+  .Home & {
+    box-shadow: none;
+  }
 	&-top {
 		border-top: 4px solid $colorGrey100;
 		background-color: $colorGrey10;
+    display: none; 
+
+    @include ss('tablet') {
+      display: block;
+    }
 		&__inner {
 			@include ss('tablet') {
 				display: flex;
 				width: 100%;
 				justify-content: flex-end;
 			}
+
+      &-mobile {
+        @include ss('tablet') {
+          display: none;
+        }
+      }
 		}
 		&__button {
 			font-size: 12px;
@@ -18,9 +44,16 @@
 			padding: 7px 12px 5px 12px;
 			display: block;
 			background-color: $colorGrey100;
-			margin-left: 25px;
+			margin-left: auto;
 			border: 2px solid $colorGrey100;
-			margin-top: -2px;
+			margin-top: 10px;
+      margin-bottom: -2px;
+
+      @include ss('tablet') {
+        margin-left: 25px;
+        margin-top: -2px;
+        margin-bottom: 0;
+      }
 			&:hover {
 				background-color: transparent;
 				color: $colorGrey100;
@@ -28,7 +61,6 @@
 		}
 	}
 	&-bottom {
-		padding-top: 4px;
 		&__inner {
 			display: flex;
 			align-items: center;
@@ -38,8 +70,13 @@
 	.site-logo {
 		display: block;
 		line-height: 1px;
-		width: 109px;
-		height: 44px;
+    width: 90px;
+    height: 37px;
+
+    @include ss('tablet') {
+      width: 109px;
+      height: 44px;
+    }
 		img {
 			width: 100%;
 			height: auto;

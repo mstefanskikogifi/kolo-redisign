@@ -35,6 +35,8 @@ $colorBlueLight: #daeffa;
 $colorError: #ff0000;
 $colorErrorLight: #ffefef;
 
+$colorGeberitGroup: #3A75C4;
+
 // Constants
 $radius: 5px;
 $radiusBig: 10px;
@@ -44,6 +46,9 @@ $inputPadding: 18px;
 $breakpoints: (
 	'mobile': (
 		max-width: 767px,
+	),
+  'mobile-big': (
+		min-width: 540px,
 	),
 	'tablet': (
 		min-width: 768px,

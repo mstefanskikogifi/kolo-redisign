@@ -1,12 +1,14 @@
 $tagPaddingY: 8px;
 $tagPaddingX: 14px;
 
+.boxes-bottom {
+  margin-top: 40px;
+}
+
 .kolo-grid {
   display: grid;
-  margin-top: 30px;
-  padding-top: 20px;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   column-gap: 10px;
@@ -21,19 +23,59 @@ $tagPaddingX: 14px;
     grid-template-columns: repeat(4, 1fr);
   }
 
+  &__tiny {
+    @extend .kolo-grid;
+
+    margin-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    @include ss('tablet') {
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 20px;
+    }
+    @include ss('desk') {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    &-item {
+      height: 120px;
+
+      &--link {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .image-wrapper {
+        border-radius: $radius;
+        height: 100%;
+      }
+
+      &--image {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        // @TODO proper images wouldn't require scaling, can determine width/height 100% with js
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+  }
+
   // warianty: .kolo-grid__item-image, .kolo-grid__item-picture, .kolo-grid__item-dark
   &__item {
     border-radius: $radiusBig;
     position: relative;
 
     &:hover {
-      .kolo-grid__item--arrow {
+      .kolo-grid__item-arrow {
+        transform: none;
         opacity: 1;
       }
     }
-    &--arrow {
+    &-arrow {
+      transform: translatex(-5px);
+      line-height: 1px;
       opacity: 0;
-      transition: all .3s ease;
+      transition: all .6s ease;
     }
     &-image {
       background-color: $colorGrey100;
@@ -44,14 +86,18 @@ $tagPaddingX: 14px;
         left: 0;
         top: 0;
         z-index: 0;
+        border-radius: $radiusBig;
       }
       img {
         transition: all 1.2s ease;
         position: absolute; 
         left: 50%;
         top: 50%;
-        width: 100%;
         transform: translate(-50%, -50%) scale(1.01);
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
       &:hover {
         img {
@@ -60,7 +106,40 @@ $tagPaddingX: 14px;
         }
       }
     }
-    & > a {
+
+    &-picture {
+      background-color: $colorGreen;
+      .image-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute; 
+        left: 0;
+        top: 0;
+        z-index: 0;
+        border-radius: $radiusBig;
+      }
+      img {
+        position: absolute; 
+        left: 50%;
+        top: 50%;
+        height: 100%;
+        width: auto;
+        transform: translate(-50%, -50%) scale(1.01);
+      }
+      .kolo-grid__item-title {
+        h2 {
+          color: $colorGrey100;
+        }
+      }
+
+      &.bg-grey--70 .kolo-grid__item-title, &.bg-accent--3 .kolo-grid__item-title {
+        h2 {
+          color: $colorGrey0;
+        }  
+      }
+    }
+
+    &-link, a {
       position: relative;
       border-radius: $radiusBig;
       height: 100%;
@@ -74,10 +153,16 @@ $tagPaddingX: 14px;
     }
     &-title {
       margin-top: auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      z-index: 1;
       h2 {
         font-size: 22px;
         color: $colorGrey0;
         letter-spacing: -0.01em;
+        margin-bottom: 0;
         .dark & {
           color: $colorGrey0;
         }
@@ -95,6 +180,10 @@ $tagPaddingX: 14px;
         }
         @include ss('desk') {
           min-height: 275px; 
+
+          .Home & {
+            min-height: 370px; 
+          }
         }
       }
       &-2 {
@@ -105,23 +194,49 @@ $tagPaddingX: 14px;
         }
         @include ss('desk') {
           grid-column-start: span 2;
-          min-height: 370px; 
+          min-height: 275px; 
+
+          .Home & {
+            min-height: 370px; 
+          }
         }
       }
       &-3 {
         grid-column-start: span 1;
         min-height: 220px; 
+        @include ss('mobile-big') {
+          min-height: 250px; 
+        }
         @include ss('tablet') {
           grid-column-start: span 2;
-          min-height: 320px; 
         }
         @include ss('desk') {
           grid-column-start: span 3;
-          min-height: 370px; 
+          min-height: 275px; 
+
+          .Home & {
+            min-height: 370px; 
+          }
+        }
+      }
+      &-4 {
+        grid-column-start: span 1;
+        min-height: 220px; 
+        @include ss('tablet') {
+          grid-column-start: span 2;
+          min-height: 250px; 
+        }
+        @include ss('desk') {
+          grid-column-start: span 4;
+          min-height: 275px; 
+
+          .Home & {
+            min-height: 370px; 
+          }
         }
       }
     }
-    &.col-row {
+    &.row-span {
       &-1 {
         grid-row-start: span 1;
       }
@@ -129,6 +244,18 @@ $tagPaddingX: 14px;
         grid-row-start: span 1;
         @include ss('desk') {
           grid-row-start: span 2;
+        }
+      }
+      &-3 {
+        grid-row-start: span 1;
+        @include ss('desk') {
+          grid-row-start: span 3;
+        }
+      }
+      &-4 {
+        grid-row-start: span 1;
+        @include ss('desk') {
+          grid-row-start: span 4;
         }
       }
     }
@@ -146,4 +273,5 @@ $tagPaddingX: 14px;
   padding-left: $tagPaddingX;
   padding-right: $tagPaddingX;
   border-radius: calc(1em + #{$tagPaddingX} * 2);
+  z-index: 1;
 }
